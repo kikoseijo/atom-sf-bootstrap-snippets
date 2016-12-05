@@ -1,7 +1,7 @@
 ".text.html":
 
   "Bootstrap JS":
-    "prefix":"boo-js"
+    "prefix":"boojs"
     "body":"""
       <script="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <script="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -10,7 +10,7 @@
     """
 
   "Bootstrap CSS":
-    "prefix":"boo-css"
+    "prefix":"boocss"
     "body":"""
       <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
       ${1:<link href="${2:assets/css/style.css}" rel="stylesheet">}
@@ -19,7 +19,7 @@
     """
 
   "Boostrap IECSS":
-    "prefix":"boo-iecss"
+    "prefix":"booiecss"
     "body":"""
       <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
