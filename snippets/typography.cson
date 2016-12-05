@@ -1,19 +1,19 @@
-'.text.html':
+'.html, .php, .phtml':
 
   'H1':
-    'prefix': 'boo-h1'
+    'prefix': '${atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")}h1'
     'body': '<h1>$1</h1>'
 
   'H2':
-    'prefix': 'boo-h2'
+    'prefix': '{atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")}h2'
     'body': '<h2>$1</h2>'
 
   'H3':
-    'prefix': 'boo-h3'
+    'prefix': '{atom.config.get("sf-prefix")}h3'
     'body': '<h3>$1</h3>'
 
   'H4':
-    'prefix': 'boo-h4'
+    'prefix': '${atom.config.get("sf-prefix")}boo-h4'
     'body': '<h4>$1</h4>'
 
   'H5':
@@ -21,7 +21,7 @@
     'body': '<h5>$1</h5>'
 
   'H6':
-    'prefix': 'boo-boo-h6'
+    'prefix': 'boo-h6'
     'body': '<h6>$1</h6>'
 
   'p.lead':

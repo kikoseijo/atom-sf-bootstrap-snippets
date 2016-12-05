@@ -1,4 +1,4 @@
-".text.html":
+".html, .php, .phtml":
 
   "Boostrap Table":
     "prefix":"bootable"
