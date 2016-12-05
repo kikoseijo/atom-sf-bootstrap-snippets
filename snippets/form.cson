@@ -7,7 +7,6 @@
         <label for="${1:name-id}">${2:Form Title}</label>
         $3
       </div>
-
       $6
     """
 
