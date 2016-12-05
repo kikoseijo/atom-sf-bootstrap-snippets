@@ -1,7 +1,7 @@
 ".text.html.basic, .text.html.php":
 
   'H1':
-    'prefix': ${atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")} + 'h1'
+    'prefix': 'h1'
     'body': '<h1>$1</h1>'
 
   'H2':
