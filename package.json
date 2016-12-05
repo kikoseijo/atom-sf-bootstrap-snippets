@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-3-snippets-for-atom",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Recopilatorio para Bootstrap v3 de atajos de teclado o fragmentos (Snippets) interesantes que agilizan la construccion",
   "repository": "https://github.com/kikoseijo/atom-sf-bootstrap-snippets",
   "license": "MIT",
