@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-3-snippets-for-atom",
   "main": "./lib/sf-settings",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Recopilatorio para Bootstrap v3 de atajos de teclado o fragmentos (Snippets) interesantes que agilizan la construccion",
   "repository": "https://github.com/kikoseijo/atom-sf-bootstrap-snippets",
   "homepage": "https://github.com/kikoseijo/atom-sf-bootstrap-snippets#readme",
