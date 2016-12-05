@@ -1,7 +1,7 @@
 ".text.html.basic, .text.html.php":
 
   "Boostrap Form Group":
-    "prefix":"booformgroup"
+    "prefix":".:formgroup"
     "body":"""
       <div class="form-group">
         <label for="${1:name-id}">${2:Form Title}</label>
@@ -11,7 +11,7 @@
     """
 
   "Boostrap Form":
-    "prefix":"booform"
+    "prefix":".:form"
     "body":"""
       <form${1: class="${2:form-inline }${3:form-horizontal }"}>
         $4
@@ -19,21 +19,21 @@
     """
 
   "Boostrap Input":
-    "prefix":"booinput"
+    "prefix":".:input"
     "body":"""
       <input ${1:type="$2" }${3:class="${4:form-control }${5:input-${6:lg}}$7" }${8:placeholder="$9" }${10:disabled}>
       $11
     """
 
   "Boostrap Textarea":
-    "prefix":"bootextarea"
+    "prefix":".:textarea"
     "body":"""
       <textarea ${1:class="form-control$2" }${3:placeholder="$4" }${5:disabled}>$6</textarea>
       $7
     """
 
   "Bootstrap Checkbox":
-    "prefix":"boocheckbox"
+    "prefix":".:checkbox"
     "body":"""
       <div class="checkbox${1:-inline}$2">
         <label>
@@ -45,7 +45,7 @@
     """
 
   "Bootstrap Inline Checkbox":
-    "prefix":"boocheckboxinline"
+    "prefix":".:checkboxinline"
     "body":"""
       <div class="checkbox-inline$1">
         <label>
@@ -57,7 +57,7 @@
     """
 
   "Bootstrap Radio":
-    "prefix":"booradio"
+    "prefix":".:radio"
     "body":"""
       <div class="radio${1:-inline}$2">
         <label>
@@ -69,7 +69,7 @@
     """
 
   "Bootstrap Inline Radio":
-    "prefix":"booradioinline"
+    "prefix":".:radioinline"
     "body":"""
       <div class="radio-inline$1">
         <label>
@@ -81,7 +81,7 @@
     """
 
   "Bootstrap Select":
-    "prefix":"booselect"
+    "prefix":".:select"
     "body":"""
       <select${1: class="form-control$2"}${3: disabled}>
         $4
@@ -90,7 +90,7 @@
     """
 
   "Bootstrap Fieldset":
-    "prefix":"boofieldset"
+    "prefix":".:fieldset"
     "body":"""
       <fieldset${1: class="$2"}>
         $3
@@ -99,7 +99,7 @@
     """
 
   "Bootstrap Button":
-    "prefix":"boobutton"
+    "prefix":".:button"
     "body":"""
       <button type="${1:submit}"${2: class="${3:btn }${4:btn-${5:lg} }${6:btn-${7:default} }$8"}>$9</button>
       $10

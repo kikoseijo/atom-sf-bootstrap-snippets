@@ -1,7 +1,7 @@
 ".text.html.basic, .text.html.php":
 
   "Bootstrap template HTML":
-    "prefix":"boohtml"
+    "prefix":"boo:html"
     "body":"""
       <!DOCTYPE html>
       <html lang="en">
@@ -19,7 +19,7 @@
     """
 
   "Boostrap Container":
-    "prefix":"boocontainer"
+    "prefix":"boo:container"
     "body":"""
       <div class="container${1: }">
         $2
@@ -27,7 +27,7 @@
     """
 
   "Boostrap Fluid Container":
-    "prefix":"boocontainerfluid"
+    "prefix":"boo:containerfluid"
     "body":"""
       <div class="container-fluid${1: }">
         $2
@@ -35,7 +35,7 @@
     """
 
   "Bootstrap Column":
-    "prefix":"boocol"
+    "prefix":"boo:col"
     "body":"""
       <div class="col-lg-${1:12} col-md-${2:12} col-sm-${3:12} col-xs-${4:12}${5: }">
         $6
@@ -43,7 +43,7 @@
     """
 
   "Bootstrap Row":
-    "prefix":"boorow"
+    "prefix":"boo:row"
     "body":"""
       <div class="row${1: }">
         $2

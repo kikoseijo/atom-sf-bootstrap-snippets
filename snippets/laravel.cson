@@ -1,0 +1,328 @@
+'.text.html.php.blade':
+  'Bootstrap form':
+    'prefix': '.:form'
+    'body': """
+        {!! Form::open([\'method\' => \'${1:POST}\', \'${2:route}\' => \'${3:routeName}\'${4:, \'class\' => \'form-horizontal\'}]) !!}
+
+            ${0:boottext}
+
+            <div class="btn-group pull-right">
+                ${5:{!! Form::reset("Reset", [\'class\' => \'btn btn-warning\']) !!\\}}
+                {!! Form::submit("${6:Add}", [\'class\' => \'btn btn-${7:success}\']) !!}
+            </div>
+        {!! Form::close() !!}
+    """
+
+  'Bootstrap button':
+    'prefix': '.:button'
+    'body': """
+        {!! Form::submit(\'${1:Button name}\', [\'class\' => \'btn${2: btn-info}${3: pull-right}\']) !!}
+    """
+
+  'Bootstrap checkbox':
+    'prefix': '.:checkbox'
+    'body': """
+      <div class="form-group">
+          <div class="checkbox{{ \$errors->has('${1:checkbox_id}') ? ' has-error' : '' }}">
+              <label for="${1:checkbox_id}">
+                  {!! Form::checkbox(\'${1:checkbox_id}\',${2: null},${3: null}, [\'id\' => \'${1:checkbox_id}\']) !!} ${4:Checkbox label}
+              </label>
+          </div>
+          <small class="text-danger">{{ \$errors->first(\'${1:checkbox_id}\') }}</small>
+      </div>
+    """
+
+  'Bootstrap checkbox H':
+    'prefix': '.:checkboxh'
+    'body': """
+        <div class="form-group">
+            <div class="${5:col-sm-offset-3 col-sm-9}">
+                <div class="checkbox{{ \$errors->has('${1:checkbox_id}') ? ' has-error' : '' }}">
+                    <label for="${1:checkbox_id}">
+                        {!! Form::checkbox(\'${1:checkbox_id}\',${2: null},${3: null}, [\'id\' => \'${1:checkbox_id}\']) !!} ${4:Checkbox label}
+                    </label>
+                </div>
+                <small class="text-danger">{{ \$errors->first(\'${1:checkbox_id}\') }}</small>
+            </div>
+        </div>
+    """
+
+  'Bootstrap date':
+    'prefix': '.:date'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:date}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:date}\', \'${2:Date}\') !!}
+            {!! Form::date(\'${1:date}\',${3: null}, [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}
+            <small class="text-danger">{{ \$errors->first(\'${1:date}\') }}</small>
+        </div>
+    """
+
+  'Bootstrap date H':
+    'prefix': '.:dateh'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:date}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:date}\', \'${2:Date}\', [\'class\' => \'${3:col-sm-3 control-label}\']) !!}
+            <div class="${4:col-sm-9}">
+                {!! Form::date(\'${1:date}\',${5: null}, [\'class\' => \'form-control\'${6:, \'required\' => \'required\'}]) !!}
+                <small class="text-danger">{{ \$errors->first(\'${1:date}\') }}</small>
+            </div>
+        </div>
+    """
+
+  'Bootstrap email':
+    'prefix': '.:email'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:email}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:email}\', \'${2:Email address}\') !!}
+            {!! Form::email(\'${1:email}\',${3: null}, [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}${5:, \'placeholder\' => \'eg: foo@bar.com\'}]) !!}
+            <small class="text-danger">{{ \$errors->first(\'${1:email}\') }}</small>
+        </div>
+    """
+
+  'Bootstrap email H':
+    'prefix': '.:emailh'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:email}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:email}\', \'${2:Email address}\', [\'class\' =>\'${3:col-sm-3 control-label}\']) !!}
+            <div class="${4:col-sm-9}">
+                {!! Form::email(\'${1:email}\',${5: null}, [\'class\' => \'form-control\'${6:, \'required\' => \'required\'}${7:, \'placeholder\' => \'eg: foo@bar.com\'}]) !!}
+                <small class="text-danger">{{ \$errors->first(\'${1:email}\') }}</small>
+            </div>
+        </div>
+    """
+
+  'Bootstrap file':
+    'prefix': '.:file'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:inputname}\', \'${2:File label}\') !!}
+            {!! Form::file(\'${1:inputname}\'${3:, [\'required\' => \'required\']}) !!}
+            ${4:<p class="help-block">${5:Help block text}</p>}
+            <small class="text-danger">{{ \$errors->first(\'${1:inputname}\') }}</small>
+        </div>
+    """
+
+  'Bootstrap formmodel':
+    'prefix': '.:formmodel'
+    'body': """
+        {!! Form::model(\$${1:model}, [\'route\' => [\'${1:model}s.update\', ${1:model}s->id}], \'method\' => \'PUT\']) !!}
+
+            ${0:boottext}
+
+            <div class="btn-group pull-right">
+                ${2:{!! Form::reset("Reset", [\'class\' => \'btn btn-warning\']) !!\}}
+                {!! Form::submit("${3:Add}", [\'class\' => \'btn btn-${4:success}\']) !!}
+            </div>
+
+        {!! Form::close() !!}
+    """
+
+  'Bootstrap hidden':
+    'prefix': '.:hidden'
+    'body': """
+        {!! Form::hidden(\'${1:inputname}\', ${2:\'value\'}) !!}
+    """
+
+  'Bootstrap number':
+    'prefix': '.:number'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
+            {!! Form::number(\'${1:inputname}\',${3: null}, [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}
+            <small class="text-danger">{{ \$errors->first(\'${1:inputname}\') }}</small>
+        </div>
+    """
+
+  'Bootstrap number H':
+    'prefix': '.:numberh'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:inputname}\', \'${2:Input label}\', [\'class\' => \'${5:col-sm-3 control-label}\']) !!}
+            <div class="${6:col-sm-9}">
+                {!! Form::number(\'${1:inputname}\',${3: null}, [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}
+                <small class="text-danger">{{ \$errors->first(\'${1:inputname}\') }}</small>
+            </div>
+        </div>
+    """
+
+  'Bootstrap password':
+    'prefix': '.:password'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:password}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:password}\', \'${2:Password}\') !!}
+            {!! Form::password(\'${1:password}\', [\'class\' => \'form-control\'${3:, \'required\' => \'required\'}]) !!}
+            <small class="text-danger">{{ \$errors->first(\'${1:password}\') }}</small>
+        </div>
+    """
+
+  'Bootstrap password H':
+    'prefix': '.:passwordh'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:password}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:password}\', \'${2:Password}\', [\'class\' => \'${4:col-sm-3 control-label}\']) !!}
+                <div class="${5:col-sm-9}">
+                    {!! Form::password(\'${1:password}\', [\'class\' => \'form-control\'${3:, \'required\' => \'required\'}]) !!}
+                    <small class="text-danger">{{ \$errors->first(\'${1:password}\') }}</small>
+                </div>
+        </div>
+    """
+
+  'Bootstrap radio':
+    'prefix': '.:radio'
+    'body': """
+        <div class="radio{{ \$errors->has('${1:radio_group_name}') ? ' has-error' : '' }}">
+            <label for="${1:radio_group_name}" class="checkbox">
+                {!! Form::radio(\'${1:radio_group_name}\',${2: null},${3:  null}, [
+                    \'class\' => \'form-control\',
+                    \'id\'    => \'${4:radio_id}\',
+                ]) !!} ${5:Checkbox label}
+            </label>
+        </div>
+    """
+
+  'Bootstrap radio':
+    'prefix': '.:radio'
+    'body': """
+        <div class="radio{{ \$errors->has('${1:radio_group_name}') ? ' has-error' : '' }}">
+            <div class="${5:col-sm-offset-3 col-sm-9}">
+                <label for="${1:radio_group_name}" class="checkbox">
+                    {!! Form::radio(\'${1:radio_group_name}\',${2: null},${3:  null}, [
+                        \'class\' => \'form-control\',
+                        \'id\'    => \'${4:radio_id}\',
+                    ]) !!} ${5:Checkbox label}
+                </label>
+            </div>
+        </div>
+    """
+
+  'Bootstrap select':
+    'prefix': '.:select'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
+            {!! Form::select(\'${1:inputname}\',${3: \$options},${4: \\$selected_value}, [\'class\' => \'form-control\'${5:, \'required\' => \'required\'}${6:, \'multiple\'}]) !!}
+            <small class="text-danger">{{ \\$errors->first(\'${1:inputname}\') }}</small>
+        </div>
+    """
+
+  'Bootstrap select H':
+    'prefix': '.:selecth'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:inputname}\', \'${2:Input label}\', [\'class\' => \'${7:col-sm-3 control-label}\']) !!}
+            <div class="${8:col-sm-9}">
+                {!! Form::select(\'${1:inputname}\',${3: \$options},${4: \\$selected_value}, [\'class\' => \'form-control\'${5:, \'required\' => \'required\'}${6:, \'multiple\'}]) !!}
+                <small class="text-danger">{{ \\$errors->first(\'${1:inputname}\') }}</small>
+            </div>
+        </div>
+    """
+
+  'Bootstrap select month':
+    'prefix': '.:selectmonth'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:month}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:month}\', \'${2:Month}\') !!}
+            {!! Form::selectRange(\'${1:month}\', [\'class\' => \'form-control\'${3:, \'required\' => \'required\'}]) !!}
+            <small class="text-danger">{{ \$errors->first(\'${1:month}\') }}</small>
+        </div>
+    """
+
+  'Bootstrap select month H':
+    'prefix': '.:selectmonthh'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:month}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:month}\', \'${2:Month}\', [\'class\' => \'${4:col-sm-3 control-label}\']) !!}
+            <div class="${5:col-sm-9}">
+                {!! Form::selectRange(\'${1:month}\', [\'class\' => \'form-control\'${3:, \'required\' => \'required\'}]) !!}
+                <small class="text-danger">{{ \$errors->first(\'${1:month}\') }}</small>
+            </div>
+        </div>
+    """
+
+  'Bootstrap select range':
+    'prefix': '.:selectrange'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
+            {!! Form::selectRange(\'${1:inputname}\', ${3:0}, ${4:10}, [\'class\' => \'form-control\'${5:, \'required\' => \'required\'}]) !!}
+            <small class="text-danger">{{ \$errors->first(\'${1:inputname}\') }}</small>
+        </div>
+    """
+
+  'Bootstrap select range H':
+    'prefix': '.:selectrangeh'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:inputname}\', \'${2:Range}\', [\'class\' => \'${6:col-sm-3 control-label}\']) !!}
+            <div class="${7:col-sm-9}">
+                {!! Form::selectRange(\'${1:inputname}\', ${3:0}, ${4:10}, [\'class\' => \'form-control\'${5:, \'required\' => \'required\'}]) !!}
+                <small class="text-danger">{{ \$errors->first(\'${1:inputname}\') }}</small>
+            </div>
+        </div>
+    """
+
+  'Bootstrap select year':
+    'prefix': '.:selectyear'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:year}') ? ' has-error' : '' }}">
+            {!! Form::label('${1:year}', '${2:Year}') !!}
+            {!! Form::selectYear('${1:year}', ${3:date('Y')}, ${4:date('Y') + 10}, null, ['class' => 'form-control'${5:, 'required' => 'required'}]) !!}
+            <small class="text-danger">{{ \$errors->first('${1:year}') }}</small>
+        </div>
+    """
+
+  'Bootstrap select year H':
+    'prefix': '.:selectyearh'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:year}') ? ' has-error' : '' }}">
+            {!! Form::label('${1:year}', '${2:Year}', 'class' => '${6:col-sm-3 control-label}') !!}
+            <div class="${7:col-sm-9}">
+                {!! Form::selectYear('${1:year}', ${3:date('Y')}, ${4:date('Y') + 10}, null, ['class' => 'form-control'${5:, 'required' => 'required'}]) !!}
+                <small class="text-danger">{{ \$errors->first('${1:year}') }}</small>
+            </div>
+        </div>
+    """
+
+  'Bootstrap text':
+    'prefix': '.:text'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
+            {!! Form::text(\'${1:inputname}\',${3: null,} [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}
+            <small class="text-danger">{{ \$errors->first(\'${1:inputname}\') }}</small>
+        </div>
+    """
+
+  'Bootstrap text H':
+    'prefix': '.:texth'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:inputname}\', \'${2:Input}\', [\'class\' => \'${5:col-sm-3 control-label}\']) !!}
+            <div class="${6:col-sm-9}">
+                {!! Form::text(\'${1:inputname}\',${3: null,} [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}
+                <small class="text-danger">{{ \$errors->first(\'${1:inputname}\') }}</small>
+            </div>
+        </div>
+    """
+
+  'Bootstrap textarea':
+    'prefix': '.:textarea'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
+            {!! Form::textarea(\'${1:inputname}\',${3: null,} [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}
+            <small class="text-danger">{{ \$errors->first(\'${1:inputname}\') }}</small>
+        </div>
+    """
+
+  'Bootstrap textarea H':
+    'prefix': '.:textareah'
+    'body': """
+        <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
+            {!! Form::label(\'${1:inputname}\', \'${2:Input}\', [\'class\' => \'${5:col-sm-3 control-label}\']) !!}
+            <div class="${6:col-sm-9}">
+                {!! Form::textarea(\'${1:inputname}\',${3: null,} [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}
+                <small class="text-danger">{{ \$errors->first(\'${1:inputname}\') }}</small>
+            </div>
+        </div>
+    """
