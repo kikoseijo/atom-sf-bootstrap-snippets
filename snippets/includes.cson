@@ -4,15 +4,15 @@
     "prefix":"boojs"
     "body":"""
       <script="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-      <script="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+      <script="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       $1
     """
 
   "Bootstrap CSS":
     "prefix":"boocss"
     "body":"""
-      <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-      ${1:<link href="${2:assets/css/style.css}" rel="stylesheet">}
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      ${1:<link href="${2:assets/css/css.css}" rel="stylesheet">}
       $3
     """
 

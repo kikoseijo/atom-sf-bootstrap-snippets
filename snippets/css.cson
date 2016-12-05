@@ -1,7 +1,7 @@
 ".css":
 
   "Bootstrap Template CSS":
-    "prefix": atom.config.get('bootstrap-3-snippets-for-atom.sf-prefix') + "css"
+    "prefix":  "$prefijo"+"css"
     "body":"""
 
       $1
@@ -17,4 +17,8 @@
       @media (min-width: 1200px) {
 
       }
+    """
+    "variables":
+      "prefijo":"""
+      atom.config.get('bootstrap-3-snippets-for-atom.sf-prefix')
     """

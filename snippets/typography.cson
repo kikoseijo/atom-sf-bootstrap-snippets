@@ -30,8 +30,8 @@
 
   'p.text-':
     'prefix': 'boo-text'
-    'body': '<p class="text-$0">$1</p>'
+    'body': '<p class="text-${1:"primary"}">$2</p>'
 
   'p.bg-':
     'prefix': 'boo-bg'
-    'body': '<p class="bg-$0">$1</p>'
+    'body': '<p class="bg-${1:"success"}">$2</p>'
