@@ -1,20 +1,28 @@
 '.html, .php, .phtml':
 
   'H1':
-    'prefix': '${atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")}h1'
+    'prefix': '${prefixto}h1'
     'body': '<h1>$1</h1>'
+    'variables':
+      'prefixto':'atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")'
 
   'H2':
-    'prefix': '{atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")}h2'
+    'prefix': '${prefixto}h2'
     'body': '<h2>$1</h2>'
+    'variables':
+      'prefixto':'atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")'
 
   'H3':
-    'prefix': '{atom.config.get("sf-prefix")}h3'
+    'prefix': '${prefixto}h3'
     'body': '<h3>$1</h3>'
+    'variables':
+      'prefixto':'atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")'
 
   'H4':
-    'prefix': '${atom.config.get("sf-prefix")}boo-h4'
+    'prefix': '${prefixto}boo-h4'
     'body': '<h4>$1</h4>'
+    'variables':
+      'prefixto':'atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")'
 
   'H5':
     'prefix': 'boo-h5'
