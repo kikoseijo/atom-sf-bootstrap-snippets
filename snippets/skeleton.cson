@@ -1,0 +1,63 @@
+".text.html":
+
+  "Bootstrap template HTML":
+    "prefix":"boo-html"
+    "body":"""
+      <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>$1</title>
+
+          $2
+
+        </head>
+        <body>
+
+          $3
+
+        </body>
+      </html>
+    """
+
+  "Boostrap Container":
+    "prefix":"boo-container"
+    "body":"""
+      <div class="container${1: }">
+
+        $2
+
+      </div>
+    """
+
+  "Boostrap Fluid Container":
+    "prefix":"boo-containerfluid"
+    "body":"""
+      <div class="container-fluid${1: }">
+
+        $2
+
+      </div>
+    """
+
+  "Bootstrap Column":
+    "prefix":"boo-col"
+    "body":"""
+      <div class="col-lg-${1:12} col-md-${2:12} col-sm-${3:12} col-xs-${4:12}${5: }">
+
+        $6
+
+      </div>
+    """
+
+  "Bootstrap Row":
+    "prefix":"boo-row"
+    "body":"""
+      <div class="row${1: }">
+
+        $2
+
+      </div>
+    """

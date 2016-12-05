@@ -1,2 +1,2 @@
-# atom-bootstrap-snippets
-An Atom package that provides bootstrap snippets
+Atom Bootstrap Snippet sets for Atom.
+By Sunnyface.com
