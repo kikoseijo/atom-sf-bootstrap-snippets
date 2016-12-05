@@ -1,7 +1,7 @@
 ".css":
 
   "Bootstrap Template CSS":
-    "prefix":"boocss"
+    "prefix": atom.config.get('bootstrap-3-snippets-for-atom.sf-prefix') + "css"
     "body":"""
 
       $1
