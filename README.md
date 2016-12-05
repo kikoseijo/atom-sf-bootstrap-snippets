@@ -1,8 +1,3 @@
-# Recopilatorio de Snippets para Atom
-
-El fin de este repositorio es ir completandose de las funciones o los shortcodes que mas usamos en bootstrap, despues de ir muchas veces a la web de bootstrap se hace sensato crear estos snippets para usar en el mejor editor hasta la fecha.  
-
-Estaré encantado de añadir nuevos snippets a cualquiera que desee colaborar, ya sea a través de Github o simplemente habriendo algún ito en la web de github.    
 
 
 ## Instalación por GUI
@@ -14,59 +9,53 @@ Puedes hacerlo a través del interface GUI (`Preferencias > Instalar`) y busca e
 
 Para que funcionen los snippets de Laravel hay que instalar el [language-blade](https://atom.io/packages/language-blade) paquete antes de instalar este repositorio.  a por la consola de comandos:
 
-  `apm install language-blade`
+  `apm install language-blade`  
   `apm install bootstrap-3-snippets-for-atom`
 
 Después tienes que reiniciar Atom para que los cambios surgan efecto.
 
 
 
-## Laravel snippets
+## Bootstrap Forms - Laravel Snippets
 
-### General
+### Fromulario + Formulario con Modelo
 
 |      Input       |      Shortcut     |
 |------------------|-------------------|
 | **Form**         | `.:form`          |
 | **Form model**   | `.:formmodel`     |
 
-### Campos de formulario en disposición vertical
 
-|      Input      |      Shortcut     |
-|-----------------|-------------------|
-| **Button**      | `.:button`        |
-| **Checkbox**    | `.:checkbox`      |
-| **Date**        | `.:date`          |
-| **Email**       | `.:email`         |
-| **File**        | `.:file`          |
-| **Hidden**      | `.:hidden`        |
-| **Number**      | `.:number`        |
-| **Password**    | `.:password`      |
-| **Radio**       | `.:radio`         |
-| **Select**      | `.:select`        |
-| **SelectMonth** | `.:selectmonth`   |
-| **SelectYear**  | `.:selectyear`    |
-| **SelectRange** | `.:selectrange`   |
-| **Text**        | `.:text`          |
-| **Textarea**    | `.:textarea`      |
 
-### Inputs en horizontal
+### Campos de formulario - | V | H |
 
-|      Input      |      Shortcut     |
-|-----------------|-------------------|
-| **Checkbox**    | `.:checkboxh`     |
-| **Date**        | `.:dateh`         |
-| **Email**       | `.:emailh`        |
-| **File**        | `.:fileh`         |
-| **Number**      | `.:numberh`       |
-| **Password**    | `.:passwordh`     |
-| **Radio**       | `.:radioh`        |
-| **Select**      | `.:selecth`       |
-| **SelectMonth** | `.:selectmonthh`  |
-| **SelectYear**  | `.:selectyearh`   |
-| **SelectRange** | `.:selectrangeh`  |
-| **Text**        | `.:texth`         |
-| **Textarea**    | `.:textareah`     |
+|      Input      |      Shortcut     | |      Input      |      Shortcut     |
+|-----------------|-------------------| |-----------------|-------------------|
+| **Button**      | `.:button`        | |                 |                   |
+| **Checkbox**    | `.:checkbox`      | | **Checkbox**    | `.:checkboxh`     |
+| **Date**        | `.:date`          | | **Date**        | `.:dateh`         |
+| **Email**       | `.:email`         | | **Email**       | `.:emailh`        |
+| **File**        | `.:file`          | | **File**        | `.:fileh`         |
+| **Hidden**      | `.:hidden`        | |                 |                   |
+| **Number**      | `.:number`        | | **Number**      | `.:numberh`       |
+| **Password**    | `.:password`      | | **Password**    | `.:passwordh`     |
+| **Radio**       | `.:radio`         | | **Radio**       | `.:radioh`        |
+| **Select**      | `.:select`        | |                 |                   |
+| **SelectMonth** | `.:selectmonth`   | | **SelectMonth** | `.:selectmonthh`  |
+| **SelectYear**  | `.:selectyear`    | | **SelectYear**  | `.:selectyearh`   |
+| **SelectRange** | `.:selectrange`   | | **SelectRange** | `.:selectrangeh`  |
+| **Text**        | `.:text`          | | **Text**        | `.:texth`         |
+| **Textarea**    | `.:textarea`      | | **Textarea**    | `.:textareah`     |
+
+
+
+## Nota del autor
+
+Los Snippets han sido recopilados de diversos plugins disponibles los cuales han sido modificados.
+
+El fin de este repositorio es ir completandose de las funciones o los shortcodes que mas usamos en bootstrap para usar en el mejor editor conocido hasta la fecha.  
+
+Estaré encantado de añadir vuestros snippets del que desee colaborar, ya sea a través del [repositorio Github](https://github.com/kikoseijo/atom-sf-bootstrap-snippets) o simplemente habriendo algún ito en la web de github.  
 
 
 ## Futuras mejoras:
@@ -78,7 +67,7 @@ Después tienes que reiniciar Atom para que los cambios surgan efecto.
 
 ###### [By the Sunnyface.com Team.](https://www.sunnyface.com "Programador ios málaga Marbella")
 
-[logo]
+![logo]
 
 
 > Happy Days!  
