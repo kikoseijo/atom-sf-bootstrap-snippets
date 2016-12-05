@@ -2,7 +2,7 @@
   "name": "bootstrap-3-snippets-for-atom",
   "version": "0.1.0",
   "description": "A Bootstrap 3 snippetset for Atom.",
-  "repository": "https://github.com/kikoseijo/atom-bootstrap",
+  "repository": "https://github.com/kikoseijo/atom-sf-bootstrap-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
