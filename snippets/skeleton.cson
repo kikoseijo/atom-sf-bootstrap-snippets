@@ -1,4 +1,4 @@
-".html, .php, .phtml":
+".text.html.basic, .text.html.php":
 
   "Bootstrap template HTML":
     "prefix":"boohtml"

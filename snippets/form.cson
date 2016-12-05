@@ -1,4 +1,4 @@
-".php, .html, .phtml":
+".text.html.basic, .text.html.php":
 
   "Boostrap Form Group":
     "prefix":"booformgroup"

@@ -1,4 +1,4 @@
-".css, .scss, .less":
+"source.css":
 
   "Bootstrap Template CSS":
     "prefix":  "${atom.config.get('bootstrap-3-snippets-for-atom.sf-prefix')}css"

@@ -1,28 +1,20 @@
-'.html, .php, .phtml':
+".text.html.basic, .text.html.php":
 
   'H1':
-    'prefix': '${prefixto}h1'
+    'prefix': ${atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")} + 'h1'
     'body': '<h1>$1</h1>'
-    'variables':
-      'prefixto':'atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")'
 
   'H2':
-    'prefix': '${prefixto}h2'
+    'prefix': ${1:atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")} + 'h2'
     'body': '<h2>$1</h2>'
-    'variables':
-      'prefixto':'atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")'
 
   'H3':
-    'prefix': '${prefixto}h3'
+    'prefix': {1:atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")} + 'h3'
     'body': '<h3>$1</h3>'
-    'variables':
-      'prefixto':'atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")'
 
   'H4':
-    'prefix': '${prefixto}boo-h4'
+    'prefix': 'boo-h4'
     'body': '<h4>$1</h4>'
-    'variables':
-      'prefixto':'atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")'
 
   'H5':
     'prefix': 'boo-h5'
@@ -38,8 +30,8 @@
 
   'p.text-':
     'prefix': 'boo-text'
-    'body': '<p class="text-${1:"primary"}">$2</p>'
+    'body': '<p class="text-${1:primary}">$2</p>'
 
   'p.bg-':
     'prefix': 'boo-bg'
-    'body': '<p class="bg-${1:"success"}">$2</p>'
+    'body': '<p class="bg-${1:success}">$2</p>'
