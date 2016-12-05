@@ -1,7 +1,7 @@
 ".text.html.basic, .text.html.php":
 
   "Boostrap Table":
-    "prefix":"bootable"
+    "prefix":{atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")} + "bootable"
     "body":"""
       <table class="table${1: ${2:table-striped }${3:table-bordered }${4:table-hover }${5:table-condensed}}">
         <thead>

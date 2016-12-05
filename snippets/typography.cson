@@ -5,11 +5,11 @@
     'body': '<h1>$1</h1>'
 
   'H2':
-    'prefix': atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix") + 'h2'
+    'prefix': 'atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")h2'
     'body': '<h2>$1</h2>'
 
   'H3':
-    'prefix': {1:atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")} + 'h3'
+    'prefix': '{atom.config.get("bootstrap-3-snippets-for-atom.sf-prefix")}h3'
     'body': '<h3>$1</h3>'
 
   'H4':
