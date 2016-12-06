@@ -22,8 +22,8 @@ Después tienes que reiniciar Atom para que los cambios surgan efecto.
 
 |      Input       |      Shortcut     |
 |------------------|-------------------|
-| **Form**         | `.:form`          |
-| **Form model**   | `.:formmodel`     |
+| **Form**         | `boo:form`        |
+| **Form model**   | `boo:formmodel`   |
 
 
 
@@ -31,21 +31,21 @@ Después tienes que reiniciar Atom para que los cambios surgan efecto.
 
 | Input Vertical  |      Shortcut     | Input Horizontal|      Shortcut     |
 |-----------------|-------------------|-----------------|-------------------|
-| **Button**      | `.:button`        |                 |                   |
-| **Checkbox**    | `.:checkbox`      | **Checkbox**    | `.:checkboxh`     |
-| **Date**        | `.:date`          | **Date**        | `.:dateh`         |
-| **Email**       | `.:email`         | **Email**       | `.:emailh`        |
-| **File**        | `.:file`          | **File**        | `.:fileh`         |
-| **Hidden**      | `.:hidden`        |                 |                   |
-| **Number**      | `.:number`        | **Number**      | `.:numberh`       |
-| **Password**    | `.:password`      | **Password**    | `.:passwordh`     |
-| **Radio**       | `.:radio`         | **Radio**       | `.:radioh`        |
-| **Select**      | `.:select`        |                 |                   |
-| **SelectMonth** | `.:selectmonth`   | **SelectMonth** | `.:selectmonthh`  |
-| **SelectYear**  | `.:selectyear`    | **SelectYear**  | `.:selectyearh`   |
-| **SelectRange** | `.:selectrange`   | **SelectRange** | `.:selectrangeh`  |
-| **Text**        | `.:text`          | **Text**        | `.:texth`         |
-| **Textarea**    | `.:textarea`      | **Textarea**    | `.:textareah`     |
+| **Button**      | `boo:button`      |                 |                   |
+| **Checkbox**    | `boo:checkbox`    | **Checkbox**    | `boo:checkboxh`   |
+| **Date**        | `boo:date`        | **Date**        | `boo:dateh`       |
+| **Email**       | `boo:email`       | **Email**       | `boo:emailh`      |
+| **File**        | `boo:file`        | **File**        | `boo:fileh`       |
+| **Hidden**      | `boo:hidden`      |                 |                   |
+| **Number**      | `boo:number`      | **Number**      | `boo:numberh`     |
+| **Password**    | `boo:password`    | **Password**    | `boo:passwordh`   |
+| **Radio**       | `boo:radio`       | **Radio**       | `boo:radioh`      |
+| **Select**      | `boo:select`      |                 |                   |
+| **SelectMonth** | `boo:selectmonth` | **SelectMonth** | `boo:selectmonthh`|
+| **SelectYear**  | `boo:selectyear`  | **SelectYear**  | `boo:selectyearh` |
+| **SelectRange** | `boo:selectrange` | **SelectRange** | `boo:selectrangeh`|
+| **Text**        | `boo:text`        | **Text**        | `boo:texth`       |
+| **Textarea**    | `boo:textarea`    | **Textarea**    | `boo:textareah`   |
 
 
 

@@ -1,7 +1,7 @@
 "source.css":
 
   "Bootstrap Template CSS":
-    "prefix":  ".:css"
+    "prefix":  "boo:css"
     "body":"""
 
       $1

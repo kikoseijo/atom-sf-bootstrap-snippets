@@ -1,6 +1,6 @@
 '.text.html.php.blade':
   'Bootstrap form':
-    'prefix': '.:form'
+    'prefix': 'boo:form'
     'body': """
         {!! Form::open([\'method\' => \'${1:POST}\', \'${2:route}\' => \'${3:routeName}\'${4:, \'class\' => \'form-horizontal\'}]) !!}
 
@@ -14,13 +14,13 @@
     """
 
   'Bootstrap button':
-    'prefix': '.:button'
+    'prefix': 'boo:button'
     'body': """
         {!! Form::submit(\'${1:Button name}\', [\'class\' => \'btn${2: btn-info}${3: pull-right}\']) !!}
     """
 
   'Bootstrap checkbox':
-    'prefix': '.:checkbox'
+    'prefix': 'boo:checkbox'
     'body': """
       <div class="form-group">
           <div class="checkbox{{ \$errors->has('${1:checkbox_id}') ? ' has-error' : '' }}">
@@ -33,7 +33,7 @@
     """
 
   'Bootstrap checkbox H':
-    'prefix': '.:checkboxh'
+    'prefix': 'boo:checkboxh'
     'body': """
         <div class="form-group">
             <div class="${5:col-sm-offset-3 col-sm-9}">
@@ -48,7 +48,7 @@
     """
 
   'Bootstrap date':
-    'prefix': '.:date'
+    'prefix': 'boo:date'
     'body': """
         <div class="form-group{{ \$errors->has('${1:date}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:date}\', \'${2:Date}\') !!}
@@ -58,7 +58,7 @@
     """
 
   'Bootstrap date H':
-    'prefix': '.:dateh'
+    'prefix': 'boo:dateh'
     'body': """
         <div class="form-group{{ \$errors->has('${1:date}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:date}\', \'${2:Date}\', [\'class\' => \'${3:col-sm-3 control-label}\']) !!}
@@ -70,7 +70,7 @@
     """
 
   'Bootstrap email':
-    'prefix': '.:email'
+    'prefix': 'boo:email'
     'body': """
         <div class="form-group{{ \$errors->has('${1:email}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:email}\', \'${2:Email address}\') !!}
@@ -80,7 +80,7 @@
     """
 
   'Bootstrap email H':
-    'prefix': '.:emailh'
+    'prefix': 'boo:emailh'
     'body': """
         <div class="form-group{{ \$errors->has('${1:email}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:email}\', \'${2:Email address}\', [\'class\' =>\'${3:col-sm-3 control-label}\']) !!}
@@ -92,7 +92,7 @@
     """
 
   'Bootstrap file':
-    'prefix': '.:file'
+    'prefix': 'boo:file'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:File label}\') !!}
@@ -103,7 +103,7 @@
     """
 
   'Bootstrap formmodel':
-    'prefix': '.:formmodel'
+    'prefix': 'boo:formmodel'
     'body': """
         {!! Form::model(\$${1:model}, [\'route\' => [\'${1:model}s.update\', ${1:model}s->id}], \'method\' => \'PUT\']) !!}
 
@@ -118,13 +118,13 @@
     """
 
   'Bootstrap hidden':
-    'prefix': '.:hidden'
+    'prefix': 'boo:hidden'
     'body': """
         {!! Form::hidden(\'${1:inputname}\', ${2:\'value\'}) !!}
     """
 
   'Bootstrap number':
-    'prefix': '.:number'
+    'prefix': 'boo:number'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
@@ -134,7 +134,7 @@
     """
 
   'Bootstrap number H':
-    'prefix': '.:numberh'
+    'prefix': 'boo:numberh'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Input label}\', [\'class\' => \'${5:col-sm-3 control-label}\']) !!}
@@ -146,7 +146,7 @@
     """
 
   'Bootstrap password':
-    'prefix': '.:password'
+    'prefix': 'boo:password'
     'body': """
         <div class="form-group{{ \$errors->has('${1:password}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:password}\', \'${2:Password}\') !!}
@@ -156,7 +156,7 @@
     """
 
   'Bootstrap password H':
-    'prefix': '.:passwordh'
+    'prefix': 'boo:passwordh'
     'body': """
         <div class="form-group{{ \$errors->has('${1:password}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:password}\', \'${2:Password}\', [\'class\' => \'${4:col-sm-3 control-label}\']) !!}
@@ -168,7 +168,7 @@
     """
 
   'Bootstrap radio':
-    'prefix': '.:radio'
+    'prefix': 'boo:radio'
     'body': """
         <div class="radio{{ \$errors->has('${1:radio_group_name}') ? ' has-error' : '' }}">
             <label for="${1:radio_group_name}" class="checkbox">
@@ -181,7 +181,7 @@
     """
 
   'Bootstrap radio':
-    'prefix': '.:radio'
+    'prefix': 'boo:radio'
     'body': """
         <div class="radio{{ \$errors->has('${1:radio_group_name}') ? ' has-error' : '' }}">
             <div class="${5:col-sm-offset-3 col-sm-9}">
@@ -196,7 +196,7 @@
     """
 
   'Bootstrap select':
-    'prefix': '.:select'
+    'prefix': 'boo:select'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
@@ -206,7 +206,7 @@
     """
 
   'Bootstrap select H':
-    'prefix': '.:selecth'
+    'prefix': 'boo:selecth'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Input label}\', [\'class\' => \'${7:col-sm-3 control-label}\']) !!}
@@ -218,7 +218,7 @@
     """
 
   'Bootstrap select month':
-    'prefix': '.:selectmonth'
+    'prefix': 'boo:selectmonth'
     'body': """
         <div class="form-group{{ \$errors->has('${1:month}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:month}\', \'${2:Month}\') !!}
@@ -228,7 +228,7 @@
     """
 
   'Bootstrap select month H':
-    'prefix': '.:selectmonthh'
+    'prefix': 'boo:selectmonthh'
     'body': """
         <div class="form-group{{ \$errors->has('${1:month}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:month}\', \'${2:Month}\', [\'class\' => \'${4:col-sm-3 control-label}\']) !!}
@@ -240,7 +240,7 @@
     """
 
   'Bootstrap select range':
-    'prefix': '.:selectrange'
+    'prefix': 'boo:selectrange'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
@@ -250,7 +250,7 @@
     """
 
   'Bootstrap select range H':
-    'prefix': '.:selectrangeh'
+    'prefix': 'boo:selectrangeh'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Range}\', [\'class\' => \'${6:col-sm-3 control-label}\']) !!}
@@ -262,7 +262,7 @@
     """
 
   'Bootstrap select year':
-    'prefix': '.:selectyear'
+    'prefix': 'boo:selectyear'
     'body': """
         <div class="form-group{{ \$errors->has('${1:year}') ? ' has-error' : '' }}">
             {!! Form::label('${1:year}', '${2:Year}') !!}
@@ -272,7 +272,7 @@
     """
 
   'Bootstrap select year H':
-    'prefix': '.:selectyearh'
+    'prefix': 'boo:selectyearh'
     'body': """
         <div class="form-group{{ \$errors->has('${1:year}') ? ' has-error' : '' }}">
             {!! Form::label('${1:year}', '${2:Year}', 'class' => '${6:col-sm-3 control-label}') !!}
@@ -284,7 +284,7 @@
     """
 
   'Bootstrap text':
-    'prefix': '.:text'
+    'prefix': 'boo:text'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
@@ -294,7 +294,7 @@
     """
 
   'Bootstrap text H':
-    'prefix': '.:texth'
+    'prefix': 'boo:texth'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Input}\', [\'class\' => \'${5:col-sm-3 control-label}\']) !!}
@@ -306,7 +306,7 @@
     """
 
   'Bootstrap textarea':
-    'prefix': '.:textarea'
+    'prefix': 'boo:textarea'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
@@ -316,7 +316,7 @@
     """
 
   'Bootstrap textarea H':
-    'prefix': '.:textareah'
+    'prefix': 'boo:textareah'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Input}\', [\'class\' => \'${5:col-sm-3 control-label}\']) !!}
