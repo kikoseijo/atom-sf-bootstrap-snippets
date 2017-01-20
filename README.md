@@ -14,9 +14,15 @@ Para que funcionen los snippets de Laravel hay que instalar el [language-blade](
 
 Después tienes que reiniciar Atom para que los cambios surgan efecto.
 
+## Emmet completion Shortcut
+
+To be able to run this emmet completion shortcuts you need to have [Emmet Plugin](https://github.com/emmetio/emmet-atom) installed.
+
+Input | Shortcut | Result
+---|---|---
+**Bootstrap table** | `emm:table` | table.table.table-striped.table-bordered>(thead>tr>th*6)+(tbody>tr>td*6)
 
 
-## Bootstrap Forms - Laravel Snippets
 
 ### Fromulario + Formulario con Modelo
 

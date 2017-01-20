@@ -1,0 +1,5 @@
+".text.html.basic, .text.html.php":
+
+  "Boostrap table Emmet Shortcut":
+    "prefix": "emm:table"
+    "body":"table.table.table-striped.table-bordered>(thead>tr>th*6)+(tbody>tr>td*6)"
