@@ -2,4 +2,4 @@
 
   "Boostrap table Emmet Shortcut":
     "prefix": "emm:table"
-    "body":"table.table.table-striped.table-bordered>(thead>tr>th*6)+(tbody>tr>td*6)"
+    "body":"table.table.table-striped.table-bordered>(thead>tr>th*3)+(tbody>tr>td*3)"
