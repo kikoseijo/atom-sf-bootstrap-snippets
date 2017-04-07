@@ -3,3 +3,7 @@
   "Boostrap table Emmet Shortcut":
     "prefix": "emm:table"
     "body":"table.table.table-striped.table-bordered>(thead>tr>th*3)+(tbody>tr>td*3)"
+
+  "Emmet ul>li>a Shortcut":
+    "prefix": "emm:link-List"
+    "body":"ul.widget>li>a[href=#link$]{Footer menu link $}*6"
