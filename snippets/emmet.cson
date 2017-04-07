@@ -6,4 +6,4 @@
 
   "Emmet ul>li>a Shortcut":
     "prefix": "emm:link-List"
-    "body":"ul.widget>li>a[href=#link$]{Footer menu link $}*6"
+    "body":"ul.widget>li*6>a[href=#link$]{Footer menu link $}"
