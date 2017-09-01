@@ -4,13 +4,22 @@
 
 Puedes hacerlo a través del interface GUI (`Preferencias > Instalar`) y busca el paquete 'bootstrap-3-snippets-for-atom'
 
+> Bootstrap 4 being released soon!
 
 ## Instalación por consola de comandos
 
-Para que funcionen los snippets de Laravel hay que instalar el [language-blade](https://atom.io/packages/language-blade) paquete antes de instalar este repositorio.  a por la consola de comandos:
+Como ciertos comandos necesitan otros plugins de atom lo mejor es cargar primeros las dependencias:
 
-  `apm install language-blade`  
+***Install dependencies first:***
+
+  `apm install emmet`
+  `apm install language-blade`
+
+***Then install this plugin:***
+
   `apm install bootstrap-3-snippets-for-atom`
+
+***Reopen atom window if was open!***
 
 Después tienes que reiniciar Atom para que los cambios surgan efecto.
 
@@ -59,9 +68,9 @@ Input | Shortcut | Result
 
 Los Snippets han sido recopilados de diversos plugins disponibles los cuales han sido modificados.
 
-El fin de este repositorio es ir completandose de las funciones o los shortcodes que mas usamos en bootstrap para usar en el mejor editor conocido hasta la fecha.  
+El fin de este repositorio es ir completandose de las funciones o los shortcodes que mas usamos en bootstrap para usar en el mejor editor conocido hasta la fecha.
 
-Estaré encantado de añadir vuestros snippets del que desee colaborar, ya sea a través del [repositorio Github](https://github.com/kikoseijo/atom-sf-bootstrap-snippets) o simplemente habriendo algún ito en la web de github.  
+Estaré encantado de añadir vuestros snippets del que desee colaborar, ya sea a través del [repositorio Github](https://github.com/kikoseijo/atom-sf-bootstrap-snippets) o simplemente habriendo algún ito en la web de github.
 
 
 ## Futuras mejoras:
