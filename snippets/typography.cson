@@ -1,29 +1,5 @@
 ".text.html.basic, .text.html.php":
 
-  'H1':
-    'prefix': 'boo:h1'
-    'body': '<h1>$1</h1>'
-
-  'H2':
-    'prefix': 'boo:h2'
-    'body': '<h2>$1</h2>'
-
-  'H3':
-    'prefix': 'boo:h3'
-    'body': '<h3>$1</h3>'
-
-  'H4':
-    'prefix': 'boo:h4'
-    'body': '<h4>$1</h4>'
-
-  'H5':
-    'prefix': 'boo:h5'
-    'body': '<h5>$1</h5>'
-
-  'H6':
-    'prefix': 'boo:h6'
-    'body': '<h6>$1</h6>'
-
   'p.lead':
     'prefix': 'boo:lead'
     'body': '<p class="lead">$0</p>'

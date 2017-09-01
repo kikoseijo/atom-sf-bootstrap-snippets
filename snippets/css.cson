@@ -1,4 +1,4 @@
-"source.css":
+"source.css, source.less, source.scss":
 
   "Bootstrap Template CSS":
     "prefix":  "boo:css"
