@@ -1,6 +1,6 @@
 '.text.html.php.blade':
-  'Bootstrap collective form':
-    'prefix': 'boo:form'
+  'Laravel collective form collective form':
+    'prefix': 'lara:form'
     'body': """
         {!! Form::open([\'method\' => \'${1:POST}\', \'${2:route}\' => \'${3:routeName}\'${4:, \'class\' => \'form-horizontal\'}]) !!}
             ${0:boottext}
@@ -11,14 +11,14 @@
         {!! Form::close() !!}
     """
 
-  'Bootstrap button':
-    'prefix': 'boo:button'
+  'Laravel collective form submit button':
+    'prefix': 'lara:button'
     'body': """
         {!! Form::submit(\'${1:Button name}\', [\'class\' => \'btn${2: btn-info}${3: pull-right}\']) !!}
     """
 
-  'Bootstrap checkbox':
-    'prefix': 'boo:checkbox'
+  'Laravel collective form checkbox':
+    'prefix': 'lara:checkbox'
     'body': """
       <div class="form-group">
           <div class="checkbox{{ \$errors->has('${1:checkbox_id}') ? ' has-error' : '' }}">
@@ -30,8 +30,8 @@
       </div>
     """
 
-  'Bootstrap checkbox H':
-    'prefix': 'boo:checkboxh'
+  'Laravel collective form checkbox H':
+    'prefix': 'lara:checkboxh'
     'body': """
         <div class="form-group">
             <div class="${5:col-sm-offset-3 col-sm-9}">
@@ -45,8 +45,8 @@
         </div>
     """
 
-  'Bootstrap date':
-    'prefix': 'boo:date'
+  'Laravel collective form date':
+    'prefix': 'lara:date'
     'body': """
         <div class="form-group{{ \$errors->has('${1:date}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:date}\', \'${2:Date}\') !!}
@@ -55,8 +55,8 @@
         </div>
     """
 
-  'Bootstrap date H':
-    'prefix': 'boo:dateh'
+  'Laravel collective form date H':
+    'prefix': 'lara:dateh'
     'body': """
         <div class="form-group{{ \$errors->has('${1:date}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:date}\', \'${2:Date}\', [\'class\' => \'${3:col-sm-3 control-label}\']) !!}
@@ -67,8 +67,8 @@
         </div>
     """
 
-  'Bootstrap email':
-    'prefix': 'boo:email'
+  'Laravel collective form email':
+    'prefix': 'lara:email'
     'body': """
         <div class="form-group{{ \$errors->has('${1:email}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:email}\', \'${2:Email address}\') !!}
@@ -77,8 +77,8 @@
         </div>
     """
 
-  'Bootstrap email H':
-    'prefix': 'boo:emailh'
+  'Laravel collective form email H':
+    'prefix': 'lara:emailh'
     'body': """
         <div class="form-group{{ \$errors->has('${1:email}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:email}\', \'${2:Email address}\', [\'class\' =>\'${3:col-sm-3 control-label}\']) !!}
@@ -89,8 +89,8 @@
         </div>
     """
 
-  'Bootstrap file':
-    'prefix': 'boo:file'
+  'Laravel collective form file':
+    'prefix': 'lara:file'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:File label}\') !!}
@@ -100,8 +100,8 @@
         </div>
     """
 
-  'Bootstrap formmodel':
-    'prefix': 'boo:formmodel'
+  'Laravel collective form formmodel':
+    'prefix': 'lara:formmodel'
     'body': """
         {!! Form::model(\$${1:model}, [\'route\' => [\'${1:model}s.update\', ${1:model}s->id}], \'method\' => \'PUT\']) !!}
 
@@ -115,14 +115,14 @@
         {!! Form::close() !!}
     """
 
-  'Bootstrap hidden':
-    'prefix': 'boo:hidden'
+  'Laravel collective form hidden':
+    'prefix': 'lara:hidden'
     'body': """
         {!! Form::hidden(\'${1:inputname}\', ${2:\'value\'}) !!}
     """
 
-  'Bootstrap number':
-    'prefix': 'boo:number'
+  'Laravel collective form number':
+    'prefix': 'lara:number'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
@@ -131,8 +131,8 @@
         </div>
     """
 
-  'Bootstrap number H':
-    'prefix': 'boo:numberh'
+  'Laravel collective form number H':
+    'prefix': 'lara:numberh'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Input label}\', [\'class\' => \'${5:col-sm-3 control-label}\']) !!}
@@ -143,8 +143,8 @@
         </div>
     """
 
-  'Bootstrap password':
-    'prefix': 'boo:password'
+  'Laravel collective form password':
+    'prefix': 'lara:password'
     'body': """
         <div class="form-group{{ \$errors->has('${1:password}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:password}\', \'${2:Password}\') !!}
@@ -153,8 +153,8 @@
         </div>
     """
 
-  'Bootstrap password H':
-    'prefix': 'boo:passwordh'
+  'Laravel collective form password H':
+    'prefix': 'lara:passwordh'
     'body': """
         <div class="form-group{{ \$errors->has('${1:password}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:password}\', \'${2:Password}\', [\'class\' => \'${4:col-sm-3 control-label}\']) !!}
@@ -165,8 +165,8 @@
         </div>
     """
 
-  'Bootstrap radio':
-    'prefix': 'boo:radio'
+  'Laravel collective form radio':
+    'prefix': 'lara:radio'
     'body': """
         <div class="radio{{ \$errors->has('${1:radio_group_name}') ? ' has-error' : '' }}">
             <label for="${1:radio_group_name}" class="checkbox">
@@ -178,8 +178,8 @@
         </div>
     """
 
-  'Bootstrap radio':
-    'prefix': 'boo:radio'
+  'Laravel collective form radio':
+    'prefix': 'lara:radio'
     'body': """
         <div class="radio{{ \$errors->has('${1:radio_group_name}') ? ' has-error' : '' }}">
             <div class="${5:col-sm-offset-3 col-sm-9}">
@@ -193,8 +193,8 @@
         </div>
     """
 
-  'Bootstrap select':
-    'prefix': 'boo:select'
+  'Laravel collective form select':
+    'prefix': 'lara:select'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
@@ -203,8 +203,8 @@
         </div>
     """
 
-  'Bootstrap select H':
-    'prefix': 'boo:selecth'
+  'Laravel collective form select H':
+    'prefix': 'lara:selecth'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Input label}\', [\'class\' => \'${7:col-sm-3 control-label}\']) !!}
@@ -215,8 +215,8 @@
         </div>
     """
 
-  'Bootstrap select month':
-    'prefix': 'boo:selectmonth'
+  'Laravel collective form select month':
+    'prefix': 'lara:selectmonth'
     'body': """
         <div class="form-group{{ \$errors->has('${1:month}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:month}\', \'${2:Month}\') !!}
@@ -225,8 +225,8 @@
         </div>
     """
 
-  'Bootstrap select month H':
-    'prefix': 'boo:selectmonthh'
+  'Laravel collective form select month H':
+    'prefix': 'lara:selectmonthh'
     'body': """
         <div class="form-group{{ \$errors->has('${1:month}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:month}\', \'${2:Month}\', [\'class\' => \'${4:col-sm-3 control-label}\']) !!}
@@ -237,8 +237,8 @@
         </div>
     """
 
-  'Bootstrap select range':
-    'prefix': 'boo:selectrange'
+  'Laravel collective form select range':
+    'prefix': 'lara:selectrange'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
@@ -247,8 +247,8 @@
         </div>
     """
 
-  'Bootstrap select range H':
-    'prefix': 'boo:selectrangeh'
+  'Laravel collective form select range H':
+    'prefix': 'lara:selectrangeh'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Range}\', [\'class\' => \'${6:col-sm-3 control-label}\']) !!}
@@ -259,8 +259,8 @@
         </div>
     """
 
-  'Bootstrap select year':
-    'prefix': 'boo:selectyear'
+  'Laravel collective form select year':
+    'prefix': 'lara:selectyear'
     'body': """
         <div class="form-group{{ \$errors->has('${1:year}') ? ' has-error' : '' }}">
             {!! Form::label('${1:year}', '${2:Year}') !!}
@@ -269,8 +269,8 @@
         </div>
     """
 
-  'Bootstrap select year H':
-    'prefix': 'boo:selectyearh'
+  'Laravel collective form select year H':
+    'prefix': 'lara:selectyearh'
     'body': """
         <div class="form-group{{ \$errors->has('${1:year}') ? ' has-error' : '' }}">
             {!! Form::label('${1:year}', '${2:Year}', 'class' => '${6:col-sm-3 control-label}') !!}
@@ -281,8 +281,8 @@
         </div>
     """
 
-  'Bootstrap text':
-    'prefix': 'boo:text'
+  'Laravel collective form text':
+    'prefix': 'lara:text'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
@@ -291,8 +291,8 @@
         </div>
     """
 
-  'Bootstrap text H':
-    'prefix': 'boo:texth'
+  'Laravel collective form text H':
+    'prefix': 'lara:texth'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Input}\', [\'class\' => \'${5:col-sm-3 control-label}\']) !!}
@@ -303,8 +303,8 @@
         </div>
     """
 
-  'Bootstrap textarea':
-    'prefix': 'boo:textarea'
+  'Laravel collective form textarea':
+    'prefix': 'lara:textarea'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
@@ -313,8 +313,8 @@
         </div>
     """
 
-  'Bootstrap textarea H':
-    'prefix': 'boo:textareah'
+  'Laravel collective form textarea H':
+    'prefix': 'lara:textareah'
     'body': """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
             {!! Form::label(\'${1:inputname}\', \'${2:Input}\', [\'class\' => \'${5:col-sm-3 control-label}\']) !!}

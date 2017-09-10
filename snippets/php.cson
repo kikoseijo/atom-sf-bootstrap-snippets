@@ -1,6 +1,11 @@
 
 ".text.html.basic, .text.html.php":
 
-  'PHP Echo with <?php':
-    'prefix': 'eecho'
-    'body': '<?php echo $1?>'
+  'PHP construct method':
+    'prefix': 'boo:checkbox'
+    'body': """
+      public function __construct(${1:Reqeust} $${2:request})
+      {
+          $this->${2:request} = $${2:request};
+      }
+    """
