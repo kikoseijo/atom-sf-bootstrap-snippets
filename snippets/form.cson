@@ -10,6 +10,16 @@
       $6
     """
 
+  "Boostrap Button Group":
+    "prefix":"boo:buttonGroup"
+    "body":"""
+      <div class="btn-group" role="group" aria-label="${1:name-id}">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Right</button>
+      </div>
+    """
+
   "Boostrap Form":
     "prefix":"boo:form"
     "body":"""
