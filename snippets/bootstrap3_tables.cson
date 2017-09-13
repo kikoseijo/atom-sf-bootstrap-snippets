@@ -1,0 +1,20 @@
+".text.html.basic, .text.html.php":
+
+  "Boostrap3 Table - Responsive Table ":
+    "prefix":"bootstrap3:table-responsive"
+    "body":"""
+      <div class="table-responsive">
+        <table class="table${1: ${2:table-striped }${3:table-bordered }${4:table-hover }${5:table-condensed}}">
+          <thead>
+            <tr>
+              <th>$5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    """

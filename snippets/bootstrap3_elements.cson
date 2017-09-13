@@ -1,7 +1,7 @@
 ".text.html.basic, .text.html.php":
 
-  "Bootstrap template HTML":
-    "prefix":"boo:html"
+  "Bootstrap3 Elements - template HTML":
+    "prefix":"bootstrap3:html"
     "body":"""
       <!DOCTYPE html>
       <html lang="en">
@@ -18,32 +18,32 @@
       </html>
     """
 
-  "Boostrap Container":
-    "prefix":"boo:container"
+  "Bootstrap3 Elements - Container":
+    "prefix":"bootstrap3:container"
     "body":"""
       <div class="container${1: }">
         $2
       </div>
     """
 
-  "Boostrap Fluid Container":
-    "prefix":"boo:containerfluid"
+  "Bootstrap3 Elements - Fluid Container":
+    "prefix":"bootstrap3:containerfluid"
     "body":"""
       <div class="container-fluid${1: }">
         $2
       </div>
     """
 
-  "Bootstrap Column":
-    "prefix":"boo:col"
+  "Bootstrap3 Elements - Column":
+    "prefix":"bootstrap3:col"
     "body":"""
       <div class="col-lg-${1:12} col-md-${2:12} col-sm-${3:12} col-xs-${4:12}${5: }">
         $6
       </div>
     """
 
-  "Bootstrap Row":
-    "prefix":"boo:row"
+  "Bootstrap3 Elements - Row":
+    "prefix":"bootstrap3:row"
     "body":"""
       <div class="row${1: }">
         $2

@@ -1,7 +1,7 @@
 ".text.html.basic, .text.html.php":
 
-  "Boostrap Form Group":
-    "prefix":"boo:formgroup"
+  "Bootstrap3 Form - Form Group":
+    "prefix":"bootstrap3:formgroup"
     "body":"""
       <div class="form-group">
         <label for="${1:name-id}">${2:Form Title}</label>
@@ -10,8 +10,8 @@
       $6
     """
 
-  "Boostrap Button Group":
-    "prefix":"boo:buttonGroup"
+  "Bootstrap3 Form - Button Group":
+    "prefix":"bootstrap3:buttonGroup"
     "body":"""
       <div class="btn-group" role="group" aria-label="${1:name-id}">
         <button type="button" class="btn btn-default">Left</button>
@@ -20,30 +20,30 @@
       </div>
     """
 
-  "Boostrap Form":
-    "prefix":"boo:form"
+  "Bootstrap3 Form - Form tag":
+    "prefix":"bootstrap3:form"
     "body":"""
       <form${1: class="${2:form-inline }${3:form-horizontal }"}>
         $4
       </form>
     """
 
-  "Boostrap Input":
-    "prefix":"boo:input"
+  "Bootstrap3 Form - Text input":
+    "prefix":"bootstrap3:input"
     "body":"""
       <input ${1:type="$2" }${3:class="${4:form-control }${5:input-${6:lg}}$7" }${8:placeholder="$9" }${10:disabled}>
       $11
     """
 
-  "Boostrap Textarea":
-    "prefix":"boo:textarea"
+  "Bootstrap3 Form - Textarea input":
+    "prefix":"bootstrap3:textarea"
     "body":"""
       <textarea ${1:class="form-control$2" }${3:placeholder="$4" }${5:disabled}>$6</textarea>
       $7
     """
 
-  "Bootstrap Checkbox":
-    "prefix":"boo:checkbox"
+  "Bootstrap3 Form - Checkbox input":
+    "prefix":"bootstrap3:checkbox"
     "body":"""
       <div class="checkbox${1:-inline}$2">
         <label>
@@ -54,8 +54,8 @@
       $9
     """
 
-  "Bootstrap Inline Checkbox":
-    "prefix":"boo:checkboxinline"
+  "Bootstrap3 Form - Checkbox input Inline":
+    "prefix":"bootstrap3:checkboxinline"
     "body":"""
       <div class="checkbox-inline$1">
         <label>
@@ -66,8 +66,8 @@
       $8
     """
 
-  "Bootstrap Radio":
-    "prefix":"boo:radio"
+  "Bootstrap3 Form - Radio input":
+    "prefix":"bootstrap3:radio"
     "body":"""
       <div class="radio${1:-inline}$2">
         <label>
@@ -78,8 +78,8 @@
       $9
     """
 
-  "Bootstrap Inline Radio":
-    "prefix":"boo:radioinline"
+  "Bootstrap3 Form - Inline Radio input":
+    "prefix":"bootstrap3:radioinline"
     "body":"""
       <div class="radio-inline$1">
         <label>
@@ -90,8 +90,8 @@
       $8
     """
 
-  "Bootstrap Select":
-    "prefix":"boo:select"
+  "Bootstrap3 Form - Select input":
+    "prefix":"bootstrap3:select"
     "body":"""
       <select${1: class="form-control$2"}${3: disabled}>
         $4
@@ -99,8 +99,8 @@
       $5
     """
 
-  "Bootstrap Fieldset":
-    "prefix":"boo:fieldset"
+  "Bootstrap3 Form - Fieldset input":
+    "prefix":"bootstrap3:fieldset"
     "body":"""
       <fieldset${1: class="$2"}>
         $3
@@ -108,8 +108,8 @@
       $4
     """
 
-  "Bootstrap Button":
-    "prefix":"boo:button"
+  "Bootstrap3 Form - Button":
+    "prefix":"bootstrap3:button"
     "body":"""
       <button type="${1:submit}"${2: class="${3:btn }${4:btn-${5:lg} }${6:btn-${7:default} }$8"}>$9</button>
       $10

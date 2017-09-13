@@ -1,7 +1,6 @@
-
 ".text.html.basic, .text.html.php":
 
-  'PHP construct method':
+  'PHP snippets - construct method':
     'prefix': 'boo:checkbox'
     'body': """
       public function __construct(${1:Reqeust} $${2:request})

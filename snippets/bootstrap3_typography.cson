@@ -1,0 +1,13 @@
+".text.html.basic, .text.html.php":
+
+  'Bootstrap3 Typo - p.lead':
+    'prefix': 'bootstrap3:lead'
+    'body': '<p class="lead">$0</p>'
+
+  'Bootstrap3 Typo - p.text-':
+    'prefix': 'bootstrap3:text'
+    'body': '<p class="text-${1:primary}">$2</p>'
+
+  'Bootstrap3 Typo - p.bg-':
+    'prefix': 'bootstrap3:bg'
+    'body': '<p class="bg-${1:success}">$2</p>'
