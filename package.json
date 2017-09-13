@@ -1,5 +1,5 @@
 {
-  "name": "lara-dev-snippets",
+  "name": "bootstrap-3-snippets-for-atom",
   "main": "./lib/sf-settings",
   "version": "2.2.2",
   "description": "Bootstrap3,Laravel,Bulma.io (Snippets package) - helping Fullstack developpers to produce more in less time. Fieldsets, laravel collective, components, elements, most used items...",
