@@ -1,0 +1,358 @@
+'.text.html.php.blade':
+
+  'Bulma component - Breadcrumb':
+    'prefix': 'bulma:Breadcrumb'
+    'body': """
+      <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="#">Bulma</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Components</a></li>
+          <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+        </ul>
+      </nav>
+    """
+
+  'Bulma component - Card':
+    'prefix': 'bulma:card'
+    'body': """
+      <div class="card">
+
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+          </figure>
+        </div>
+
+        <div class="card-content">
+
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="http://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">John Smith</p>
+              <p class="subtitle is-6">@johnsmith</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+            <a href="#">#css</a> <a href="#">#responsive</a>
+            <br>
+            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+          </div>
+
+        </div>
+
+        <footer class="card-footer">
+          <a href="#" class="card-footer-item">Save</a>
+          <a href="#" class="card-footer-item">Edit</a>
+          <a href="#" class="card-footer-item">Delete</a>
+        </footer>
+
+      </div>
+    """
+
+  'Bulma component - Dropdown':
+    'prefix': 'bulma:dropdown'
+    'body': """
+      <div class="dropdown is-hoverable">
+        <div class="dropdown-trigger">
+          <button class="button is-info" aria-haspopup="true" aria-controls="dropdown-menu4">
+            <span>Hover me</span>
+            <span class="icon is-small">
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+          <div class="dropdown-content">
+            <div class="dropdown-item">
+              <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    """
+
+  'Bulma component - Menu':
+    'prefix': 'bulma:menu'
+    'body': """
+      <aside class="menu">
+        <p class="menu-label">
+          General
+        </p>
+        <ul class="menu-list">
+          <li><a>Dashboard</a></li>
+          <li><a>Customers</a></li>
+        </ul>
+        <p class="menu-label">
+          Administration
+        </p>
+        <ul class="menu-list">
+          <li><a>Team Settings</a></li>
+          <li>
+            <a class="is-active">Manage Your Team</a>
+            <ul>
+              <li><a>Members</a></li>
+              <li><a>Plugins</a></li>
+              <li><a>Add a member</a></li>
+            </ul>
+          </li>
+          <li><a>Invitations</a></li>
+          <li><a>Cloud Storage Environment Settings</a></li>
+          <li><a>Authentication</a></li>
+        </ul>
+        <p class="menu-label">
+          Transactions
+        </p>
+        <ul class="menu-list">
+          <li><a>Payments</a></li>
+          <li><a>Transfers</a></li>
+          <li><a>Balance</a></li>
+        </ul>
+      </aside>
+    """
+
+  'Bulma component - Message':
+    'prefix': 'bulma:message'
+    'body': """
+      <article class="message">
+        <div class="message-header">
+          <p>Hello World</p>
+          <button class="delete" aria-label="delete"></button>
+        </div>
+        <div class="message-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+        </div>
+      </article>
+    """
+
+  'Bulma component - Modal':
+    'prefix': 'bulma:modal'
+    'body': """
+      <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <p class="image is-4by3">
+            <img src="http://bulma.io/images/placeholders/1280x960.png" alt="">
+          </p>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+    """
+
+  'Bulma component - Modal Card':
+    'prefix': 'bulma:modal-card'
+    'body': """
+      <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Modal title</p>
+            <button class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button is-success">Save changes</button>
+            <button class="button">Cancel</button>
+          </footer>
+        </div>
+      </div>
+    """
+
+  'Bulma component - Navbar':
+    'prefix': 'bulma:xxxx'
+    'body': """
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="http://bulma.io">
+            <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+          </a>
+
+          <button class="button navbar-burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+          <!-- navbar-start, navbar-end... -->
+            <a class="navbar-item">Home</a>
+            <a class="navbar-item">
+              <img src="http://bulma.io/images/bulma-logo.png" width="112" height="28" alt="Bulma">
+            </a>
+            <div class="navbar-item has-dropdown">
+              <a class="navbar-link">Docs</a>
+              <div class="navbar-dropdown">
+                <!-- Other navbar items -->
+                <a class="navbar-item">
+                  Overview
+                </a>
+              </div>
+            </div>
+        </div>
+      </nav>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Get all "navbar-burger" elements
+          var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+          // Check if there are any navbar burgers
+          if ($navbarBurgers.length > 0) {
+            // Add a click event on each of them
+            $navbarBurgers.forEach(function ($el) {
+              $el.addEventListener('click', function () {
+                // Get the target from the "data-target" attribute
+                var target = $el.dataset.target;
+                var $target = document.getElementById(target);
+                // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                $el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+              });
+            });
+          }
+        });
+      </script>
+    """
+
+  'Bulma component - Pagination':
+    'prefix': 'bulma:pagination'
+    'body': """
+      <nav class="pagination" role="navigation" aria-label="pagination">
+        <a class="pagination-previous">Previous</a>
+        <a class="pagination-next">Next page</a>
+        <ul class="pagination-list">
+          <li>
+            <a class="pagination-link" aria-label="Goto page 1">1</a>
+          </li>
+          <li>
+            <span class="pagination-ellipsis">&hellip;</span>
+          </li>
+          <li>
+            <a class="pagination-link" aria-label="Goto page 45">45</a>
+          </li>
+          <li>
+            <a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a>
+          </li>
+          <li>
+            <a class="pagination-link" aria-label="Goto page 47">47</a>
+          </li>
+          <li>
+            <span class="pagination-ellipsis">&hellip;</span>
+          </li>
+          <li>
+            <a class="pagination-link" aria-label="Goto page 86">86</a>
+          </li>
+        </ul>
+      </nav>
+    """
+
+  'Bulma component - Panel':
+    'prefix': 'bulma:panel'
+    'body': """
+      <nav class="panel">
+        <p class="panel-heading">
+          repositories
+        </p>
+        <div class="panel-block">
+          <p class="control has-icons-left">
+            <input class="input is-small" type="text" placeholder="search">
+            <span class="icon is-small is-left">
+              <i class="fa fa-search"></i>
+            </span>
+          </p>
+        </div>
+        <p class="panel-tabs">
+          <a class="is-active">all</a>
+          <a>public</a>
+          <a>private</a>
+          <a>sources</a>
+          <a>forks</a>
+        </p>
+        <a class="panel-block is-active">
+          <span class="panel-icon">
+            <i class="fa fa-book"></i>
+          </span>
+          bulma
+        </a>
+        <a class="panel-block">
+          <span class="panel-icon">
+            <i class="fa fa-book"></i>
+          </span>
+          marksheet
+        </a>
+        <a class="panel-block">
+          <span class="panel-icon">
+            <i class="fa fa-book"></i>
+          </span>
+          minireset.css
+        </a>
+        <a class="panel-block">
+          <span class="panel-icon">
+            <i class="fa fa-book"></i>
+          </span>
+          jgthms.github.io
+        </a>
+        <a class="panel-block">
+          <span class="panel-icon">
+            <i class="fa fa-code-fork"></i>
+          </span>
+          daniellowtw/infboard
+        </a>
+        <a class="panel-block">
+          <span class="panel-icon">
+            <i class="fa fa-code-fork"></i>
+          </span>
+          mojs
+        </a>
+        <label class="panel-block">
+          <input type="checkbox">
+          remember me
+        </label>
+        <div class="panel-block">
+          <button class="button is-primary is-outlined is-fullwidth">
+            reset all filters
+          </button>
+        </div>
+      </nav>
+    """
+
+  'Bulma component - Tabs':
+    'prefix': 'bulma:tabs'
+    'body': """
+      <div class="tabs is-centered">
+        <ul>
+          <li class="is-active">
+            <a>
+              <span class="icon is-small"><i class="fa fa-image"></i></span>
+              <span>Pictures</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="icon is-small"><i class="fa fa-music"></i></span>
+              <span>Music</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="icon is-small"><i class="fa fa-film"></i></span>
+              <span>Videos</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="icon is-small"><i class="fa fa-file-text-o"></i></span>
+              <span>Documents</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    """

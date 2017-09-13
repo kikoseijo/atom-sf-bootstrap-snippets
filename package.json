@@ -2,7 +2,7 @@
   "name": "bootstrap-3-snippets-for-atom",
   "main": "./lib/sf-settings",
   "version": "2.1.0",
-  "description": "Bootstrap v3 shortcut (Snippets) for fast development",
+  "description": "Bootstrap,Laravel,Bulma++ (Snippets) for PHP developpers fast development",
   "repository": "https://github.com/kikoseijo/atom-sf-bootstrap-snippets",
   "homepage": "https://github.com/kikoseijo/atom-sf-bootstrap-snippets#readme",
   "license": "MIT",
@@ -14,7 +14,8 @@
     "bootstrap",
     "atajos",
     "snippets",
-    "laravel"
+    "laravel",
+    "bulma"
   ],
   "folders": [
     {
