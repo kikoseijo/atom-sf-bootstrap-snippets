@@ -7,7 +7,7 @@
         <article class="media">
           <div class="media-left">
             <figure class="image is-64x64">
-              <img src="http://bulma.io/images/placeholders/128x128.png" alt="Image">
+              <img src="http://via.placeholder.com/128x128" alt="Image">
             </figure>
           </div>
           <div class="media-content">
@@ -47,8 +47,8 @@
   'Bulma element - Image':
     'prefix': 'bulma:image'
     'body': """
-      <figure class="image is-128x128">
-        <img src="http://bulma.io/images/placeholders/128x128.png">
+      <figure class="image is-${1:128x128}">
+        <img src="http://via.placeholder.com/${1:128x128}">
       </figure>
     """
 

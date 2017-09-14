@@ -47,7 +47,7 @@
       <article class="media">
         <figure class="media-left">
           <p class="image is-64x64">
-            <img src="http://bulma.io/images/placeholders/128x128.png">
+            <img src="http://via.placeholder.com/128x128.png">
           </p>
         </figure>
         <div class="media-content">
@@ -150,7 +150,7 @@
                 <p class="title">Middle tile</p>
                 <p class="subtitle">With an image</p>
                 <figure class="image is-4by3">
-                  <img src="http://bulma.io/images/placeholders/640x480.png">
+                  <img src="http://via.placeholder.com/640x480.png">
                 </figure>
               </article>
             </div>
