@@ -39,8 +39,8 @@
   'Bulma element - Icon':
     'prefix': 'bulma:icon'
     'body': """
-      <span class="icon has-text-info">
-        <i class="fa fa-info-circle"></i>
+      <span class="icon has-text-${1:info}">
+        <i class="fa fa-${2:info-circle}"></i>
       </span>
     """
 
