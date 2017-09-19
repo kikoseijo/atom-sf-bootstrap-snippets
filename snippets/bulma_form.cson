@@ -4,11 +4,11 @@
     'prefix': 'bulma:field'
     'body': """
       <div class="field">
-        <label class="label fo="${1:name}">Label</label>
+        <label class="label fo="${1:name}">${2:Label}</label>
         <div class="control">
-          <input class="input" id="${1:name}" name="${1:name}" type="text" placeholder="Text input">
+          <input class="input" id="${1:name}" name="${1:name}" type="text" placeholder="${2:Label}">
         </div>
-        <p class="help">This is a help text</p>
+        <p class="help">This_is_a_help_text</p>
       </div>
     """
 
@@ -17,7 +17,7 @@
     'body': """
       <div class="field">
         <p class="control has-icons-left has-icons-right">
-          <input class="input" type="email" placeholder="Email">
+          <input class="input" type="email" placeholder="${1:Placeholder}">
           <span class="icon is-small is-left">
             <i class="fa fa-envelope"></i>
           </span>
