@@ -9,8 +9,14 @@
       }
     """
 
-  'PHP snippets - array':
-    'prefix': 'php:array'
+  'PHP snippets - Full array definition':
+    'prefix': 'php:arrayFull'
     'body': """
-      ['${1:name}'=>'${2:value}']
+      $${1:arrayName} = ['${1:name}' => '${2:value}'];
+    """
+
+  'PHP snippets - array value':
+    'prefix': 'php:arrValue'
+    'body': """
+       '${1:name}' => '${2:value}',
     """
