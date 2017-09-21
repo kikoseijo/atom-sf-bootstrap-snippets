@@ -7,3 +7,7 @@
   "Emmet ul>li>a Shortcut":
     "prefix": "emm:link-List"
     "body":"ul.widget>li*6>a[href=#link$]{Footer menu link $}"
+
+  "Emmet .columns>.column Shortcut":
+    "prefix": "emm:columns_bulma"
+    "body":".columns>.column*${1:6}"
