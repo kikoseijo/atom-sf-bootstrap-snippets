@@ -18,5 +18,51 @@
   'PHP snippets - array value':
     'prefix': 'php:arrValue'
     'body': """
-       '${1:name}' => '${2:value}',
+      '${1:name}' => '${2:value}',
+    """
+
+  'PHP snippets - Class definition (Trait)':
+    'prefix': 'php:trait_class_definition'
+    'body': """<?php namespace App\Traits;
+
+      /**
+       * Trait ${1:TraitName}.
+       */
+      trait ${1:TraitName}
+      {
+          //
+      }
+
+    """
+
+  'PHP snippets - Class definition (Provider)':
+    'prefix': 'php:provider_class_definition'
+    'body': """<?php namespace App\Providers;
+
+        use Illuminate\Support\ServiceProvider;
+
+        class ${1:ClassName} extends ServiceProvider
+        {
+
+            /**
+             * Bootstrap any application services.
+             *
+             * @return void
+             */
+            public function boot()
+            {
+
+            }
+
+            /**
+             * Register any application services.
+             *
+             * @return void
+             */
+            public function register()
+            {
+              //
+            }
+
+        }
     """
