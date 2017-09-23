@@ -1,0 +1,67 @@
+'.text.html.php.blade, text.html.php':
+  'Layout':
+    'prefix': 'lara:layout'
+    'rightLabelHTML': '<span style="color:#f4645f">Laravel</span> Layout'
+    'body': """<!DOCTYPE html>
+        <html lang="{{config('app.locale')}}">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>@yield('title', config('app.name'))</title>
+            <link href="{{ asset(mix('css/${1:app}.css')) }}" rel="stylesheet">
+            @stack('stylesheets', '')
+            @yield('scripts', '')
+        </head>
+        <body>
+            <header class="main-nav background-dark">
+                <div class="container">
+                    @auth
+                        @include('public.nav.guest')
+                    @endauth
+                    @guest
+                        @include('public.nav.guest')
+                    @endguest
+                 </div>
+            </header>
+            @yield('content')
+
+            <script src="{{ asset(mix('js/${1:app}.js')) }}"></script>
+            <div class="overlay"></div>
+            @stack('scripts')
+        </body>
+        </html>
+    """
+
+  'Service Provider':
+    'prefix': 'laravel:ServiceProvider'
+    'rightLabelHTML': '<span style="color:#f4645f">Laravel</span> Service Provider'
+    'body': """<?php namespace App\\\\Providers;
+
+      use Illuminate\\\\Support\\\\ServiceProvider;
+
+      class ${1:Name}ServiceProvider extends ServiceProvider
+      {
+          protected $defer = ${2:true};
+
+          public function boot()
+          {
+              view()->composer('view', function () {
+                  //
+              });
+          }
+
+          public function register()
+          {
+              $this->app->singleton(${2:Implementation}::class, function ($app) {
+                  return new ${2:Implementation}(config('${3:name}'));
+              });
+          }
+
+          public function provides()
+          {
+              return [${2:Implementation}::class];
+          }
+
+      }
+    """

@@ -1,7 +1,8 @@
 ".text.html.basic, .text.html.php":
 
-  'PHP snippets - construct method':
+  'Construct definition':
     'prefix': 'php:construct'
+    'rightLabelHTML': '<span style="color:#4A90E2">PHP</span> public function __construct'
     'body': """
       public function __construct(${1:Request} $${2:request})
       {
@@ -9,60 +10,46 @@
       }
     """
 
-  'PHP snippets - Full array definition':
+  'Full array definition':
     'prefix': 'php:arrayFull'
+    'rightLabelHTML': '<span style="color:#4A90E2">PHP</span> arrayName = [key => value];'
     'body': """
       $${1:arrayName} = ['${1:name}' => '${2:value}'];
     """
 
-  'PHP snippets - array value':
+  'key => value':
     'prefix': 'php:arrValue'
+    'rightLabelHTML': '<span style="color:#4A90E2">PHP</span> key => value'
     'body': """
       '${1:name}' => '${2:value}',
     """
 
-  'PHP snippets - Class definition (Trait)':
-    'prefix': 'php:trait_class_definition'
-    'body': """<?php namespace App\Traits;
+  'Trait declaration':
+    'prefix': 'php:Trait'
+    'rightLabelHTML': '<span style="color:#4A90E2">PHP</span> Trait'
+    'body': """<?php namespace App\\\\Traits;
 
       /**
        * Trait ${1:TraitName}.
        */
       trait ${1:TraitName}
       {
-          //
+          $2
       }
 
     """
 
-  'PHP snippets - Class definition (Provider)':
-    'prefix': 'php:provider_class_definition'
-    'body': """<?php namespace App\Providers;
+  'interface Contract':
+    'prefix': 'php:Contract'
+    'rightLabelHTML': '<span style="color:#4A90E2">PHP</span> Interface'
+    'body': """<?php namespace App\\\\Contracts${1:\\\\Subfolder};
 
-        use Illuminate\Support\ServiceProvider;
+      /**
+       * Contract ${2:ContractName}...
+       */
+      interface ${2:ContractName}
+      {
+          $3
+      }
 
-        class ${1:ClassName} extends ServiceProvider
-        {
-
-            /**
-             * Bootstrap any application services.
-             *
-             * @return void
-             */
-            public function boot()
-            {
-
-            }
-
-            /**
-             * Register any application services.
-             *
-             * @return void
-             */
-            public function register()
-            {
-              //
-            }
-
-        }
     """
