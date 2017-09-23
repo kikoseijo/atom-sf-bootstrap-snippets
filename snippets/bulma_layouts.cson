@@ -1,7 +1,8 @@
-'.text.html.php.blade':
+'.text.html.php.blade, .text.html, .text.html.php':
 
   'Bulma layout - Container':
     'prefix': 'bulma:container'
+    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Container'
     'body': """
       <div class="container is-fluid">
         <div class="notification">
@@ -12,6 +13,7 @@
 
   'Bulma layout - Level':
     'prefix': 'bulma:level'
+    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Level'
     'body': """
       <nav class="level">
         <div class="level-item has-text-centered">
@@ -41,8 +43,9 @@
       </nav>
     """
 
-  'Bulma layout - media':
+  'Bulma layout - Media':
     'prefix': 'bulma:media'
+    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Media'
     'body': """
       <article class="media">
         <figure class="media-left">
@@ -80,6 +83,7 @@
 
   'Bulma layout - Section':
     'prefix': 'bulma:section'
+    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Section'
     'body': """
       <section class="section is-medium is-primary">
         <div class="container">
@@ -93,6 +97,7 @@
 
   'Bulma layout - Hero':
     'prefix': 'bulma:hero'
+    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Hero'
     'body': """
       <section class="hero">
         <div class="hero-body">
@@ -110,6 +115,7 @@
 
   'Bulma layout - Footer':
     'prefix': 'bulma:footer'
+    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Footer'
     'body': """
       <footer class="footer">
         <div class="container">
@@ -131,6 +137,7 @@
 
   'Bulma layout - Tiles':
     'prefix': 'bulma:tiles'
+    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Tiles'
     'body': """
       <div class="tile is-ancestor">
         <div class="tile is-vertical is-8">

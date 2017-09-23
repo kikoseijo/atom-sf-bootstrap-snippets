@@ -1,4 +1,4 @@
-".text.html.basic, .text.html.php":
+'.text.html.php.blade, .text.html, .text.html.php':
 
   "Bootstrap3 Form - Form Group":
     "prefix":"bootstrap3:formgroup"

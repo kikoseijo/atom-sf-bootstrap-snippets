@@ -1,7 +1,8 @@
-'.text.html.php.blade':
+'.text.html.php.blade, .text.html, .text.html.php':
 
   'Bulma - CDN Starter template':
     'prefix': 'bulma:!'
+    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> CDN Starter template'
     'body': """
       <!DOCTYPE html>
       <html>
@@ -29,6 +30,7 @@
 
   'Bulma - CDN Stylesheets + font-awesome (only)':
     'prefix': 'bulma:cdn-css'
+    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> CDN import - its CSS'
     'body': """
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css">

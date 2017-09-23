@@ -1,7 +1,8 @@
-'.text.html.php.blade':
+'.text.html.php.blade, .text.html, .text.html.php':
 
   'Bulma element - Box':
     'prefix': 'bulma:box'
+    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Box'
     'body': """
       <div class="box">
         <article class="media">
@@ -38,6 +39,7 @@
 
   'Bulma element - Icon':
     'prefix': 'bulma:icon'
+    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Icon'
     'body': """
       <span class="icon has-text-${1:info}">
         <i class="fa fa-${2:info-circle}"></i>
@@ -46,6 +48,7 @@
 
   'Bulma element - Image':
     'prefix': 'bulma:image'
+    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Image'
     'body': """
       <figure class="image is-${1:128x128}">
         <img src="http://via.placeholder.com/${1:128x128}">
@@ -53,16 +56,18 @@
     """
 
   'Bulma element - Notification':
-     'prefix': 'bulma:notification'
-     'body': """
-       <div class="notification">
-         <button class="delete"></button>
-         Lorem ipsum dolor sit amet, consectetur
-       </div>
+    'prefix': 'bulma:notification'
+    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Notification'
+    'body': """
+      <div class="notification">
+        <button class="delete"></button>
+        Lorem ipsum dolor sit amet, consectetur
+      </div>
      """
 
   'Bulma element - Table':
     'prefix': 'bulma:table'
+    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Table'
     'body': """
       <table class="table is-bordered is-striped is-narrow is-fullwidth">
           <thead>
@@ -98,6 +103,7 @@
 
   'Bulma element - Tag':
     'prefix': 'bulma:tag'
+    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Tag'
     'body': """
       <span class="tag">
         Tag label
@@ -106,6 +112,7 @@
 
   'Bulma element - Title':
     'prefix': 'bulma:title'
+    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Title'
     'body': """
       <p class="title is-1 is-spaced">Title 1</p>
       <p class="subtitle is-3">Subtitle 3</p>

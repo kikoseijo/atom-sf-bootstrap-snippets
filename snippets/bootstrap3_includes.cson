@@ -1,24 +1,27 @@
-".text.html.basic, .text.html.php":
+'.text.html.basic, .text.html.php, .text.html.php.blade':
 
-  "Bootstrap3 Includes - Scripts + Jquery":
-    "prefix":"bootstrap3:js"
-    "body":"""
+  'Scripts + Jquery':
+    'prefix':'boo3:js'
+    'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3.3.7</span> Scripts include CDN + jQuery'
+    'body':"""
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       $1
     """
 
-  "Bootstrap3 Includes - Stylesheets":
-    "prefix":"bootstrap3:css"
-    "body":"""
+  'Stylesheets':
+    'prefix':'boo3:css'
+    'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3.3.7</span> Stylesheets CDN'
+    'body':"""
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       ${1:<link href="${2:assets/css/css.css}" rel="stylesheet">}
       $3
     """
 
-  "Boostrap3 Includes - IECSS for heads":
-    "prefix":"bootstrap3:iecss"
-    "body":"""
+  'IECSS for heads':
+    'prefix':'boo3:iecss'
+    'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3.3.7</span> IECSS for heads'
+    'body':"""
       <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>

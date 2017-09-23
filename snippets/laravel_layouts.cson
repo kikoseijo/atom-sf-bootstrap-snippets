@@ -1,4 +1,4 @@
-'.text.html.php.blade, text.html.php':
+'.text.html.php.blade':
   'Layout':
     'prefix': 'lara:layout'
     'rightLabelHTML': '<span style="color:#f4645f">Laravel</span> Layout'

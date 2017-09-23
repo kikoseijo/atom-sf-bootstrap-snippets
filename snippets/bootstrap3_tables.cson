@@ -1,7 +1,8 @@
-".text.html.basic, .text.html.php":
+".text.html.basic, .text.html.php, .text.html.php.blade":
 
   "Boostrap3 Table - Responsive Table ":
-    "prefix":"bootstrap3:table-responsive"
+    "prefix":"boo3:table-responsive"
+    'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3.3.7</span> Table - responsive'
     "body":"""
       <div class="table-responsive">
         <table class="table${1: ${2:table-striped }${3:table-bordered }${4:table-hover }${5:table-condensed}}">
