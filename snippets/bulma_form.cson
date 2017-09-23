@@ -6,7 +6,7 @@
       <div class="field">
         <label class="label" for="${1:name}">${2:Label}</label>
         <div class="control">
-          <input class="input" id="${1:name}" name="${1:name}" type="text" placeholder="${2:Label}">
+          <input class="input" id="${1:name}" name="${1:name}" type="text" value="" placeholder="${2:Label}">
         </div>
         <p class="help">This_is_a_help_text</p>
       </div>
