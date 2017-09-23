@@ -4,7 +4,7 @@
     'prefix': 'bulma:field'
     'body': """
       <div class="field">
-        <label class="label fo="${1:name}">${2:Label}</label>
+        <label class="label" for="${1:name}">${2:Label}</label>
         <div class="control">
           <input class="input" id="${1:name}" name="${1:name}" type="text" placeholder="${2:Label}">
         </div>
