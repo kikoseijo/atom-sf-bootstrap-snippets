@@ -1,0 +1,6 @@
+'.text.html.php.blade':
+
+  'translate blade directive':
+    'prefix': 'lang'
+    'rightLabelHTML': '<span style="color:#f4645f">Blade</span> @lang(\'key.val\')'
+    'body': "@lang('${1:file}.${2:val}"
