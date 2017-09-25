@@ -2,6 +2,7 @@
 
   'Bulma layout - Container':
     'prefix': 'bulma:container'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Container'
     'body': """
       <div class="container is-fluid">
@@ -13,6 +14,7 @@
 
   'Bulma layout - Level':
     'prefix': 'bulma:level'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Level'
     'body': """
       <nav class="level">
@@ -45,6 +47,7 @@
 
   'Bulma layout - Media':
     'prefix': 'bulma:media'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Media'
     'body': """
       <article class="media">
@@ -83,6 +86,7 @@
 
   'Bulma layout - Section':
     'prefix': 'bulma:section'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Section'
     'body': """
       <section class="section is-medium is-primary">
@@ -97,6 +101,7 @@
 
   'Bulma layout - Hero':
     'prefix': 'bulma:hero'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Hero'
     'body': """
       <section class="hero">
@@ -115,6 +120,7 @@
 
   'Bulma layout - Footer':
     'prefix': 'bulma:footer'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Footer'
     'body': """
       <footer class="footer">
@@ -137,6 +143,7 @@
 
   'Bulma layout - Tiles':
     'prefix': 'bulma:tiles'
+    'leftLabelHTML': '<span style="color:#FFFFFF; background:#1B81B6; border-radius:1px; padding-top:4px; padding-bottom:4px; text-align:center;"> Ks </span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Tiles'
     'body': """
       <div class="tile is-ancestor">

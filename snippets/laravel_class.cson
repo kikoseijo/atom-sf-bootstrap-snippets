@@ -1,9 +1,8 @@
 '.text.html.php':
 
-
-
   'Service Provider':
     'prefix': 'laravel:ServiceProvider'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#f4645f">Laravel</span> Service Provider'
     'body': """<?php namespace App\\\\Providers;
 
@@ -37,6 +36,7 @@
 
   'Repository':
     'prefix': 'laravel:repository'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#f4645f">Laravel</span> Repository'
     'body': """<?php namespace App\\\\Repositories;
 

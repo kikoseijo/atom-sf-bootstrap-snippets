@@ -1,6 +1,7 @@
 '.text.html.php.blade':
   'Layout':
     'prefix': 'lara:layout'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#f4645f">Laravel</span> Layout'
     'body': """<!DOCTYPE html>
         <html lang="{{config('app.locale')}}">

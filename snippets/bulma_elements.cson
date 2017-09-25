@@ -2,6 +2,7 @@
 
   'Bulma element - Box':
     'prefix': 'bulma:box'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Box'
     'body': """
       <div class="box">
@@ -40,14 +41,16 @@
   'Bulma element - Icon':
     'prefix': 'bulma:icon'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Icon'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'body': """
-      <span class="icon has-text-${1:info}">
+      <span class="icon has-text-${1:primary|info|success|warning|danger}">
         <i class="fa fa-${2:info-circle}"></i>
       </span>
     """
 
   'Bulma element - Image':
     'prefix': 'bulma:image'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Image'
     'body': """
       <figure class="image is-${1:128x128}">
@@ -57,6 +60,7 @@
 
   'Bulma element - Notification':
     'prefix': 'bulma:notification'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Notification'
     'body': """
       <div class="notification is-${1:primary|info|success|warning|danger}">
@@ -67,6 +71,7 @@
 
   'Bulma element - Table':
     'prefix': 'bulma:table'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Table'
     'body': """
       <table class="table is-bordered is-striped is-narrow is-fullwidth">
@@ -103,6 +108,7 @@
 
   'Bulma element - Tag':
     'prefix': 'bulma:tag'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Tag'
     'body': """
       <span class="tag">
@@ -112,6 +118,7 @@
 
   'Bulma element - Title':
     'prefix': 'bulma:title'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Title'
     'body': """
       <p class="title is-1 is-spaced">Title 1</p>

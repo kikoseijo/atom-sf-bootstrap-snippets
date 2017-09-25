@@ -2,6 +2,7 @@
 
   'Construct definition':
     'prefix': 'php:construct'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#4A90E2">PHP</span> public function __construct'
     'body': """
       public function __construct(${1:Request} $${2:request})
@@ -12,6 +13,7 @@
 
   'Full array definition':
     'prefix': 'php:arrayFull'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#4A90E2">PHP</span> arrayName = [key => value];'
     'body': """
       $${1:arrayName} = ['${1:name}' => '${2:value}'];
@@ -19,6 +21,7 @@
 
   'key => value':
     'prefix': 'php:arrValue'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#4A90E2">PHP</span> key => value'
     'body': """
       '${1:name}' => '${2:value}',
@@ -26,6 +29,7 @@
 
   'Trait declaration':
     'prefix': 'php:Trait'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#4A90E2">PHP</span> Trait'
     'body': """<?php namespace App\\\\Traits;
 
@@ -41,6 +45,7 @@
 
   'interface Contract':
     'prefix': 'php:Contract'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#4A90E2">PHP</span> Interface'
     'body': """<?php namespace App\\\\Contracts${1:\\\\Subfolder};
 

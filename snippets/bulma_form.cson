@@ -2,6 +2,7 @@
 
   'Bulma Form - field':
     'prefix': 'bulma:field'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Form Field'
     'body': """
       <div class="field">
@@ -15,6 +16,7 @@
 
   'Bulma Form - field + Icon':
     'prefix': 'bulma:field with icon'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Form Field + Icon'
     'body': """
       <div class="field">
@@ -32,6 +34,7 @@
 
   'Bulma Form - field + Addon':
     'prefix': 'bulma:field with addon'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Form Field + Addon'
     'body': """
       <div class="field has-addons">
@@ -48,6 +51,7 @@
 
   'Bulma Form - (full)':
     'prefix': 'bulma:form-full'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Form - (full)'
     'body': """
       <div class="field is-horizontal">

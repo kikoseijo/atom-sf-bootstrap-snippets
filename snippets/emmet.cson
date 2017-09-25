@@ -1,13 +1,16 @@
 '.text.html.basic, .text.html.php.blade, .text.html.php':
 
-  "Boostrap3 table Emmet Shortcut":
-    "prefix": "emm:table"
-    "body":"table.table.table-striped.table-bordered>(thead>tr>th*3)+(tbody>tr>td*3)"
+  'Boostrap3 table Emmet Shortcut':
+    'prefix': 'emm:table'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
+    'body':'table.table.table-striped.table-bordered>(thead>tr>th*3)+(tbody>tr>td*3)'
 
-  "Emmet ul>li>a Shortcut":
-    "prefix": "emm:link-List"
-    "body":"ul.widget>li*6>a[href=#link$]{Footer menu link $}"
+  'Emmet ul>li>a Shortcut':
+    'prefix': 'emm:link-List'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
+    'body':'ul.widget>li*6>a[href=#link$]{Footer menu link $}'
 
-  "Emmet .columns>.column Shortcut":
-    "prefix": "emm:columns_bulma"
-    "body":".columns>.column*${1:6}"
+  'Emmet .columns>.column Shortcut':
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
+    'prefix': 'emm:columns_bulma'
+    'body':'.columns>.column*${1:6}'

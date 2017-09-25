@@ -2,6 +2,7 @@
 
   'Scripts + Jquery':
     'prefix':'boo3:js'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3.3.7</span> Scripts include CDN + jQuery'
     'body':"""
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -11,6 +12,7 @@
 
   'Stylesheets':
     'prefix':'boo3:css'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3.3.7</span> Stylesheets CDN'
     'body':"""
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -20,6 +22,7 @@
 
   'IECSS for heads':
     'prefix':'boo3:iecss'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3.3.7</span> IECSS for heads'
     'body':"""
       <!--[if lt IE 9]>

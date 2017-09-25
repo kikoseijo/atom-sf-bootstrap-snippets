@@ -2,6 +2,7 @@
 
   "Boostrap3 Table - Responsive Table ":
     "prefix":"boo3:table-responsive"
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3.3.7</span> Table - responsive'
     "body":"""
       <div class="table-responsive">

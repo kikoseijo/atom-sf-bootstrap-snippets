@@ -2,6 +2,7 @@
 
   'Bulma component - Breadcrumb':
     'prefix': 'bulma:Breadcrumb'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Breadcrumb'
     'body': """
       <nav class="breadcrumb" aria-label="breadcrumbs">
@@ -16,6 +17,7 @@
 
   'Bulma component - Card':
     'prefix': 'bulma:card'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Card'
     'body': """
       <div class="card">
@@ -61,6 +63,7 @@
 
   'Bulma component - Dropdown':
     'prefix': 'bulma:dropdown'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Dropdown'
     'body': """
       <div class="dropdown is-hoverable">
@@ -84,6 +87,7 @@
 
   'Bulma component - Menu':
     'prefix': 'bulma:menu'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Menu'
     'body': """
       <aside class="menu">
@@ -124,6 +128,7 @@
 
   'Bulma component - Message':
     'prefix': 'bulma:message'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Message'
     'body': """
       <article class="message">
@@ -139,6 +144,7 @@
 
   'Bulma component - Modal':
     'prefix': 'bulma:modal'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Modal'
     'body': """
       <div class="modal">
@@ -154,6 +160,7 @@
 
   'Bulma component - Modal Card':
     'prefix': 'bulma:modal-card'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Modal Card'
     'body': """
       <div class="modal">
@@ -176,6 +183,7 @@
 
   'Bulma component - Navbar':
     'prefix': 'bulma:navbar'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Navbar'
     'body': """
       <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -232,6 +240,7 @@
 
   'Bulma component - Pagination':
     'prefix': 'bulma:pagination'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Pagination'
     'body': """
       <nav class="pagination" role="navigation" aria-label="pagination">
@@ -265,6 +274,7 @@
 
   'Bulma component - Panel':
     'prefix': 'bulma:panel'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Panel'
     'body': """
       <nav class="panel">
@@ -336,6 +346,7 @@
 
   'Bulma component - Tabs':
     'prefix': 'bulma:tabs'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Tabs'
     'body': """
       <div class="tabs is-centered">
