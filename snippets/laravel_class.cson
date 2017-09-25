@@ -40,8 +40,8 @@
     'rightLabelHTML': '<span style="color:#f4645f">Laravel</span> Repository'
     'body': """<?php namespace App\\\\Repositories;
 
-      use App\\\\Models\\\${2:Model};
       use App\\\\Contracts\\\\Repositories\\\\${1:Name}Repository as ${1:Name}Contract;
+      use App\\\\Models\\\\${2:Model};
 
       class ${1:Name}Repository extends ${1:Name}Contract
       {
