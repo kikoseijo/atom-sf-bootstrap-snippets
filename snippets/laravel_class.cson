@@ -1,0 +1,59 @@
+'.text.html.php':
+
+
+
+  'Service Provider':
+    'prefix': 'laravel:ServiceProvider'
+    'rightLabelHTML': '<span style="color:#f4645f">Laravel</span> Service Provider'
+    'body': """<?php namespace App\\\\Providers;
+
+      use Illuminate\\\\Support\\\\ServiceProvider;
+
+      class ${1:Name}ServiceProvider extends ServiceProvider
+      {
+          protected $defer = ${2:true};
+
+          public function boot()
+          {
+              view()->composer('view', function () {
+                  //
+              });
+          }
+
+          public function register()
+          {
+              $this->app->singleton(${2:Implementation}::class, function ($app) {
+                  return new ${2:Implementation}(config('${3:name}'));
+              });
+          }
+
+          public function provides()
+          {
+              return [${2:Implementation}::class];
+          }
+
+      }
+    """
+
+  'Repository':
+    'prefix': 'laravel:repository'
+    'rightLabelHTML': '<span style="color:#f4645f">Laravel</span> Repository'
+    'body': """<?php namespace App\\\\Repositories;
+
+      use App\\\\Models\\\${2:Model};
+      use App\\\\Contracts\\\\Repositories\\\\${1:Name}Repository as ${1:Name}Contract;
+
+      class ${1:Name}Repository extends ${1:Name}Contract
+      {
+          /**
+           * {@inheritdoc}
+           */
+          public function recent()
+          {
+              return ${2:Model}::orderBy('id', 'desc')->get();
+          }
+
+          $3
+
+      }
+    """
