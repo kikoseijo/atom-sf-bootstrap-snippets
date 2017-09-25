@@ -59,9 +59,9 @@
     'prefix': 'bulma:notification'
     'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Notification'
     'body': """
-      <div class="notification">
+      <div class="notification is-${1:primary|info|success|warning|danger}">
         <button class="delete"></button>
-        Lorem ipsum dolor sit amet, consectetur
+        $2
       </div>
      """
 
