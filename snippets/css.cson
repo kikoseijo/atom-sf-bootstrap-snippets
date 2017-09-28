@@ -1,4 +1,4 @@
-"source.css, source.less, source.scss":
+".source.css, .source.less, .source.scss":
 
   "CSS Media calls":
     "prefix":  "css:media-calls"
