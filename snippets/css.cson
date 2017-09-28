@@ -3,6 +3,7 @@
   "CSS Media calls":
     "prefix":  "css:media-calls"
     'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
+    'rightLabelHTML': '<span style="color:#4A90E2">LESS</span> media calls'
     "body":"""
 
       $1
