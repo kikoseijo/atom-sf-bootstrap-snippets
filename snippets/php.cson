@@ -47,7 +47,7 @@
     'prefix': 'php:Contract'
     'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#4A90E2">PHP</span> Interface'
-    'body': """<?php namespace App\\\\Contracts${1:\\\\Subfolder};
+    'body': """<?php namespace App\\\\Contracts\\\\${1:Subfolder};
 
       /**
        * Contract ${2:ContractName}...
