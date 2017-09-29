@@ -43,7 +43,7 @@
       use App\\\\Contracts\\\\Repositories\\\\${1:Name}Repository as ${1:Name}Contract;
       use App\\\\Models\\\\${2:Model};
 
-      class ${1:Name}Repository extends ${1:Name}Contract
+      class ${1:Name}Repository implements ${1:Name}Contract
       {
           /**
            * {@inheritdoc}
