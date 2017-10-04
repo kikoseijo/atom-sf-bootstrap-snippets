@@ -37,8 +37,10 @@ Input | Shortcut | Result
 
 |      Input       |      Shortcut     |
 |------------------|-------------------|
-| **Form**         | `boo:form`        |
-| **Form model**   | `boo:formmodel`   |
+| **Collective**   | `boo:form`        |
+| **PHP**          | `php:interface`   |
+| **Laravel**      | `lara:layout`     |
+| **Bulma**        | `bulma:hero`      |
 
 //TODO:
 add more documentation.
