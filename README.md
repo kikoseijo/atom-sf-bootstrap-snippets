@@ -35,12 +35,15 @@ Input | Shortcut | Result
 
 ### Fromulario + Formulario con Modelo
 
+|------------------|-------------------|
 |      Input       |      Shortcut     |
 |------------------|-------------------|
 | **Collective**   | `boo:form`        |
 | **PHP**          | `php:interface`   |
 | **Laravel**      | `lara:layout`     |
 | **Bulma**        | `bulma:hero`      |
+| **CSS**          | `css:media-calls` |
+|------------------|-------------------|
 
 //TODO:
 add more documentation.
