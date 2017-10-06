@@ -4,32 +4,31 @@
     'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#f4645f">Laravel</span> Layout'
     'body': """<!DOCTYPE html>
-        <html lang="{{config('app.locale')}}">
-        <head>
+        <html lang="{{ app()->getLocale() }}">
+          <head>@if (App::environment() === 'production' && env('ANALYTICS_CODE') != '')
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107185797-1"></script>
+                <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments)};
+                gtag('js', new Date());
+                gtag('config', {{ env('ANALYTICS_CODE') }});
+                </script>
+            @endif
             <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>@yield('title', config('app.name'))</title>
-            <link href="{{ asset(mix('css/${1:app}.css')) }}" rel="stylesheet">
-            @stack('stylesheets', '')
-            @yield('scripts', '')
-        </head>
-        <body>
-            <header class="main-nav background-dark">
-                <div class="container">
-                    @auth
-                        @include('public.nav.guest')
-                    @endauth
-                    @guest
-                        @include('public.nav.guest')
-                    @endguest
-                 </div>
-            </header>
+            <meta name="csrf-token" content="{{ csrf_token() }}">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="{{ asset('css/${1:app}.css')}}">
+            @stack('stylesheet')
+          </head>
+          <body id="web-app">
+            $2@includeif('web.nav.header')
             @yield('content')
-
-            <script src="{{ asset(mix('js/${1:app}.js')) }}"></script>
+            @includeif('web.nav.footer')
             <div class="overlay"></div>
+            <script src="{{ asset('js/${1:app}.js') }}" charset="utf-8"></script>
             @stack('scripts')
-        </body>
+          </body>
         </html>
     """
