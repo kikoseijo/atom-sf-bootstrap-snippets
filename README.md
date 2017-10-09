@@ -42,6 +42,7 @@ Input | Shortcut | Result
 | **PHP**          | `php:interface`   |
 | **Laravel**      | `lara:layout`     |
 | **Bulma**        | `bulma:hero`      |
+| **{N}**          | `tns:dragab`      |
 | **CSS**          | `css:media-calls` |
 |------------------|-------------------|
 
