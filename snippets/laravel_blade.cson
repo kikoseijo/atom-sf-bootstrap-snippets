@@ -17,7 +17,7 @@
     'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#f4645f">Blade</span> tranlsation file declaration'
     'body': """<?php return [
-        '${1:key}' => '${2:value}',
+        '${1:messages}' => '${2:value}',
       ];
 
       """
