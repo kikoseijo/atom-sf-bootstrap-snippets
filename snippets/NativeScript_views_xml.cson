@@ -3,7 +3,7 @@
   'Drawer page View XML':
     'prefix': 'tns:drawer-page-xml'
     'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#3450FD">{N}</span> Drawer page view XML'
+    'rightLabelHTML': '<span style="color:#3450FD">{N}</span> Drawer page view XML (nsDrawer)'
     'body': """
       <Page
           class="page"
