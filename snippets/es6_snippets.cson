@@ -4,4 +4,10 @@
     prefix: "import-empty"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#f5da55'>ES6</span> ES6 Import empty"
-    body: "import ${1} from '${2}';"
+    body: "import ${1} from './${2:../../}${3}';"
+
+  "ES6: Import axios":
+    prefix: "import-axios"
+    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> ES6 Import axios from axios"
+    body: "import axios from 'axios';\n$1"
