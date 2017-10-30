@@ -3,7 +3,6 @@
     'prefix': 'rn:component-class'
     'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#26DAFE">RN</span> React Native Component Class'
-    'prefix': 'rnc'
     'body': '''
       import React, { Component } from 'react';
       import { View, Text, StyleSheet, } from 'react-native';
