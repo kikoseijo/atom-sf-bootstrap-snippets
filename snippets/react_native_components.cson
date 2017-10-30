@@ -1,0 +1,48 @@
+'.source.js':
+  'React Native Component Class':
+    'prefix': 'rn:component-class'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
+    'rightLabelHTML': '<span style="color:#26DAFE">RN</span> React Native Component Class'
+    'prefix': 'rnc'
+    'body': '''
+      import React, { Component } from 'react';
+      import { View, Text, StyleSheet, } from 'react-native';
+
+      export default class ${1:ComponentName} extends Component {
+        render() {
+          return (
+            ${2:<View style={styles.container\\}>
+              ${3:<Text>${4:I'm the ${1:ComponentName} component}</Text>}
+            </View>}
+          );$5
+        }
+      }
+
+      const styles = StyleSheet.create({
+        container: {
+          flex: 1,
+        },
+      });
+      '''
+  'React Native Pure Component function':
+    'prefix': 'rn:pure-component-function'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
+    'rightLabelHTML': '<span style="color:#26DAFE">RN</span> React Native Pure Component function'
+    'body': '''
+      import React from 'react';
+      import { View, Text, StyleSheet } from 'react-native';
+
+      const ${1:ComponentName} = ({$2}) => (
+        ${3:<View style={styles.container\\}>
+          ${4:<Text>${5:I'm ${1:ComponentName}}</Text>}
+        </View>}
+      );$6
+
+      export default ${1:ComponentName};
+
+      const styles = StyleSheet.create({
+        container: {
+          flex: 1,
+        },
+      });
+      '''
