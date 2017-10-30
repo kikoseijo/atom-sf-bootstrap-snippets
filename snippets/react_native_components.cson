@@ -1,47 +1,12 @@
 '.source.js':
   'React Native Component Class':
-    'prefix': 'rn:component-class'
+    'prefix': 'rn:class-component'
     'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#26DAFE">RN</span> React Native Component Class'
-    'body': '''
-      import React, { Component } from 'react';
-      import { View, Text, StyleSheet, } from 'react-native';
+    'body': "import React, { Component } from 'react';\nimport { View, Text, StyleSheet, } from 'react-native';\n\nexport default class ${1:ComponentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<View style={styles.container\\}>\n\t\t\t\t<Text>I'm the ${1:ComponentName} component</Text>\n\t\t\t</View>\n\t\t);$5\n\t}\n}\n\nconst styles = StyleSheet.create({\n\tcontainer: {\n\t\tflex: 1,\n\t},\n});\n"
 
-      export default class ${1:ComponentName} extends Component {
-        render() {
-          return (
-            ${2:<View style={styles.container\\}>
-              ${3:<Text>${4:I'm the ${1:ComponentName} component}</Text>}
-            </View>}
-          );$5
-        }
-      }
-
-      const styles = StyleSheet.create({
-        container: {
-          flex: 1,
-        },
-      });
-      '''
   'React Native Pure Component function':
-    'prefix': 'rn:pure-component-function'
+    'prefix': 'rn:function-component'
     'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
     'rightLabelHTML': '<span style="color:#26DAFE">RN</span> React Native Pure Component function'
-    'body': '''
-      import React from 'react';
-      import { View, Text, StyleSheet } from 'react-native';
-
-      const ${1:ComponentName} = ({$2}) => (
-        ${3:<View style={styles.container\\}>
-          ${4:<Text>${5:I'm ${1:ComponentName}}</Text>}
-        </View>}
-      );$6
-
-      export default ${1:ComponentName};
-
-      const styles = StyleSheet.create({
-        container: {
-          flex: 1,
-        },
-      });
-      '''
+    'body': "import React from 'react';\nimport { View, Text, StyleSheet } from 'react-native';\n\nconst ${1:ComponentName} = ($2) => (\n\t<View style={styles.container\\}>\n\t\t<Text>I'm ${1:ComponentName}</Text>\n\t</View>\n);$3\n\nexport default ${1:ComponentName};\n\nconst styles = StyleSheet.create({\n\tcontainer: {\n\t\tflex: 1,\n\t},\n});\n"
