@@ -1,10 +1,10 @@
 '.text.html.php.blade, .text.html, .text.html.hack':
 
   'Bulma component - Breadcrumb':
-    'prefix': 'bulma:Breadcrumb'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Breadcrumb'
-    'body': """
+    prefix: 'bulma:Breadcrumb'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Breadcrumb'
+    body: """
       <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
           <li><a href="#">Bulma</a></li>
@@ -16,10 +16,10 @@
     """
 
   'Bulma component - Card':
-    'prefix': 'bulma:card'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Card'
-    'body': """
+    prefix: 'bulma:card'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Card'
+    body: """
       <div class="card">
 
         <div class="card-image">
@@ -62,10 +62,10 @@
     """
 
   'Bulma component - Dropdown':
-    'prefix': 'bulma:dropdown'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Dropdown'
-    'body': """
+    prefix: 'bulma:dropdown'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Dropdown'
+    body: """
       <div class="dropdown is-hoverable">
         <div class="dropdown-trigger">
           <button class="button is-info" aria-haspopup="true" aria-controls="dropdown-menu4">
@@ -86,10 +86,10 @@
     """
 
   'Bulma component - Menu':
-    'prefix': 'bulma:menu'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Menu'
-    'body': """
+    prefix: 'bulma:menu'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Menu'
+    body: """
       <aside class="menu">
         <p class="menu-label">
           General
@@ -127,10 +127,10 @@
     """
 
   'Bulma component - Message':
-    'prefix': 'bulma:message'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Message'
-    'body': """
+    prefix: 'bulma:message'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Message'
+    body: """
       <article class="message">
         <div class="message-header">
           <p>Hello World</p>
@@ -143,10 +143,10 @@
     """
 
   'Bulma component - Modal':
-    'prefix': 'bulma:modal'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Modal'
-    'body': """
+    prefix: 'bulma:modal'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Modal'
+    body: """
       <div class="modal">
         <div class="modal-background"></div>
         <div class="modal-content">
@@ -159,10 +159,10 @@
     """
 
   'Bulma component - Modal Card':
-    'prefix': 'bulma:modal-card'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Modal Card'
-    'body': """
+    prefix: 'bulma:modal-card'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Modal Card'
+    body: """
       <div class="modal">
         <div class="modal-background"></div>
         <div class="modal-card">
@@ -182,10 +182,10 @@
     """
 
   'Bulma component - Navbar':
-    'prefix': 'bulma:navbar'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Navbar'
-    'body': """
+    prefix: 'bulma:navbar'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Navbar'
+    body: """
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="http://bulma.io">
@@ -239,10 +239,10 @@
     """
 
   'Bulma component - Pagination':
-    'prefix': 'bulma:pagination'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Pagination'
-    'body': """
+    prefix: 'bulma:pagination'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Pagination'
+    body: """
       <nav class="pagination" role="navigation" aria-label="pagination">
         <a class="pagination-previous">Previous</a>
         <a class="pagination-next">Next page</a>
@@ -273,10 +273,10 @@
     """
 
   'Bulma component - Panel':
-    'prefix': 'bulma:panel'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Panel'
-    'body': """
+    prefix: 'bulma:panel'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Panel'
+    body: """
       <nav class="panel">
         <p class="panel-heading">
           repositories
@@ -345,10 +345,10 @@
     """
 
   'Bulma component - Tabs':
-    'prefix': 'bulma:tabs'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Tabs'
-    'body': """
+    prefix: 'bulma:tabs'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Tabs'
+    body: """
       <div class="tabs is-centered">
         <ul>
           <li class="is-active">

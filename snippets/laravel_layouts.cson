@@ -1,9 +1,9 @@
 '.text.html.php.blade':
   'Layout':
-    'prefix': 'lara:layout'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#f4645f">Laravel</span> Layout'
-    'body': """<!DOCTYPE html>
+    prefix: 'lara:layout'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#f4645f">Laravel</span> Layout'
+    body: """<!DOCTYPE html>
         <html lang="{{ app()->getLocale() }}">
           <head>@if (App::environment() === 'production' && env('ANALYTICS_CODE') != '')
                 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107185797-1"></script>

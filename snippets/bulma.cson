@@ -1,10 +1,10 @@
 '.text.html.php.blade, .text.html, .text.html.hack':
 
   'Bulma - CDN Starter template':
-    'prefix': 'bulma:!'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> CDN Starter template'
-    'body': """
+    prefix: 'bulma:!'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> CDN Starter template'
+    body: """
       <!DOCTYPE html>
       <html>
         <head>
@@ -30,10 +30,10 @@
     """
 
   'Bulma - CDN Stylesheets + font-awesome (only)':
-    'prefix': 'bulma:cdn-css'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> CDN import - its CSS'
-    'body': """
+    prefix: 'bulma:cdn-css'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> CDN import - its CSS'
+    body: """
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css">
     """

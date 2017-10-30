@@ -1,19 +1,19 @@
 '.text.html.basic, .text.html.hack, .text.html.php.blade':
 
   'Boostrap3 table Emmet Shortcut':
-    'prefix': 'emm:table'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#4A90E2">Emmet</span> table.table.table-striped.table-bordered...'
-    'body':'table.table.table-striped.table-bordered>(thead>tr>th*3)+(tbody>tr>td*3)'
+    prefix: 'emm:table'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#4A90E2">Emmet</span> table.table.table-striped.table-bordered...'
+    body:'table.table.table-striped.table-bordered>(thead>tr>th*3)+(tbody>tr>td*3)'
 
   'Emmet ul>li>a Shortcut':
-    'prefix': 'emm:link-List'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#4A90E2">Emmet</span> ul>li>a'
-    'body':'ul.widget>li*6>a[href=#link$]{Footer menu link $}'
+    prefix: 'emm:link-List'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#4A90E2">Emmet</span> ul>li>a'
+    body:'ul.widget>li*6>a[href=#link$]{Footer menu link $}'
 
   'Emmet .columns>.column Shortcut':
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#4A90E2">Emmet</span> .columns>.column*'
-    'prefix': 'emm:columns_bulma'
-    'body':'.columns>.column*${1:6}'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#4A90E2">Emmet</span> .columns>.column*'
+    prefix: 'emm:columns_bulma'
+    body:'.columns>.column*${1:6}'

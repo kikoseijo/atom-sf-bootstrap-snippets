@@ -1,10 +1,10 @@
 '.text.html.php.blade, .text.html, .text.html.hack':
 
   'Bulma layout - Container':
-    'prefix': 'bulma:container'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Container'
-    'body': """
+    prefix: 'bulma:container'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Container'
+    body: """
       <div class="container is-fluid">
         <div class="notification">
           This container is <strong>fluid</strong>: it will have a 24px gap on either side, on any viewport size.
@@ -13,10 +13,10 @@
     """
 
   'Bulma layout - Level':
-    'prefix': 'bulma:level'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Level'
-    'body': """
+    prefix: 'bulma:level'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Level'
+    body: """
       <nav class="level">
         <div class="level-item has-text-centered">
           <div>
@@ -46,10 +46,10 @@
     """
 
   'Bulma layout - Media':
-    'prefix': 'bulma:media'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Media'
-    'body': """
+    prefix: 'bulma:media'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Media'
+    body: """
       <article class="media">
         <figure class="media-left">
           <p class="image is-64x64">
@@ -85,10 +85,10 @@
     """
 
   'Bulma layout - Section':
-    'prefix': 'bulma:section'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Section'
-    'body': """
+    prefix: 'bulma:section'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Section'
+    body: """
       <section class="section is-medium is-primary">
         <div class="container">
           <h1 class="title">Section</h1>
@@ -100,10 +100,10 @@
     """
 
   'Bulma layout - Hero':
-    'prefix': 'bulma:hero'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Hero'
-    'body': """
+    prefix: 'bulma:hero'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Hero'
+    body: """
       <section class="hero">
         <div class="hero-body">
           <div class="container">
@@ -119,10 +119,10 @@
     """
 
   'Bulma layout - Footer':
-    'prefix': 'bulma:footer'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Footer'
-    'body': """
+    prefix: 'bulma:footer'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Footer'
+    body: """
       <footer class="footer">
         <div class="container">
           <div class="content has-text-centered">
@@ -142,10 +142,10 @@
     """
 
   'Bulma layout - Tiles':
-    'prefix': 'bulma:tiles'
-    'leftLabelHTML': '<span style="color:#FFFFFF; background:#1B81B6; border-radius:1px; padding-top:4px; padding-bottom:4px; text-align:center;"> Ks </span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Tiles'
-    'body': """
+    prefix: 'bulma:tiles'
+    leftLabelHTML: '<span style="color:#FFFFFF; background:#1B81B6; border-radius:1px; padding-top:4px; padding-bottom:4px; text-align:center;"> Ks </span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Tiles'
+    body: """
       <div class="tile is-ancestor">
         <div class="tile is-vertical is-8">
           <div class="tile">

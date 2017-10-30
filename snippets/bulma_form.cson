@@ -1,10 +1,10 @@
 '.text.html.php.blade, .text.html, .text.html.hack':
 
   'Bulma Form - field':
-    'prefix': 'bulma:field'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Form Field'
-    'body': """
+    prefix: 'bulma:field'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Form Field'
+    body: """
       <div class="field">
         <label class="label" for="${1:name}">${2:Label}</label>
         <div class="control">
@@ -15,10 +15,10 @@
     """
 
   'Bulma Form - field + Icon':
-    'prefix': 'bulma:field with icon'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Form Field + Icon'
-    'body': """
+    prefix: 'bulma:field with icon'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Form Field + Icon'
+    body: """
       <div class="field">
         <p class="control has-icons-left has-icons-right">
           <input class="input" type="email" placeholder="${1:Placeholder}">
@@ -33,10 +33,10 @@
     """
 
   'Bulma Form - field + Addon':
-    'prefix': 'bulma:field with addon'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Form Field + Addon'
-    'body': """
+    prefix: 'bulma:field with addon'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Form Field + Addon'
+    body: """
       <div class="field has-addons">
         <div class="control is-expanded">
           <input class="input" type="text" placeholder="Find a repository">
@@ -50,10 +50,10 @@
     """
 
   'Bulma Form - (full)':
-    'prefix': 'bulma:form-full'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#00d1b2">Bulma.io</span> Form - (full)'
-    'body': """
+    prefix: 'bulma:form-full'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00d1b2">Bulma.io</span> Form - (full)'
+    body: """
       <div class="field is-horizontal">
         <div class="field-label is-normal">
           <label class="label">From</label>

@@ -1,10 +1,10 @@
 '.text.html.hack':
 
   'Service Provider':
-    'prefix': 'laravel:ServiceProvider'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#f4645f">Laravel</span> Service Provider'
-    'body': """<?php namespace App\\\\Providers;
+    prefix: 'laravel:ServiceProvider'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#f4645f">Laravel</span> Service Provider'
+    body: """<?php namespace App\\\\Providers;
 
       use Illuminate\\\\Support\\\\ServiceProvider;
 
@@ -35,10 +35,10 @@
     """
 
   'Repository':
-    'prefix': 'laravel:repository'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#f4645f">Laravel</span> Repository'
-    'body': """<?php namespace App\\\\Repositories;
+    prefix: 'laravel:repository'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#f4645f">Laravel</span> Repository'
+    body: """<?php namespace App\\\\Repositories;
 
       use App\\\\Contracts\\\\Repositories\\\\${1:Name}Repository as ${1:Name}Contract;
       use App\\\\Models\\\\${2:Model};

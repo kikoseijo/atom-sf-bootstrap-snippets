@@ -1,10 +1,10 @@
 '.source.json':
 
   'Typescript tsconfig.json':
-    'prefix': 'ts:tsconfig'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#294E80">Typescript</span> tsconfig.json'
-    'body': """
+    prefix: 'ts:tsconfig'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#294E80">Typescript</span> tsconfig.json'
+    body: """
       {
           "compilerOptions": {
               "module": "system",
@@ -25,10 +25,10 @@
     """
 
   'Typescript tsconfig.json nativescript':
-    'prefix': 'ts:config-nativescript'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#294E80">Ts</span>+<span style="color:#3450FD">{N}</span> tsconfig.json (Nativescript)'
-    'body': """
+    prefix: 'ts:config-nativescript'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#294E80">Ts</span>+<span style="color:#3450FD">{N}</span> tsconfig.json (Nativescript)'
+    body: """
       {
           "compilerOptions": {
               "module": "commonjs",

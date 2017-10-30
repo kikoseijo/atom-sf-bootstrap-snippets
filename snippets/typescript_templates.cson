@@ -1,18 +1,18 @@
 '.source.ts':
 
   'Typescript model class':
-    'prefix': 'ts:model-class'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#20C93A">Typescript</span> model class'
-    'body': """
+    prefix: 'ts:model-class'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#20C93A">Typescript</span> model class'
+    body: """
 
     """
     
   'Typescript ts-config.ts':
-    'prefix': 'ts:config-nativescript'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#20C93A">Typescript</span> tsconfig.json'
-    'body': """
+    prefix: 'ts:config-nativescript'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#20C93A">Typescript</span> tsconfig.json'
+    body: """
       {
     "compilerOptions": {
         "module": "commonjs",

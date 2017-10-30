@@ -1,10 +1,10 @@
 '.source.ts':
 
   'Drawer page View TS':
-    'prefix': 'tns:drawer-page-view'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#3450FD">{N}</span> Drawer page view .ts'
-    'body': """
+    prefix: 'tns:drawer-page-view'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#3450FD">{N}</span> Drawer page view .ts'
+    body: """
       import { EventData } from "data/observable";
       import { RadSideDrawer } from "nativescript-pro-ui/sidedrawer";
       import { topmost } from "ui/frame";
@@ -26,10 +26,10 @@
       }
     """
   'Drawer page View-Model TS':
-    'prefix': 'tns:drawer-page-model'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#3450FD">{N}</span> Drawer page view-model TS'
-    'body': """
+    prefix: 'tns:drawer-page-model'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#3450FD">{N}</span> Drawer page view-model TS'
+    body: """
       import { Observable } from "data/observable";
 
       export class ${1:Feature}ViewModel extends Observable {

@@ -1,10 +1,10 @@
 '.text.html.php.blade, .text.html, .text.html.hack':
 
   "Form Group":
-    "prefix":"bootstrap3:formgroup"
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3</span> form-group + label'
-    "body":"""
+    prefix:"bootstrap3:formgroup"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> form-group + label'
+    body:"""
       <div class="form-group">
         <label for="${1:name-id}">${2:Form Title}</label>
         $3
@@ -13,10 +13,10 @@
     """
 
   "Button Group":
-    "prefix":"bootstrap3:buttonGroup"
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3</span> Button Group'
-    "body":"""
+    prefix:"bootstrap3:buttonGroup"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Button Group'
+    body:"""
       <div class="btn-group" role="group" aria-label="${1:name-id}">
         <button type="button" class="btn btn-default">Left</button>
         <button type="button" class="btn btn-default">Middle</button>
@@ -25,38 +25,38 @@
     """
 
   "Form tag":
-    "prefix":"bootstrap3:form"
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3</span> Form declaration'
-    "body":"""
+    prefix:"bootstrap3:form"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Form declaration'
+    body:"""
       <form${1: class="${2:form-inline }${3:form-horizontal }"}>
         $4
       </form>
     """
 
   "Text input":
-    "prefix":"bootstrap3:input"
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3</span> Input'
-    "body":"""
+    prefix:"bootstrap3:input"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Input'
+    body:"""
       <input ${1:type="$2" }${3:class="${4:form-control }${5:input-${6:lg}}$7" }${8:placeholder="$9" }${10:disabled}>
       $11
     """
 
   "Textarea input":
-    "prefix":"bootstrap3:textarea"
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3</span> Text area'
-    "body":"""
+    prefix:"bootstrap3:textarea"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Text area'
+    body:"""
       <textarea ${1:class="form-control$2" }${3:placeholder="$4" }${5:disabled}>$6</textarea>
       $7
     """
 
   "Checkbox input":
-    "prefix":"bootstrap3:checkbox"
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3</span> Checkbox'
-    "body":"""
+    prefix:"bootstrap3:checkbox"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Checkbox'
+    body:"""
       <div class="checkbox${1:-inline}$2">
         <label>
           <input type="checkbox" ${3:name="$4" }${5:value="$5" }${6:checked }${7:disabled}>
@@ -67,10 +67,10 @@
     """
 
   "Checkbox input Inline":
-    "prefix":"bootstrap3:checkboxinline"
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3</span> Checkbox inline'
-    "body":"""
+    prefix:"bootstrap3:checkboxinline"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Checkbox inline'
+    body:"""
       <div class="checkbox-inline$1">
         <label>
           <input type="checkbox" ${2:name="$3" }${4:value="$5" }${6:checked }${7:disabled}>
@@ -81,10 +81,10 @@
     """
 
   "Radio input":
-    "prefix":"bootstrap3:radio"
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3</span> Radio button'
-    "body":"""
+    prefix:"bootstrap3:radio"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Radio button'
+    body:"""
       <div class="radio${1:-inline}$2">
         <label>
           <input type="radio" ${3:name="$4" }${5:value="$5" }${6:checked }${7:disabled}>
@@ -95,10 +95,10 @@
     """
 
   "Inline Radio input":
-    "prefix":"bootstrap3:radioinline"
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3</span> Radio button inline'
-    "body":"""
+    prefix:"bootstrap3:radioinline"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Radio button inline'
+    body:"""
       <div class="radio-inline$1">
         <label>
         <input type="radio" ${2:name="$3" }${4:value="$5" }${6:checked }${7:disabled}>
@@ -109,10 +109,10 @@
     """
 
   "Select input":
-    "prefix":"bootstrap3:select"
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3</span> Select input'
-    "body":"""
+    prefix:"bootstrap3:select"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Select input'
+    body:"""
       <select${1: class="form-control$2"}${3: disabled}>
         $4
       </select>
@@ -120,10 +120,10 @@
     """
 
   "Fieldset":
-    "prefix":"bootstrap3:fieldset"
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3</span> Fieldset'
-    "body":"""
+    prefix:"bootstrap3:fieldset"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Fieldset'
+    body:"""
       <fieldset${1: class="$2"}>
         $3
       </fieldset>
@@ -131,10 +131,10 @@
     """
 
   "Button":
-    "prefix":"bootstrap3:button"
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#7952b3">Bootstrap 3</span> Button'
-    "body":"""
+    prefix:"bootstrap3:button"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Button'
+    body:"""
       <button type="${1:submit}"${2: class="${3:btn }${4:btn-${5:lg} }${6:btn-${7:default} }$8"}>$9</button>
       $10
     """

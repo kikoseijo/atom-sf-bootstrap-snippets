@@ -1,10 +1,10 @@
 '.text.xml':
 
   'Drawer page View XML':
-    'prefix': 'tns:drawer-page-xml'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#3450FD">{N}</span> Drawer Page view XML (nsDrawer)'
-    'body': """
+    prefix: 'tns:drawer-page-xml'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#3450FD">{N}</span> Drawer Page view XML (nsDrawer)'
+    body: """
       <Page
           class="page"
           navigatingTo="onNavigatingTo"
