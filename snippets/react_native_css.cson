@@ -1,18 +1,713 @@
-'.source.js':
-  'React Native Component Class':
-    'prefix': 'rn:class-component'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#26DAFE">RN</span> React Native Component Class'
-    'body': "import React, { Component } from 'react';\nimport { View, Text, StyleSheet, } from 'react-native';\n\nexport default class ${1:ComponentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<View style={styles.container\\}>\n\t\t\t\t<Text>I'm the ${1:ComponentName} component</Text>\n\t\t\t</View>\n\t\t);$5\n\t}\n}\n\nconst styles = StyleSheet.create({\n\tcontainer: {\n\t\tflex: 1,\n\t},\n});\n"
+".source.js. .source.js.jsx":
+  "backgroundColor":
+    prefix: "bgc"
+    body: "backgroundColor: '${1:#${2:ffffff}}'"
+  "borderColor":
+    prefix: "borc"
+    body: "borderColor: ${1:#${2:000},"
+  "borderStyle":
+    prefix: "bors"
+    body: "borderStyle: ${3:solid,"
+  "borderWidth":
+    prefix: "borw"
+    body: "borderWidth: ${1:${2:1},"
+  "borderBottomWidth":
+    prefix: "borbw"
+    body: "borderBottomWidth: "${1:${2:1}},""
+  "borderLefttWidth":
+    prefix: "borlw"
+    body: "borderLeftWidth: ${1:${2:1},"
+  "borderRightWidth":
+    prefix: "borrw"
+    body: "borderRightWidth: ${1:${2:1},"
+  "borderTop":
+    prefix: "bort"
+    body: "borderTop: ${1:${2:1}} ${3:solid} ${4:#${5:000},"
+  "borderTopWidth":
+    prefix: "bortw"
+    body: "borderTopWidth: ${1:${2:1},"
+  "border-radius":
+    prefix: "br"
+    body: "border-radius: ${1:${2:1},"
+  "bottom":
+    prefix: "bot"
+    body: "bottom: ${1:0,"
+  "box":
+    prefix: "box"
+    body: """
+      position: ${1:absolute}
+      top: ${2:0}
+      right: ${3:0}
+      bottom: ${4:0}
+      left: ${5:0}
+      content: ""
+    """
+  "box-shadow":
+    prefix: "bs"
+    body: """
+        // h-length, v-length, blur, spread, colour
+        box-shadow: ${1:0} ${2:3px} ${3:15px} ${4:1px} ${5:rgba(0, 0, 0, .5)}
+    """
+  "boxShadow":
+    prefix: "shadow-box"
+    body: "shadowColor: '#000',\nshadowOffset: { width: 0, height: 2 },\nshadowOpacity: 0.1,\nshadowRadius: 2,\nelevation: 1,\n$1"
+  "clear":
+    prefix: "clr"
+    body: "clear: ${1:both,"
+  "color":
+    prefix: "col"
+    body: "color: ${1:#${2:000000},"
+  "content":
+    prefix: "con"
+    body: "content: "$1""
+  "cursor":
+    prefix: "cur"
+    body: "cursor: ${1:pointer,"
+  "cursor: pointer":
+    prefix: "curp"
+    body: "cursor: pointer"
+  "cursor: default":
+    prefix: "curd"
+    body: "cursor: default"
+  "cursor: inherit":
+    prefix: "curi"
+    body: "cursor: inherit"
+  "display":
+    prefix: "dis"
+    body: "display: ${1:none,"
+  "display: block":
+    prefix: "disb"
+    body: "display: block"
+  "display: inline-block":
+    prefix: "disi"
+    body: "display: inline-block"
+  "display: none":
+    prefix: "disn"
+    body: "display: none"
+  "display: flex":
+    prefix: "disf"
+    body: "display: flex"
+  "fill":
+    prefix: "fill"
+    body: "fill: ${1:#${2:000000},"
+  "fontFamily":
+    prefix: "ff"
+    body: "fontFamily: ${1:arial,"
+  "fontSize":
+    prefix: "fs"
+    body: "fontSize: ${1:${2:1},"
+  "fontStyle":
+    prefix: "fst"
+    body: "fontStyle: ${1:italic,"
+  "fontStyle: italic":
+    prefix: "fsti"
+    body: "fontStyle: italic"
+  "fontStyle: normal":
+    prefix: "fstn"
+    body: "fontStyle: normal"
+  "fontStyle: oblique":
+    prefix: "fsto"
+    body: "fontStyle: oblique"
+  "fontWeight":
+    prefix: "fw"
+    body: "fontWeight: ${1:bold,"
+  "fontWeight: bold":
+    prefix: "fwb"
+    body: "fontWeight: bold"
+  "fontWeight: light":
+    prefix: "fwl"
+    body: "fontWeight: light"
+  "fontWeight: normal":
+    prefix: "fwn"
+    body: "fontWeight: normal"
+  "height":
+    prefix: "hei"
+    body: "height: ${1:${2:1},"
+  "justify-content":
+    prefix: "jc"
+    body: "justify-content: ${1:center,"
+  "justify-content: flex-end":
+    prefix: "jcfe"
+    body: "justify-content: flex-end"
+  "justify-content: flex-start":
+    prefix: "jcfs"
+    body: "justify-content: flex-start"
+  "justify-content: center":
+    prefix: "jcc"
+    body: "justify-content: center"
+  "justify-content: space-around":
+    prefix: "jca"
+    body: "justify-content: space-around"
+  "justify-content: space-between":
+    prefix: "jcb"
+    body: "justify-content: space-between"
+  "height: auto":
+    prefix: "heia"
+    body: "height: auto"
+  "listStyle":
+    prefix: "lis"
+    body: "listStyle: ${1:square} ${2:inside} ${4:url(\"${3:list.png}\"),"
+  "listStyle-type":
+    prefix: "list"
+    body: "listStyle-type: ${1:circle,"
+  "listStyle-type: circle":
+    prefix: "listc"
+    body: "listStyle-type: circle"
+  "listStyle-type: disc":
+    prefix: "listd"
+    body: "listStyle-type: disc"
+  "listStyle-type: lower-roman":
+    prefix: "listlr"
+    body: "listStyle-type: lower-roman"
+  "listStyle-type: none":
+    prefix: "listn"
+    body: "listStyle-type: none"
+  "listStyle-type: square":
+    prefix: "lists"
+    body: "listStyle-type: square"
+  "listStyle-type: upper-roman":
+    prefix: "listur"
+    body: "listStyle-type: upper-roman"
+  "left":
+    prefix: "left"
+    body: "left: ${1:0,"
+  "left (shorthand)":
+    prefix: "lef"
+    body: "left: ${1:0,"
+  "lineHeight":
+    prefix: "lh"
+    body: "lineHeight: ${1:${2:1}${3:em},"
+  "letter-spacing":
+    prefix: "ls"
+    body: "letter-spacing: ${1:${2:1},"
+  "letter-spacing: normal":
+    prefix: "lsn"
+    body: "letter-spacing: normal"
+  "margin":
+    prefix: "mar"
+    body: "margin: ${1:${2:1},"
+  "marginBottom":
+    prefix: "marb"
+    body: "marginBottom: ${1:${2:1},"
+  "marginLeftt":
+    prefix: "marl"
+    body: "marginLeftt: ${1:${2:1},"
+  "marginRight":
+    prefix: "marr"
+    body: "marginRight: ${1:${2:1},"
+  "marginTop":
+    prefix: "mart"
+    body: "marginTop: ${1:${2:1},"
+  "margin: 0 auto":
+    prefix: "mara"
+    body: "margin: 0 auto"
+  "minHeight":
+    prefix: "mih"
+    body: "minHeight: ${1:${2:1},"
+  "minWidth":
+    prefix: "miw"
+    body: "minWidth: ${1:${2:1},"
+  "maxHeight":
+    prefix: "mah"
+    body: "maxHeight: ${1:${2:1},"
+  "maxWidth":
+    prefix: "maw"
+    body: "maxWidth: ${1:${2:1},"
+  "order":
+    prefix: "ord"
+    body: "order: ${1:1,"
+  "overflow":
+    prefix: "ov"
+    body: "overflow: ${1:hidden,"
+  "overflow: auto":
+    prefix: "ova"
+    body: "overflow: auto"
+  "overflow: hidden":
+    prefix: "ovh"
+    body: "overflow: hidden"
+  "overflow: scroll":
+    prefix: "ovs"
+    body: "overflow: scroll"
+  "overflow: visible":
+    prefix: "ovv"
+    body: "overflow: visible"
+  "padding":
+    prefix: "pad"
+    body: "padding: ${1:${2:1},"
+  "paddingBottom":
+    prefix: "padb"
+    body: "paddingBottom: ${1:${2:1},"
+  "paddingLeftt":
+    prefix: "padl"
+    body: "paddingLeftt: ${1:${2:1},"
+  "paddingRight":
+    prefix: "padr"
+    body: "paddingRight: ${1:${2:1},"
+  "paddingTop":
+    prefix: "padt"
+    body: "paddingTop: ${1:${2:1},"
+  "position":
+    prefix: "pos"
+    body: "position: ${1:relative,"
+  "position absolute":
+    prefix: "posa"
+    body: "position: absolute"
+  "position fixed":
+    prefix: "posf"
+    body: "position: fixed"
+  "position relative":
+    prefix: "posr"
+    body: "position: relative"
+  "position static":
+    prefix: "poss"
+    body: "position: static"
+  "right":
+    prefix: "rig"
+    body: "right: ${1:0,"
+  "textAlign":
+    prefix: "ta"
+    body: "textAlign: ${1:center,"
+  "textAlign: center":
+    prefix: "tac"
+    body: "textAlign: center"
+  "textAlign: left":
+    prefix: "tal"
+    body: "textAlign: left"
+  "textAlign: right":
+    prefix: "tar"
+    body: "textAlign: right"
+  "textDecoration":
+    prefix: "td"
+    body: "textDecoration: ${1:underline,"
+  "textDecoration: underline":
+    prefix: "tdu"
+    body: "textDecoration: underline"
+  "textDecoration: none":
+    prefix: "tdn"
+    body: "textDecoration: none"
+  "text-transform":
+    prefix: "tt"
+    body: "text-transform: ${1:uppercase,"
+  "text-transform: capitalize":
+    prefix: "ttc"
+    body: "text-transform: ${1:capitalize,"
+  "text-transform: lowercase":
+    prefix: "ttl"
+    body: "text-transform: ${1:lowercase,"
+  "text-transform: none":
+    prefix: "ttn"
+    body: "text-transform: ${1:none,"
+  "text-transform: uppercase":
+    prefix: "ttu"
+    body: "text-transform: ${1:uppercase,"
+  "top":
+    prefix: "top"
+    body: "top: ${1:0,"
+  "verticalAlign":
+    prefix: "va"
+    body: "verticalAlign: ${1:middle,"
+  "verticalAlign: bottom":
+    prefix: "vab"
+    body: "verticalAlign: bottom"
+  "verticalAlign: middle":
+    prefix: "vam"
+    body: "verticalAlign: middle"
+  "verticalAlign: top":
+    prefix: "vat"
+    body: "verticalAlign: top"
+  "white-space":
+    prefix: "ws"
+    body: "white-space: ${1:nowrap,"
+  "white-space: nowrap":
+    prefix: "wsn"
+    body: "white-space: nowrap"
+  "white-space: normal":
+    prefix: "wsnor"
+    body: "white-space: normal"
+  "white-space: pre":
+    prefix: "wsp"
+    body: "white-space: pre"
+  "width":
+    prefix: "wid"
+    body: "width: ${1:${2:1},"
+  "width: auto":
+    prefix: "wida"
+    body: "width: auto"
+  "z-index":
+    prefix: "zi"
+    body: "z-index: ${1:1,"
+  "@import":
+    prefix: "imp"
+    body: "@import "${1:filename,""
+  "@include":
+    prefix: "inc"
+    body: "@include ${1:mixin,"
+  "@media":
+    prefix: "med"
+    body: "@media $1 {\n  $2\n,"
+  "@mixin":
+    prefix: "mix"
+    body: "@mixin ${1:name} {\n  $2\n,"
+  "!important":
+    prefix: "!"
+    body: "!important"
+  "!important (alt)":
+    prefix: "i"
+    body: "!important"
 
-  'React Native Pure Component function':
-    'prefix': 'rn:function-component'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#26DAFE">RN</span> React Native Pure Component function'
-    'body': "import React from 'react';\nimport { View, Text, StyleSheet } from 'react-native';\n\nconst ${1:ComponentName} = ($2) => (\n\t<View style={styles.container\\}>\n\t\t<Text>I'm ${1:ComponentName}</Text>\n\t</View>\n);$3\n\nexport default ${1:ComponentName};\n\nconst styles = StyleSheet.create({\n\tcontainer: {\n\t\tflex: 1,\n\t},\n});\n"
-
-  'React Native state definition':
-    'prefix': 'rn:state-initialization-declaration-init'
-    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
-    'rightLabelHTML': '<span style="color:#26DAFE">RN</span> React Native State declaration initialization'
-    'body': "state = {\n\t${1}: ${2:[]},\n\t${3}\n}"
+".source.css, .source.scss, .source.css.scss, .source.less, .source.css.less":
+  "align-items":
+    prefix: "ai"
+    body: "align-items: ${1:center},"
+  "align-items: baseline":
+    prefix: "aib"
+    body: "align-items: baseline,"
+  "align-items: center":
+    prefix: "aic"
+    body: "align-items: center,"
+  "align-items: flex-start":
+    prefix: "aifs"
+    body: "align-items: flex-start,"
+  "align-items flex-end":
+    prefix: "aife"
+    body: "align-items: flex-end,"
+  "align-items stretch":
+    prefix: "ais"
+    body: "align-items: stretch,"
+  "background":
+    prefix: "bg"
+    body: "background: ${1:#${2:ffffff}},"
+  "backgroundColor":
+    prefix: "bgc"
+    body: "backgroundColor: ${1:#${2:ffffff}},"
+  "background-image":
+    prefix: "bgi"
+    body: "background-image: ${2:url(\"${1:background.jpg}\")},"
+  "background-image (asset-url)":
+    prefix: "bgia"
+    body: "background-image: ${2:asset-url(\"${1:background.jpg}\")},"
+  "background-position":
+    prefix: "bgp"
+    body: "background-position: ${1:left} ${2:top},"
+  "background-repeat":
+    prefix: "bgr"
+    body: "background-repeat: ${1:repeat},"
+  "background-repeat: repeat":
+    prefix: "bgrr"
+    body: "background-repeat: repeat,"
+  "background-repeat: repeat-x":
+    prefix: "bgrx"
+    body: "background-repeat: repeat-x,"
+  "background-repeat: repeat-y":
+    prefix: "bgry"
+    body: "background-repeat: repeat-y,"
+  "background-repeat: no-repeat":
+    prefix: "bgrn"
+    body: "background-repeat: no-repeat,"
+  "backgroundSize":
+    prefix: "bgs"
+    body: "backgroundSize: ${1:cover},"
+  "border":
+    prefix: "bor"
+    body: "border: ${1:${2:1}} ${3:solid} ${4:#${5:000}},"
+  "borderColor":
+    prefix: "borc"
+    body: "borderColor: ${1:#${2:000}},"
+  "borderStyle":
+    prefix: "bors"
+    body: "borderStyle: ${3:solid},"
+  "borderWidth":
+    prefix: "borw"
+    body: "borderWidth: ${1:${2:1}},"
+  "borderBottom":
+    prefix: "borb"
+    body: "borderBottom: ${1:${2:1}} ${3:solid} ${4:#${5:000}},"
+  "borderBottomWidth":
+    prefix: "borbw"
+    body: "borderBottomWidth: ${1:${2:1}},"
+  "borderLeftt":
+    prefix: "borl"
+    body: "borderLeftt: ${1:${2:1}} ${3:solid} ${4:#${5:000}},"
+  "borderLefttWidth":
+    prefix: "borlw"
+    body: "borderLefttWidth: ${1:${2:1}},"
+  "borderRight":
+    prefix: "borr"
+    body: "borderRight: ${1:${2:1}} ${3:solid} ${4:#${5:000}},"
+  "borderRightWidth":
+    prefix: "borrw"
+    body: "borderRightWidth: ${1:${2:1}},"
+  "borderTop":
+    prefix: "bort"
+    body: "borderTop: ${1:${2:1}} ${3:solid} ${4:#${5:000}},"
+  "borderTopWidth":
+    prefix: "bortw"
+    body: "borderTopWidth: ${1:${2:1}},"
+  "border-radius":
+    prefix: "br"
+    body: "border-radius: ${1:${2:1}},"
+  "bottom":
+    prefix: "bot"
+    body: "bottom: ${1:0},"
+  "box":
+    prefix: "box"
+    body: """
+      position: ${1:absolute};
+      top: ${2:0};
+      right: ${3:0};
+      bottom: ${4:0};
+      left: ${5:0};
+      content: "";
+    """
+  "box-shadow":
+    prefix: "bs"
+    body: """
+        // h-length, v-length, blur, spread, colour
+        box-shadow: ${1:0} ${2:3px} ${3:15px} ${4:1px} ${5:rgba(0, 0, 0, .5)};
+    """
+  "clear":
+    prefix: "clr"
+    body: "clear: ${1:both},"
+  "color":
+    prefix: "col"
+    body: "color: ${1:#${2:000000}},"
+  "content":
+    prefix: "con"
+    body: "content: "$1","
+  "cursor":
+    prefix: "cur"
+    body: "cursor: ${1:pointer},"
+  "cursor: pointer":
+    prefix: "curp"
+    body: "cursor: pointer,"
+  "cursor: default":
+    prefix: "curd"
+    body: "cursor: default,"
+  "cursor: inherit":
+    prefix: "curi"
+    body: "cursor: inherit,"
+  "display":
+    prefix: "dis"
+    body: "display: ${1:none},"
+  "display: block":
+    prefix: "disb"
+    body: "display: block,"
+  "display: inline-block":
+    prefix: "disi"
+    body: "display: inline-block,"
+  "display: none":
+    prefix: "disn"
+    body: "display: none,"
+  "display: flex":
+    prefix: "disf"
+    body: "display: flex,"
+  "fill":
+    prefix: "fill"
+    body: "fill: ${1:#${2:000000}},"
+  "flex":
+    prefix: "flex"
+    body: "flex: ${1:1} ${2:1} ${3:auto},"
+  "flex (alt)":
+    prefix: "fle"
+    body: "flex: ${1:1} ${2:1} ${3:auto},"
+  "flex-direction":
+    prefix: "fd"
+    body: "flex-direction: ${1:column},"
+  "flex-direction: row":
+    prefix: "fdr"
+    body: "flex-direction: row,"
+  "flex-direction: column":
+    prefix: "fdc"
+    body: "flex-direction: column,"
+  "float":
+    prefix: "fl"
+    body: "float: ${1:left},"
+  "float: left":
+    prefix: "fll"
+    body: "float: left,"
+  "float: right":
+    prefix: "flr"
+    body: "float: right,"
+  "float: none":
+    prefix: "fln"
+    body: "float: none,"
+  "fontFamily":
+    prefix: "ff"
+    body: "fontFamily: ${1:arial},"
+  "fontSize":
+    prefix: "fs"
+    body: "fontSize: ${1:${2:1}},"
+  "fontStyle":
+    prefix: "fst"
+    body: "fontStyle: ${1:italic},"
+  "fontStyle: italic":
+    prefix: "fsti"
+    body: "fontStyle: italic,"
+  "fontStyle: normal":
+    prefix: "fstn"
+    body: "fontStyle: normal,"
+  "fontStyle: oblique":
+    prefix: "fsto"
+    body: "fontStyle: oblique,"
+  "fontWeight":
+    prefix: "fw"
+    body: "fontWeight: ${1:bold},"
+  "fontWeight: bold":
+    prefix: "fwb"
+    body: "fontWeight: bold,"
+  "fontWeight: light":
+    prefix: "fwl"
+    body: "fontWeight: light,"
+  "fontWeight: normal":
+    prefix: "fwn"
+    body: "fontWeight: normal,"
+  "height":
+    prefix: "hei"
+    body: "height: ${1:${2:1}},"
+  "height: auto":
+    prefix: "heia"
+    body: "height: null,"
+  "left":
+    prefix: "left"
+    body: "left: ${1:0},"
+  "left (shorthand)":
+    prefix: "lef"
+    body: "left: ${1:0},"
+  "lineHeight":
+    prefix: "lh"
+    body: "lineHeight: ${1:${2:1}${3:em}},"
+  "letter-spacing":
+    prefix: "ls"
+    body: "letter-spacing: ${1:${2:1}},"
+  "letter-spacing: normal":
+    prefix: "lsn"
+    body: "letter-spacing: normal,"
+  "margin":
+    prefix: "mar"
+    body: "margin: ${1:${2:1}},"
+  "marginBottom":
+    prefix: "marb"
+    body: "marginBottom: ${1:${2:1}},"
+  "marginLeftt":
+    prefix: "marl"
+    body: "marginLeftt: ${1:${2:1}},"
+  "marginRight":
+    prefix: "marr"
+    body: "marginRight: ${1:${2:1}},"
+  "marginTop":
+    prefix: "mart"
+    body: "marginTop: ${1:${2:1}},"
+  "margin: 0 auto":
+    prefix: "mara"
+    body: "margin: 0 auto,"
+  "minWidth":
+    prefix: "miw"
+    body: "minWidth: ${1:${2:1}},"
+  "maxWidth":
+    prefix: "maw"
+    body: "maxWidth: ${1:${2:1}},"
+  "order":
+    prefix: "ord"
+    body: "order: ${1:1},"
+  "overflow":
+    prefix: "ov"
+    body: "overflow: ${1:hidden},"
+  "overflow: auto":
+    prefix: "ova"
+    body: "overflow: auto,"
+  "overflow: hidden":
+    prefix: "ovh"
+    body: "overflow: hidden,"
+  "overflow: scroll":
+    prefix: "ovs"
+    body: "overflow: scroll,"
+  "overflow: visible":
+    prefix: "ovv"
+    body: "overflow: visible,"
+  "padding":
+    prefix: "pad"
+    body: "padding: ${1:${2:1}},"
+  "paddingBottom":
+    prefix: "padb"
+    body: "paddingBottom: ${1:${2:1}},"
+  "paddingLeftt":
+    prefix: "padl"
+    body: "paddingLeftt: ${1:${2:1}},"
+  "paddingRight":
+    prefix: "padr"
+    body: "paddingRight: ${1:${2:1}},"
+  "paddingTop":
+    prefix: "padt"
+    body: "paddingTop: ${1:${2:1}},"
+  "position":
+    prefix: "pos"
+    body: "position: ${1:relative},"
+  "position absolute":
+    prefix: "posa"
+    body: "position: absolute,"
+  "position fixed":
+    prefix: "posf"
+    body: "position: fixed,"
+  "position relative":
+    prefix: "posr"
+    body: "position: relative,"
+  "position static":
+    prefix: "poss"
+    body: "position: static,"
+  "right":
+    prefix: "rig"
+    body: "right: ${1:0},"
+  "textAlign":
+    prefix: "ta"
+    body: "textAlign: ${1:center},"
+  "textAlign: center":
+    prefix: "tac"
+    body: "textAlign: center,"
+  "textAlign: left":
+    prefix: "tal"
+    body: "textAlign: left,"
+  "textAlign: right":
+    prefix: "tar"
+    body: "textAlign: right,"
+  "textDecoration":
+    prefix: "td"
+    body: "textDecoration: ${1:underline},"
+  "textDecoration: underline":
+    prefix: "tdu"
+    body: "textDecoration: underline,"
+  "textDecoration: none":
+    prefix: "tdn"
+    body: "textDecoration: none,"
+  "top":
+    prefix: "top"
+    body: "top: ${1:0},"
+  "verticalAlign":
+    prefix: "va"
+    body: "verticalAlign: ${1:middle},"
+  "verticalAlign: bottom":
+    prefix: "vab"
+    body: "verticalAlign: bottom,"
+  "verticalAlign: middle":
+    prefix: "vam"
+    body: "verticalAlign: middle,"
+  "verticalAlign: top":
+    prefix: "vat"
+    body: "verticalAlign: top,"
+  "width":
+    prefix: "wid"
+    body: "width: ${1:${2:1}},"
+  "width: auto":
+    prefix: "wida"
+    body: "width: auto,"
+  "z-index":
+    prefix: "zi"
+    body: "z-index: ${1:1},"
+  "@media":
+    prefix: "med"
+    body: "@media $1 {\n  $2\n,"
+  "!important":
+    prefix: "!"
+    body: "!important"
+  "!important (alt)":
+    prefix: "i"
+    body: "!important"
