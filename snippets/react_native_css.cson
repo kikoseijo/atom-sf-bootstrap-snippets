@@ -1,0 +1,18 @@
+'.source.js':
+  'React Native Component Class':
+    'prefix': 'rn:class-component'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
+    'rightLabelHTML': '<span style="color:#26DAFE">RN</span> React Native Component Class'
+    'body': "import React, { Component } from 'react';\nimport { View, Text, StyleSheet, } from 'react-native';\n\nexport default class ${1:ComponentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<View style={styles.container\\}>\n\t\t\t\t<Text>I'm the ${1:ComponentName} component</Text>\n\t\t\t</View>\n\t\t);$5\n\t}\n}\n\nconst styles = StyleSheet.create({\n\tcontainer: {\n\t\tflex: 1,\n\t},\n});\n"
+
+  'React Native Pure Component function':
+    'prefix': 'rn:function-component'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
+    'rightLabelHTML': '<span style="color:#26DAFE">RN</span> React Native Pure Component function'
+    'body': "import React from 'react';\nimport { View, Text, StyleSheet } from 'react-native';\n\nconst ${1:ComponentName} = ($2) => (\n\t<View style={styles.container\\}>\n\t\t<Text>I'm ${1:ComponentName}</Text>\n\t</View>\n);$3\n\nexport default ${1:ComponentName};\n\nconst styles = StyleSheet.create({\n\tcontainer: {\n\t\tflex: 1,\n\t},\n});\n"
+
+  'React Native state definition':
+    'prefix': 'rn:state-initialization-declaration-init'
+    'leftLabelHTML': '<span style="color:#1B81B6">Ⓢ</span>'
+    'rightLabelHTML': '<span style="color:#26DAFE">RN</span> React Native State declaration initialization'
+    'body': "state = {\n\t${1}: ${2:[]},\n\t${3}\n}"
