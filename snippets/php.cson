@@ -1,4 +1,4 @@
-'.text.html.php.blade, .text.html.php':
+'.text.html.php.blade, .text.html.hack':
 
   'Construct definition':
     'prefix': 'php:construct'

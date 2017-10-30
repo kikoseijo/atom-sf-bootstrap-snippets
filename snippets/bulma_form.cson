@@ -1,4 +1,4 @@
-'.text.html.php.blade, .text.html, .text.html.php':
+'.text.html.php.blade, .text.html, .text.html.hack':
 
   'Bulma Form - field':
     'prefix': 'bulma:field'
