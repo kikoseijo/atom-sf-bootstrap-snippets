@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-3-snippets-for-atom",
   "main": "./lib/sf-settings",
-  "version": "2.8.6",
+  "version": "2.8.7",
   "description": "React, React-native, Bootstrap3, Laravel, Bulma.io, Flexbox, ES6, Typescript, PHP and much more..  (Snippets package) - Personal collection i share with the World, Pull request are welcome! Happy days...",
   "repository": "https://github.com/kikoseijo/atom-sf-bootstrap-snippets",
   "homepage": "https://github.com/kikoseijo/atom-sf-bootstrap-snippets#readme",
