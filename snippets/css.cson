@@ -1,72 +1,71 @@
 ".source.css, .source.less, .source.scss":
-
   "CSS Media calls":
-    prefix:  "css:media-calls"
+    prefix: "css:media-calls"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#4A90E2'>LESS</span> media calls"
     body:"@media (min-width: 768px) {\n$i\n}\n@media (min-width: 992px) {\n\n}\n@media (min-width: 1200px) {\n\n}"
   "Flexbox - align-content: flex-start;":
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#4A90E2'>Flexbox</span> align-content: flex-start"
-    prefix: "flexcont"
+    prefix: "flexbox:flexcont"
     body: "align-content: ${1:flex-start|flex-end|center|space-between|space-around|stretch};"
   "Flexbox - align-items: flex-start;":
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#4A90E2'>Flexbox</span> align-items: flex-start"
-    prefix: "flexitems"
+    prefix: "flexbox:flexitems"
     body: "align-items: ${1:flex-start|flex-end|center|baseline|stretch};"
   "Flexbox - align-self: auto;":
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#4A90E2'>Flexbox</span> align-self: auto"
-    prefix: "flexself"
+    prefix: "flexbox:flexself"
     body: "align-self: ${1:auto|flex-start|flex-end|center|baseline|stretch};"
   "Flexbox - flex-basis: auto;":
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#4A90E2'>Flexbox</span> flex-basis: auto"
-    prefix: "flexbasis"
+    prefix: "flexbox:flexbasis"
     body: "flex-basis: ${1:auto|<'width' (%|rem|em|px)>};"
   "Flexbox - flex-direction: row;":
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#4A90E2'>Flexbox</span> flex-direction: row"
-    prefix: "flexdir"
+    prefix: "flexbox:flexdir"
     body: "flex-direction: ${1:row|row-reverse|column|column-reverse};"
   "Flexbox - flex-flow: row nowrap;":
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#4A90E2'>Flexbox</span> flex-flow: row nowrap"
-    prefix: "flexflow"
+    prefix: "flexbox:flexflow"
     body: "flex-flow: ${1:<'flex-direction' (row|row-reverse|column|column-reverse)> || <'flex-wrap' (nowrap|wrap|wrap-reverse)>};"
   "Flexbox - flex-grow: 0;":
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#4A90E2'>Flexbox</span> flex-grow: 0"
-    prefix: "flexgrow"
+    prefix: "flexbox:flexgrow"
     body: "flex-grow: ${1:0};"
   "Flexbox - flex-shrink: 1;":
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#4A90E2'>Flexbox</span> flex-shrink: 1"
-    prefix: "flexshr"
+    prefix: "flexbox:flexshr"
     body: "flex-shrink: ${1:1};"
   "Flexbox - flex-wrap: nowrap;":
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#4A90E2'>Flexbox</span> flex-wrap: nowrap"
-    prefix: "flexwrap"
+    prefix: "flexbox:flexwrap"
     body: "flex-wrap: ${1:nowrap|wrap|wrap-reverse};"
   "Flexbox - flex: 0 1 auto;":
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#4A90E2'>Flexbox</span> flex: 0 1 auto"
-    prefix: "flex"
+    prefix: "flexbox:flex"
     body: "flex: ${1:none|auto|[<'flex-grow' (0)> <'flex-shrink' (1)> || <'flex-basis' auto|<'width' (%|rem|em|px)>>]};"
   "Flexbox - display: flex;":
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#4A90E2'>Flexbox</span> display: flex"
-    prefix: "flexbox"
+    prefix: "flexbox:flexbox"
     body: "display: ${1:flex|inline-flex};"
   "Flexbox - justify-content: flex-start;":
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#4A90E2'>Flexbox</span> justify-content: flex-start"
-    prefix: "flexjust"
+    prefix: "flexbox:flexjust"
     body: "justify-content: ${1:flex-start|flex-end|center|space-between|space-around};"
   "Flexbox - order: 0;":
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#4A90E2'>Flexbox</span>  order: 0"
-    prefix: "flexorder"
+    prefix: "flexbox:flexorder"
     body: "order: ${1:0};"
