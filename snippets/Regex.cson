@@ -1,12 +1,13 @@
 '.source, .text, .plain':
 
-  'Regex helpers':
+  'Regex helpers simple':
     prefix: 'regex:replace-arround'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
-    rightLabelHTML: '<span style="color:#20C93A">Regex</span> Replace arround'
-    body: """
-      FIND:
-      @lang\\\\(\\\\'(.*?)\\\\'\\\\)
-      REPLACE
-      {{ __('\\\$1') }}
-    """
+    rightLabelHTML: '<span style="color:#20C93A">Atom Regex</span> Replace arround - basic one.'
+    body: "@lang\\\\(\\\\'(.*?)\\\\'\\\\)\n{{ __('\\\$1') }}"
+
+  'Regex helpers advanced':
+    prefix: 'regex:advanced-line-breaks'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#20C93A">Atom Regex</span> A bit more advanced with linebreaks.'
+    body: "'(.*?)':[\\\\n](.*?)'rnb:(.*?)'[\\\\n](.*?)[\\\\n](.*?) XXXXXXXXXXX'\n'$1':\\\\n$2'rnb:$3'\\\\n$4\\\\n$5 $1'"
