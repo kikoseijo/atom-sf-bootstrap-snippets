@@ -1,0 +1,246 @@
+'.source.js, source.js.jsx':
+  'Anatomy':
+    prefix: 'rnb:anatomy'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Anatomy'
+    body: '<Container>\n\t<Header>\n\t\t<Button>\n\t\t\t<Icon name="$1"/>\n\t\t</Button>\n\t\t<Title>$2</Title>\n\t\t<Button>\n\t\t\t<Icon name="$3" />\n\t\t</Button>\n\t</Header>\n\n\t<Content>\n\t</Content>\n\n\t<Footer>\n\t<FooterTab>\n\t\t<Button>\n\t\t\t$4\n\t\t\t<Icon name="$5" />\n\t\t</Button>\n\t\t<Button>\n\t\t\t$6\n\t\t\t<Icon name="$7" />\n\t\t</Button>\n\t\t<Button>\n\t\t\t$8\n\t\t\t<Icon name="$9" />\n\t\t</Button>\n\t\t<Button>\n\t\t\t$10\n\t\t\t<Icon name="$11"/>\n\t\t</Button>\n\t</FooterTab>\n</Footer>\n</Container>'
+
+  'Container':
+    prefix: 'rnb:container'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Container'
+    body: '<Container>\n\t$1\n</Container>'
+
+  'Header':
+    prefix: 'rnb:header'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Header'
+    body: '<Header>\n\t<Button>\n\t\t<Icon />\n\t</Button>\n\t<Title>$1</Title>\n\t<Button>\n\t\t<Icon />\n\t</Button>\n</Header>'
+
+  'Content':
+    prefix: 'rnb:content'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Content'
+    body: '<Content>\n\t$1\n</Content>'
+
+  'Badge':
+    prefix: 'rnb:badge'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Badge'
+    body: '<Badge>$1</Badge>'
+
+  'Button':
+    prefix: 'rnb:btn'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Button'
+    body: '<Button>\n\t$1\n</Button>'
+
+  'Card':
+    prefix: 'rnb:card'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Card'
+    body: '<Card>\n\t<CardItem>\n\t\t<Text>\n\t\t\t$1\n\t\t</Text>\n\t</CardItem>\n</Card>'
+
+  'CardItem':
+    prefix: 'rnb:cardItem'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> CardItem'
+    body: '<CardItem>\n\t<Text>\n\t\t$1\n\t</Text>\n</CardItem>'
+
+  'CardImage':
+    prefix: 'rnb:cardImage'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> CardImage'
+    body: '<Card>\n\t<CardItem>\n\t\t<Thumbnail source={$1} />\n\t\t<Text></Text>\n\t\t<Text note></Text>\n\t</CardItem>\n\t<CardItem>\n\t\t<Image source={} />\n\t</CardItem>\n\t<CardItem>\n\t\t<Button transparent>\n\t\t\t\n\t\t</Button>\n\t</CardItem>\n</Card>'
+
+  'CardShowcase':
+    prefix: 'rnb:cardShowcase'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> CardShowcase'
+    body: '<Card>\n\t<CardItem>\n\t\t<Thumbnail source={$1} />\n\t\t<Text></Text>\n\t\t<Text note></Text>\n\t</CardItem>\n\t<CardItem cardBody>\n\t\t<Image source={} />\n\t\t<Text>\n\t\t\t\n\t\t</Text>\n\t\t<Button transparent>\n\t\t\t\n\t\t</Button>\n\t</CardItem>\n</Card>'
+
+  'CardDynamic':
+    prefix: 'rnb:cardDynamic'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> CardDynamic'
+    body: '<Card dataArray={$1} renderRow={($2) =>\n\t<CardItem>\n\t\t$3\n\t</CardItem>\n}>\n</Card>'
+
+  'Checkbox':
+    prefix: 'rnb:checkbox'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Checkbox'
+    body: '<CheckBox checked={false$1} />'
+
+  'DeckSwiper':
+    prefix: 'rnb:deckSwiper'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> DeckSwiper'
+    body: '<DeckSwiper dataSource={$1} renderItem={$2 =>\n\t<Card>\n\t\t<CardItem>\n\t\t\t<Thumbnail source={$3} />\n\t\t\t<Text></Text>\n\t\t\t<Text note></Text>\n\t\t</CardItem>\n\t\t<CardItem>\n\t\t\t<Image source={$4} />\n\t\t</CardItem>\n\t\t<CardItem>\n\t\t\t<Icon name="$5" />\n\t\t\t<Text></Text>\n\t\t</CardItem>\n\t</Card>\n/>'
+
+  'FAB':
+    prefix: 'rnb:fab'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> FAB'
+    body: '<Fab\n\tactive={$1}\n\tdirection="up"\n\tcontainerStyle={{$2}}\n\tposition="bottomRight"\n\tonPress={() => $3}\n>\n\t<Icon name="$4" />\n\t<Button>\n\t\t<Icon name="$5" />\n\t</Button>\n\t<Button>\n\t\t<Icon name="$6" />\n\t</Button>\n\t<Button>\n\t\t<Icon name="$7" />\n\t</Button>\n</Fab>'
+
+  'FooterTab':
+    prefix: 'rnb:footerTab'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> FooterTab'
+    body: '<Footer>\n\t<FooterTab>\n\t\t<Button>\n\t\t\t$1\n\t\t\t<Icon name="$2" />\n\t\t</Button>\n\t\t<Button>\n\t\t\t$3\n\t\t\t<Icon name="$4" />\n\t\t</Button>\n\t\t<Button>\n\t\t\t$5\n\t\t\t<Icon name="$6" />\n\t\t</Button>\n\t\t<Button>\n\t\t\t$7\n\t\t\t<Icon name="$8" />\n\t\t</Button>\n\t</FooterTab>\n</Footer>'
+
+  'Grid':
+    prefix: 'rnb:grid'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Grid'
+    body: '<Grid>\n\t<Col $1/>\n\t<Row $2/>\n</Grid>'
+
+  'Col':
+    prefix: 'rnb:col'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Col'
+    body: '<Col $1/>'
+
+  'Row':
+    prefix: 'rnb:row'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Row'
+    body: '<Row $1/>'
+
+  'H1':
+    prefix: 'rnb:h1'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> H1'
+    body: '<H1>$1</H1>'
+
+  'H2':
+    prefix: 'rnb:h2'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> H2'
+    body: '<H2>$1</H2>'
+
+  'H3':
+    prefix: 'rnb:h3'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> H3'
+    body: '<H3>$1</H3>'
+
+  'Icon':
+    prefix: 'rnb:icon'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Icon'
+    body: '<Icon name="$1"/>'
+
+  'Image':
+    prefix: 'rnb:image'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Image'
+    body: '<Image source={$1} />'
+
+  'List':
+    prefix: 'rnb:list'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> List'
+    body: '<List>\n\t<ListItem>\n\t\t<Text>$1</Text>\n\t</ListItem>\n</List>'
+
+  'ListItem':
+    prefix: 'rnb:listItem'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> ListItem'
+    body: '<ListItem>\n\t<Text>$1</Text>\n</ListItem>'
+
+  'ListIcon':
+    prefix: 'rnb:listIcon'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> ListIcon'
+    body: '<List>\n\t<ListItem iconLeft>\n\t\t<Icon name="$1" />\n\t\t<Text>$2</Text>\n\t\t<Text note>$3</Text>\n\t</ListItem>\n</List>'
+
+  'ListAvatar':
+    prefix: 'rnb:listAvatar'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> ListAvatar'
+    body: '<List>\n\t<ListItem>\n\t\t<Thumbnail source={$1} />\n\t\t<Text>$2</Text>\n\t\t<Text note>$3</Text>\n\t</ListItem>\n</List>'
+
+  'ListThumbnail':
+    prefix: 'rnb:listThumbnail'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> ListThumbnail'
+    body: '<List>\n\t<ListItem>\n\t\t<Thumbnail square size={80} source={$1} />\n\t\t<Text>$2</Text>\n\t\t<Text note>$3</Text>\n\t</ListItem>\n</List>'
+
+  'ListDynamic':
+    prefix: 'rnb:listDynamic'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> ListDynamic'
+    body: '<List dataArray={$1} renderRow={($2) =>\n\t<ListItem>\n\t\t<Text>$3</Text>\n\t</ListItem>\n}>\n</List>'
+
+  'Picker':
+    prefix: 'rnb:picker'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Picker'
+    body: '<Picker\n\tiosHeader="Select one$1"\n\tmode="dropdown$2"\n\tselectedValue={$3}\n\tonValueChange={$4}>\n\t<Item label="$5" value="$6" />\n\t<Item label="$7" value="$8" />\n</Picker>'
+
+  'Radio':
+    prefix: 'rnb:radio'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Radio'
+    body: '<Radio selected={false$1} />'
+
+  'Searchbar':
+    prefix: 'rnb:searchbar'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Searchbar'
+    body: '<Header searchBar rounded>\n\t<InputGroup>\n\t\t<Icon name="$1" />\n\t\t<Input placeholder="Search$2" />\n\t\t<Icon name="ios-people$3" />\n\t</InputGroup>\n\t<Button transparent>\n\t\tSearch$4\n\t</Button>\n</Header>'
+
+  'Spinner':
+    prefix: 'rnb:spinner'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Spinner'
+    body: '<Spinner color="$1" />'
+
+  'Tabs':
+    prefix: 'rnb:tabs'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Tabs'
+    body: '<Tabs>\n\t<TabOne tabLabel="One$1" />\n\t<TabTwo tabLabel="Two$2" />\n</Tabs>'
+
+  'Text':
+    prefix: 'rnb:text'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Text'
+    body: '<Text>$1</Text>'
+
+  'Textbox':
+    prefix: 'rnb:textbox'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Textbox'
+    body: '<InputGroup>\n\t<Input />\n</InputGroup>'
+
+  'Regular Textbox':
+    prefix: 'rnb:regularTextbox'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Regular Textbox'
+    body: '<InputGroup borderType="regular">\n\t<Input placeholder="Type your text here$1"/>\n</InputGroup>'
+
+  'Underlined Textbox':
+    prefix: 'rnb:underlinedTextbox'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Underlined Textbox'
+    body: '<InputGroup borderType="underline">\n\t<Input placeholder="Type your text here$1"/>\n</InputGroup>'
+
+  'Rounded Textbox':
+    prefix: 'rnb:roundedTextbox'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Rounded Textbox'
+    body: '<InputGroup borderType="rounded">\n\t<Input placeholder="Type your text here$1"/>\n</InputGroup>'
+
+  'Icon Textbox':
+    prefix: 'rnb:iconTextbox'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Icon Textbox'
+    body: '<InputGroup>\n\t<Icon name="$1" />\n\t<Input placeholder="Type your text here$2"/>\n</InputGroup>'
+
+  'Thumbnail':
+    prefix: 'rnb:thumbnail'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#6FAF98">RNB</span> Thumbnail'
+    body: '<Thumbnail source={$1} />'
