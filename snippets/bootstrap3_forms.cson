@@ -1,140 +1,61 @@
 '.text.html.php.blade, .text.html, .text.html.php':
-
   "Form Group":
     prefix:"bootstrap3:formgroup"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> form-group + label'
-    body:"""
-      <div class="form-group">
-        <label for="${1:name-id}">${2:Form Title}</label>
-        $3
-      </div>
-      $6
-    """
-
+    body:'<div class="form-group">\n\t<label for="${1:name-id}">${2:Form Title}</label>\n\t$3\n</div>\n$6'
   "Button Group":
     prefix:"bootstrap3:buttonGroup"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Button Group'
-    body:"""
-      <div class="btn-group" role="group" aria-label="${1:name-id}">
-        <button type="button" class="btn btn-default">Left</button>
-        <button type="button" class="btn btn-default">Middle</button>
-        <button type="button" class="btn btn-default">Right</button>
-      </div>
-    """
-
+    body:'<div class="btn-group" role="group" aria-label="${1:name-id}">\n\t<button type="button" class="btn btn-default">Left</button>\n\t<button type="button" class="btn btn-default">Middle</button>\n\t<button type="button" class="btn btn-default">Right</button>\n</div>'
   "Form tag":
     prefix:"bootstrap3:form"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Form declaration'
-    body:"""
-      <form${1: class="${2:form-inline }${3:form-horizontal }"}>
-        $4
-      </form>
-    """
-
+    body:'<form${1: class="${2:form-inline }${3:form-horizontal }"}>\n\t$4\n</form>'
   "Text input":
     prefix:"bootstrap3:input"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Input'
-    body:"""
-      <input ${1:type="$2" }${3:class="${4:form-control }${5:input-${6:lg}}$7" }${8:placeholder="$9" }${10:disabled}>
-      $11
-    """
-
+    body:'<input ${1:type="$2" }${3:class="${4:form-control }${5:input-${6:lg}}$7" }${8:placeholder="$9" }${10:disabled}>\n$11'
   "Textarea input":
     prefix:"bootstrap3:textarea"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Text area'
-    body:"""
-      <textarea ${1:class="form-control$2" }${3:placeholder="$4" }${5:disabled}>$6</textarea>
-      $7
-    """
-
+    body:'<textarea ${1:class="form-control$2" }${3:placeholder="$4" }${5:disabled}>$6</textarea>\n$7'
   "Checkbox input":
     prefix:"bootstrap3:checkbox"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Checkbox'
-    body:"""
-      <div class="checkbox${1:-inline}$2">
-        <label>
-          <input type="checkbox" ${3:name="$4" }${5:value="$5" }${6:checked }${7:disabled}>
-          $8
-        </label>
-      </div>
-      $9
-    """
-
+    body:'<div class="checkbox${1:-inline}$2">\n\t<label>\n\t\t<input type="checkbox" ${3:name="$4" }${5:value="$5" }${6:checked }${7:disabled}>\n\t\t$8\n\t\t</label>\n</div>\n$9'
   "Checkbox input Inline":
     prefix:"bootstrap3:checkboxinline"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Checkbox inline'
-    body:"""
-      <div class="checkbox-inline$1">
-        <label>
-          <input type="checkbox" ${2:name="$3" }${4:value="$5" }${6:checked }${7:disabled}>
-          $8
-        </label>
-      </div>
-      $8
-    """
-
+    body:'<div class="checkbox-inline$1">\n\t<label>\n\t\t<input type="checkbox" ${2:name="$3" }${4:value="$5" }${6:checked }${7:disabled}>\n\t\t$8\n\t</label>\n</div>\n$8'
   "Radio input":
     prefix:"bootstrap3:radio"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Radio button'
-    body:"""
-      <div class="radio${1:-inline}$2">
-        <label>
-          <input type="radio" ${3:name="$4" }${5:value="$5" }${6:checked }${7:disabled}>
-          $8
-        </label>
-      </div>
-      $9
-    """
-
+    body:'<div class="radio${1:-inline}$2">\n\t<label>\n\t\t<input type="radio" ${3:name="$4" }${5:value="$5" }${6:checked }${7:disabled}>\n\t\t$8\n\t</label>\n</div>\n$9'
   "Inline Radio input":
     prefix:"bootstrap3:radioinline"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Radio button inline'
-    body:"""
-      <div class="radio-inline$1">
-        <label>
-        <input type="radio" ${2:name="$3" }${4:value="$5" }${6:checked }${7:disabled}>
-          $7
-        </label>
-      </div>
-      $8
-    """
-
+    body:'<div class="radio-inline$1">\n\t<label>\n\t<input type="radio" ${2:name="$3" }${4:value="$5" }${6:checked }${7:disabled}>\n\t\t$7\n\t</label>\n</div>\n$8'
   "Select input":
     prefix:"bootstrap3:select"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Select input'
-    body:"""
-      <select${1: class="form-control$2"}${3: disabled}>
-        $4
-      </select>
-      $5
-    """
-
+    body:'<select${1: class="form-control$2"}${3: disabled}>\n\t$4\n</select>\n$5'
   "Fieldset":
     prefix:"bootstrap3:fieldset"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Fieldset'
-    body:"""
-      <fieldset${1: class="$2"}>
-        $3
-      </fieldset>
-      $4
-    """
-
+    body:'<fieldset${1: class="$2"}>\n\t$3\n</fieldset>\n$4'
   "Button":
     prefix:"bootstrap3:button"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#7952b3">Bootstrap 3</span> Button'
-    body:"""
-      <button type="${1:submit}"${2: class="${3:btn }${4:btn-${5:lg} }${6:btn-${7:default} }$8"}>$9</button>
-      $10
-    """
+    body:'<button type="${1:submit}"${2: class="${3:btn }${4:btn-${5:lg} }${6:btn-${7:default} }$8"}>$9</button>\n$10'
