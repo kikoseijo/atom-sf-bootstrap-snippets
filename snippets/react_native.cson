@@ -14,3 +14,8 @@
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#26DAFE">RN</span> React Native State declaration initialization'
     body: "state = {\n\t${1}: ${2:[]},\n\t${3}\n}"
+  'React Native setState Inline':
+    prefix: 'rn:set-state-inline'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#26DAFE">RN</span> React Native State declaration initialization'
+    body: "this.setState({$1:$2})$3"
