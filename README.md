@@ -34,6 +34,7 @@ Input | Shortcut | Result
 
 Here are some of the libraries used, and the shortcodes to bring them all in your screen.
 
+
 |----------------------|-----------------------|
 |      Input           |      Shortcut         |
 |----------------------|-----------------------|
@@ -43,18 +44,19 @@ Here are some of the libraries used, and the shortcodes to bring them all in you
 | **Bulma**            | `bulma:hero`          |
 | **{N}**              | `tns:dragab`          |
 | **CSS**              | `css:media-calls`     |
-| **React-Native**     | `rn:class-component`     |
+| **React-Native**     | `rn:class-component`  |
 | **NativeBase**       | `rnb:container`       |
 |----------------------|-----------------------|
 
 
+
 ## Credits:
 
-# [Sunnyface.com](https://sunnyface.com "Programador ios málaga Marbella")
-# [GestorApp.com](https://gestorapp.com "Gestor de aplicaciones moviles en málaga, mijas, marbella")
-# [SosVecinos.com](https://sosvecinos.com "Plataforma móvil para la gestion de comunidades")
-# [KikoSeijo.com](https://kikoseijo.com "Programador freelance movil y Laravel")
-# [Laravel.com](https://laravel.com "PHP Artisan, gives us fast development framework")
+#### [Sunnyface.com](https://sunnyface.com "Programador ios málaga Marbella")
+#### [GestorApp.com](https://gestorapp.com "Gestor de aplicaciones moviles en málaga, mijas, marbella")
+##### [SosVecinos.com](https://sosvecinos.com "Plataforma móvil para la gestion de comunidades")
+##### [KikoSeijo.com](https://kikoseijo.com "Programador freelance movil y Laravel")
+##### [Laravel.com](https://laravel.com "PHP Artisan, gives us fast development framework")
 
 ## Changelog
 
