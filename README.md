@@ -38,6 +38,7 @@ Here are some of the libraries used, and the shortcodes to bring them all in you
 | Input                | Shortcut
 |----------------------|------------------------------------
 | **Collective**       | `boo:form`
+| **Emmet**            | `emm:table`
 | **PHP**              | `php:interface`
 | **Laravel**          | `lara:layout`
 | **Bulma**            | `bulma:hero`
@@ -45,6 +46,8 @@ Here are some of the libraries used, and the shortcodes to bring them all in you
 | **CSS**              | `css:media-calls`
 | **React-Native**     | `rn:class-component`
 | **NativeBase**       | `rnb:container`
+| **ES6**              | `import-axios`
+| **Typescript**       | `ts:model-class`
 
 
 
@@ -54,7 +57,7 @@ Here are some of the libraries used, and the shortcodes to bring them all in you
 [GestorApp.com](https://gestorapp.com "Gestor de aplicaciones moviles en málaga, mijas, marbella")
 [SosVecinos.com](https://sosvecinos.com "Plataforma móvil para la gestion de comunidades")
 [KikoSeijo.com](https://kikoseijo.com "Programador freelance movil y Laravel")
-[Laravel.com](https://laravel.com "PHP Artisan, gives us fast development framework")  
+[Laravel.com](https://laravel.com "PHP Artisan, gives us fast development framework")
 
 ## Changelog
 
