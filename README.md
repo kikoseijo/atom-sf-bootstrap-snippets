@@ -1,6 +1,11 @@
+# Atom snippets for developpers
+
+This plugins aims to save development time by adding some clever shortcuts to your atom text editor.
+By using this library you will be faster, close to speed light.
 
 
 ## Installation
+
 ### GUI
 
 Puedes hacerlo a través del interface GUI (`Preferencias > Instalar`) y busca el paquete 'bootstrap-3-snippets-for-atom'
@@ -22,7 +27,7 @@ Como ciertos comandos necesitan otros plugins de atom lo mejor es cargar primero
 
 Después tienes que reiniciar Atom para que los cambios surgan efecto.
 
-## Emmet completion Shortcut
+##### Emmet example of completion
 
 To be able to run this emmet completion shortcuts you need to have [Emmet Plugin](https://github.com/emmetio/emmet-atom) installed.
 
@@ -30,7 +35,7 @@ Input | Shortcut | Result
 ------|----------|-----------
 **Bootstrap table** | `emm:table` | table.table.table-striped.table-bordered>(thead>tr>th*6)+(tbody>tr>td*6)
 
-## Examples
+## Snippets categories
 
 Here are some of the libraries used, and the shortcodes to bring them all in your screen.
 
@@ -50,34 +55,40 @@ Here are some of the libraries used, and the shortcodes to bring them all in you
 | **Typescript**       | `ts:model-class`
 
 
-
+---
 ## Credits:
 
-* [Sunnyface.com](https://sunnyface.com "Programador ios málaga Marbella")
-. [GestorApp.com](https://gestorapp.com "Gestor de aplicaciones moviles en málaga, mijas, marbella")
-- [SosVecinos.com](https://sosvecinos.com "Plataforma móvil para la gestion de comunidades")
-> [KikoSeijo.com](https://kikoseijo.com "Programador freelance movil y Laravel")
-_ [Laravel.com](https://laravel.com "PHP Artisan, gives us fast development framework")
+>  [Sunnyface.com](https://sunnyface.com "Programador ios málaga Marbella") Web development
 
+> [GestorApp.com](https://gestorapp.com "Gestor de aplicaciones moviles en málaga, mijas, marbella") Mobile aplications
+
+> [SosVecinos.com](https://sosvecinos.com "Plataforma móvil para la gestion de comunidades") Residents mobile application
+
+> [KikoSeijo.com](https://kikoseijo.com "Programador freelance movil y Laravel") Freelance senior programmer
+
+---
 ## Changelog
 
-16.nov.2017
+
+
+
+###### 16.nov.2017
 - Updated readme.
 
-10.nov.2017
+###### 10.nov.2017
 - Added React Native.
 - Added React NativeBase.
 
-20.oct.2017
+###### 20.oct.2017
 - Updated readme.
 
-****** (Missing data) ******
+###### ...
 
-7.nov.2016
+###### 7.nov.2016
 - Initial commit.
 
 
-
+---
 
 
 ![logo]
