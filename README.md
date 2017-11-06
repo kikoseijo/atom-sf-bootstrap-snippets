@@ -1,12 +1,13 @@
 
 
-## Instalación por GUI
+## Installation
+### GUI
 
 Puedes hacerlo a través del interface GUI (`Preferencias > Instalar`) y busca el paquete 'bootstrap-3-snippets-for-atom'
 
 > Added [Bulma.io](http://bulma.io)
 
-## Instalación por consola de comandos
+### Command line
 
 Como ciertos comandos necesitan otros plugins de atom lo mejor es cargar primeros las dependencias:
 
@@ -28,14 +29,14 @@ Después tienes que reiniciar Atom para que los cambios surgan efecto.
 To be able to run this emmet completion shortcuts you need to have [Emmet Plugin](https://github.com/emmetio/emmet-atom) installed.
 
 Input | Shortcut | Result
----|---|---
+------|----------|-----------
 **Bootstrap table** | `emm:table` | table.table.table-striped.table-bordered>(thead>tr>th*6)+(tbody>tr>td*6)
 
 
 
 ### Examples
 
-Here are some of the libraries used, and the shortcode to pull all the diferent snippets.
+Here are some of the libraries used, and the shortcodes to bring them all in your screen.
 
 |----------------------|-----------------------|
 |      Input           |      Shortcut         |
@@ -57,9 +58,8 @@ Here are some of the libraries used, and the shortcode to pull all the diferent 
 # [GestorApp.com](https://gestorapp.com "Gestor de aplicaciones moviles en málaga, mijas, marbella")
 # [SosVecinos.com](https://sosvecinos.com "Plataforma móvile para la gestion de comunidades")
 
+
 ![logo]
-
-
 
 
 [logo]: https://sunnyface.com/images/logo.png "Desarrollo nativo para móviles y API REST"
