@@ -33,23 +33,29 @@ Input | Shortcut | Result
 
 
 
-### Fromulario + Formulario con Modelo
+### Examples
 
-|------------------|-------------------|
-|      Input       |      Shortcut     |
-|------------------|-------------------|
-| **Collective**   | `boo:form`        |
-| **PHP**          | `php:interface`   |
-| **Laravel**      | `lara:layout`     |
-| **Bulma**        | `bulma:hero`      |
-| **{N}**          | `tns:dragab`      |
-| **CSS**          | `css:media-calls` |
-|------------------|-------------------|
+Here are some of the libraries used, and the shortcode to pull all the diferent snippets.
 
-//TODO:
-add more documentation.
+|----------------------|-----------------------|
+|      Input           |      Shortcut         |
+|----------------------|-----------------------|
+| **Collective**       | `boo:form`            |
+| **PHP**              | `php:interface`       |
+| **Laravel**          | `lara:layout`         |
+| **Bulma**            | `bulma:hero`          |
+| **{N}**              | `tns:dragab`          |
+| **CSS**              | `css:media-calls`     |
+| **React-Native**     | `rn:class-component`     |
+| **NativeBase**       | `rnb:container`       |
+|----------------------|-----------------------|
 
-# [By the Sunnyface.com Team.](https://www.sunnyface.com "Programador ios málaga Marbella")
+
+## Credits:
+
+# [Sunnyface.com](https://sunnyface.com "Programador ios málaga Marbella")
+# [GestorApp.com](https://gestorapp.com "Gestor de aplicaciones moviles en málaga, mijas, marbella")
+# [SosVecinos.com](https://sosvecinos.com "Plataforma móvile para la gestion de comunidades")
 
 ![logo]
 
