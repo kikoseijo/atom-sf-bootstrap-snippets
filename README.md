@@ -5,8 +5,6 @@
 
 Puedes hacerlo a través del interface GUI (`Preferencias > Instalar`) y busca el paquete 'bootstrap-3-snippets-for-atom'
 
-> Added [Bulma.io](http://bulma.io)
-
 ### Command line
 
 Como ciertos comandos necesitan otros plugins de atom lo mejor es cargar primeros las dependencias:
@@ -32,9 +30,7 @@ Input | Shortcut | Result
 ------|----------|-----------
 **Bootstrap table** | `emm:table` | table.table.table-striped.table-bordered>(thead>tr>th*6)+(tbody>tr>td*6)
 
-
-
-### Examples
+## Examples
 
 Here are some of the libraries used, and the shortcodes to bring them all in your screen.
 
@@ -56,7 +52,29 @@ Here are some of the libraries used, and the shortcodes to bring them all in you
 
 # [Sunnyface.com](https://sunnyface.com "Programador ios málaga Marbella")
 # [GestorApp.com](https://gestorapp.com "Gestor de aplicaciones moviles en málaga, mijas, marbella")
-# [SosVecinos.com](https://sosvecinos.com "Plataforma móvile para la gestion de comunidades")
+# [SosVecinos.com](https://sosvecinos.com "Plataforma móvil para la gestion de comunidades")
+# [KikoSeijo.com](https://kikoseijo.com "Programador freelance movil y Laravel")
+# [Laravel.com](https://laravel.com "PHP Artisan, gives us fast development framework")
+
+## Changelog
+
+16.nov.2017
+- Updated readme.
+
+10.nov.2017
+- Added React Native.
+- Added React NativeBase.
+
+20.oct.2017
+- Updated readme.
+
+****** (Missing data) ******
+
+7.nov.2016
+- Initial commit.
+
+
+
 
 
 ![logo]
