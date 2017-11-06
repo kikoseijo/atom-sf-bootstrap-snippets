@@ -1,4 +1,4 @@
-# Atom snippets for developpers
+XXXXXXXX"# Atom snippets for developpers
 
 This plugins aims to save development time by adding some clever shortcuts to your atom text editor.
 By using this library you will be faster, close to speed light.
@@ -6,11 +6,11 @@ By using this library you will be faster, close to speed light.
 
 ## Installation
 
-### GUI
+#### GUI
 
-Puedes hacerlo a través del interface GUI (`Preferencias > Instalar`) y busca el paquete 'bootstrap-3-snippets-for-atom'
+Open atom and go to settings (***&#8984;,***) and click on install package and search for `bootstrap-3-snippets-for-atom`, install the plugin and restart atom (***&#x2303;&#x2325;&#x2318;L***)
 
-### Command line
+#### Command line
 
 Como ciertos comandos necesitan otros plugins de atom lo mejor es cargar primeros las dependencias:
 
@@ -53,6 +53,24 @@ Here are some of the libraries used, and the shortcodes to bring them all in you
 | **NativeBase**       | `rnb:container`
 | **ES6**              | `import-axios`
 | **Typescript**       | `ts:model-class`
+
+## what you get
+
+![PHP](/res/php.png?raw=true "PHP")
+
+![bootstrap3](/res/bootstrap3.png?raw=true "bootstrap3")
+
+![Bulma](/res/bulma.png?raw=true "Bulma")
+
+![ES6](/res/es6.png?raw=true "ES6")
+
+![Laravel](/res/laravel.png?raw=true "Laravel")
+
+![react-native](/res/react-native.png?raw=true "React-Native")
+
+![NativeBase](/res/react.png?raw=true "NativeBase")
+
+
 
 
 ---
