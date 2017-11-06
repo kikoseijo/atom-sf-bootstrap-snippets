@@ -1,4 +1,4 @@
-XXXXXXXX"# Atom snippets for developpers
+# Atom snippets for web artisans
 
 This plugins aims to save development time by adding some clever shortcuts to your atom text editor.
 By using this library you will be faster, close to speed light.
@@ -112,4 +112,4 @@ Here are some of the libraries used, and the shortcodes to bring them all in you
 ![logo]
 
 
-[logo]: https://sunnyface.com/images/logo.png "Desarrollo nativo para móviles y API REST"
+[logo]: https://sunnyface.com/images/logo.png
