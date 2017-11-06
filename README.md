@@ -35,18 +35,16 @@ Input | Shortcut | Result
 Here are some of the libraries used, and the shortcodes to bring them all in your screen.
 
 
-|----------------------|-----------------------|
-|      Input           |      Shortcut         |
-|----------------------|-----------------------|
-| **Collective**       | `boo:form`            |
-| **PHP**              | `php:interface`       |
-| **Laravel**          | `lara:layout`         |
-| **Bulma**            | `bulma:hero`          |
-| **{N}**              | `tns:dragab`          |
-| **CSS**              | `css:media-calls`     |
-| **React-Native**     | `rn:class-component`  |
-| **NativeBase**       | `rnb:container`       |
-|----------------------|-----------------------|
+| Input                | Shortcut
+|----------------------|------------------------------------
+| **Collective**       | `boo:form`
+| **PHP**              | `php:interface`
+| **Laravel**          | `lara:layout`
+| **Bulma**            | `bulma:hero`
+| **{N}**              | `tns:dragab`
+| **CSS**              | `css:media-calls`
+| **React-Native**     | `rn:class-component`
+| **NativeBase**       | `rnb:container`
 
 
 
