@@ -54,7 +54,7 @@ Here are some of the libraries used, and the shortcodes to bring them all in you
 [GestorApp.com](https://gestorapp.com "Gestor de aplicaciones moviles en málaga, mijas, marbella")
 [SosVecinos.com](https://sosvecinos.com "Plataforma móvil para la gestion de comunidades")
 [KikoSeijo.com](https://kikoseijo.com "Programador freelance movil y Laravel")
-[Laravel.com](https://laravel.com "PHP Artisan, gives us fast development framework")
+[Laravel.com](https://laravel.com "PHP Artisan, gives us fast development framework")  
 
 ## Changelog
 
