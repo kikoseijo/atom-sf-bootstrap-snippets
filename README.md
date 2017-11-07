@@ -42,7 +42,7 @@ Here are some of the libraries used, and the shortcodes to bring them all in you
 
 | Input                | Shortcut
 |----------------------|------------------------------------
-| **Collective**       | `boo:form`
+| **Collective**       | `form:input`
 | **Emmet**            | `emm:table`
 | **PHP**              | `php:interface`
 | **Laravel**          | `lara:layout`
