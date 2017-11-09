@@ -11,6 +11,7 @@
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#f4645f">Laravel</span> Repository'
     body: "<?php namespace App\\\\Repositories;\n\nuse App\\\\Contracts\\\\Repositories\\\\${1:Name}Repository as ${1:Name}Contract;\nuse App\\\\Models\\\\${2:Model};\n\nclass ${1:Name}Repository implements ${1:Name}Contract\n{\n\t/**\n\t* {@inheritdoc}\n\t*/\n\tpublic function recent()\n\t{\n\t\treturn ${2:Model}::orderBy('id', 'desc')->get();\n\t}\n\n\t$3\n }"
+
   'Log::error()':
     prefix: 'Log::error'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
