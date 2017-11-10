@@ -7,7 +7,7 @@
   "Flexbox - align-content: flex-start;":
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#4A90E2'>Flexbox</span> align-content: flex-start"
-    prefix: "flexbox:flexcont"
+    prefix: "flexbox:align-content"
     body: "align-content: ${1:flex-start|flex-end|center|space-between|space-around|stretch};"
   "Flexbox - align-items: flex-start;":
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
