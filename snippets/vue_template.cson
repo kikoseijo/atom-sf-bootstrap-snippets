@@ -1,11 +1,12 @@
 '.text.html.vue':
+
   'Vue: Blank template ':
     prefix: 'vue:template'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
-    rightLabelHTML: '<span style="color:#42b983">Vue</span> Blank template'
+    rightLabelHTML: '<span style="color:#42b983">Vue</span> Blank template (module.exports)'
     body: '<template>\n\t<div>\n\t\tHello im module: {{ moduleName }}\n\t</div>\n</template>\n\n<script>\nmodule.exports = {\n\tdata () {\n\t\treturn {\n\t\t\tmoduleName: \'$1\'\n\t\t}\n\t}\n}\n</script>\n\n<style>\n</style>\n'
   'Vue: Blank template - (async component)':
     prefix: 'vue:template-async-component'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
-    rightLabelHTML: '<span style="color:#42b983">Vue</span> Blank template - (async component)'
+    rightLabelHTML: '<span style="color:#42b983">Vue</span> Blank template - (export default)'
     body: '<template>\n\t<div>\n\t\tHello im module: {{ moduleName }}\n\t</div>\n</template>\n\n<script>\nexport default {\n\tdata () {\n\t\treturn {\n\t\t\tmoduleName: \'$1\'\n\t\t}\n\t}\n}\n</script>\n\n<style>\n</style>\n'
