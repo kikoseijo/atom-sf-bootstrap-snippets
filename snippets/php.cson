@@ -5,7 +5,7 @@
     rightLabelHTML: '<span style="color:#4A90E2">PHP</span> public function __construct'
     body: 'public function __construct(${1:Request} $${2:request})\n{\n\t$this->${2:request} = $${2:request};\n}'
   'PHP: Full array definition':
-    prefix: 'php:arrayFull'
+    prefix: 'php:array-definition-with-name'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#4A90E2">PHP</span> arrayName = [key => value];'
     body: '$${1:arrayName} = ["${1:name}" => "${2:value}"];'
