@@ -1,4 +1,5 @@
 '.source.js':
+
   'React Native Component Class':
     prefix: 'rn:class-component'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
