@@ -20,22 +20,22 @@
     rightLabelHTML: '<span style="color:#4A90E2">PHP</span> array => [ arra => value ]'
     body: "'${1:key}' => [\n\t'${2:key}' => '${3:value}',$4\n],"
   'PHP: Trait declaration':
-    prefix: 'php:Trait'
+    prefix: 'php:trait-declaration'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#4A90E2">PHP</span> Trait'
     body: '<?php namespace App\\\\Traits;\n\n/**\n* Trait ${1:TraitName}.\n*/\ntrait ${1:TraitName}\n{\n\t$2\n}'
   'PHP: interface Contract':
     prefix: 'php:Contract'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
-    rightLabelHTML: '<span style="color:#4A90E2">PHP</span> Interface'
+    rightLabelHTML: '<span style="color:#4A90E2">PHP</span> Contract'
     body: '<?php namespace App\\\\Contracts\\\\${1:Repositories};\n\n/**\n* Contract ${2:ContractName}...\n*/\ninterface ${2:ContractName}\n{\n\t$3\n}'
   'PHP: public function declaration':
     prefix: 'php:public-function-declaration'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
-    rightLabelHTML: '<span style="color:#4A90E2">PHP</span> Interface'
+    rightLabelHTML: '<span style="color:#4A90E2">PHP</span> public function()'
     body: 'public function ${1:functionName}($2)\n{\n\t$3\n}'
   'PHP: protected function declaration':
     prefix: 'php:protected-function-declaration'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
-    rightLabelHTML: '<span style="color:#4A90E2">PHP</span> Interface'
+    rightLabelHTML: '<span style="color:#4A90E2">PHP</span> protected function'
     body: 'protected function ${1:functionName}($2)\n{\n\t$3\n}'
