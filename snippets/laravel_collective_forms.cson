@@ -149,7 +149,7 @@
     rightLabelHTML: '<span style="color:#f4645f">Boostrap + Form::</span><span style="color:#07a">number</span>'
     body: """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
-            {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
+            {!! Form::label(\'${1:inputname}\', \'${2:Inputlabel}\') !!}
             {!! Form::number(\'${1:inputname}\',${3: null}, [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}
             <small class="text-danger">{{ \$errors->first(\'${1:inputname}\') }}</small>
         </div>
@@ -161,7 +161,7 @@
     rightLabelHTML: '<span style="color:#f4645f">Boostrap + Form::</span><span style="color:#07a">number</span> - h'
     body: """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
-            {!! Form::label(\'${1:inputname}\', \'${2:Input label}\', [\'class\' => \'${5:col-sm-3 control-label}\']) !!}
+            {!! Form::label(\'${1:inputname}\', \'${2:Inputlabel}\', [\'class\' => \'${5:col-sm-3 control-label}\']) !!}
             <div class="${6:col-sm-9}">
                 {!! Form::number(\'${1:inputname}\',${3: null}, [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}
                 <small class="text-danger">{{ \$errors->first(\'${1:inputname}\') }}</small>
@@ -218,7 +218,7 @@
     rightLabelHTML: '<span style="color:#f4645f">Boostrap + Form::</span><span style="color:#07a">select</span>'
     body: """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
-            {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
+            {!! Form::label(\'${1:inputname}\', \'${2:Inputlabel}\') !!}
             {!! Form::select(\'${1:inputname}\',${3: \$options},${4: \\$selected_value}, [\'class\' => \'form-control\'${5:, \'required\' => \'required\'}${6:, \'multiple\'}]) !!}
             <small class="text-danger">{{ \\$errors->first(\'${1:inputname}\') }}</small>
         </div>
@@ -230,7 +230,7 @@
     rightLabelHTML: '<span style="color:#f4645f">Boostrap + Form::</span><span style="color:#07a">select</span> - h'
     body: """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
-            {!! Form::label(\'${1:inputname}\', \'${2:Input label}\', [\'class\' => \'${7:col-sm-3 control-label}\']) !!}
+            {!! Form::label(\'${1:inputname}\', \'${2:Inputlabel}\', [\'class\' => \'${7:col-sm-3 control-label}\']) !!}
             <div class="${8:col-sm-9}">
                 {!! Form::select(\'${1:inputname}\',${3: \$options},${4: \\$selected_value}, [\'class\' => \'form-control\'${5:, \'required\' => \'required\'}${6:, \'multiple\'}]) !!}
                 <small class="text-danger">{{ \\$errors->first(\'${1:inputname}\') }}</small>
@@ -270,7 +270,7 @@
     rightLabelHTML: '<span style="color:#f4645f">Boostrap + Form::</span><span style="color:#07a">selectRange</span>'
     body: """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
-            {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
+            {!! Form::label(\'${1:inputname}\', \'${2:Inputlabel}\') !!}
             {!! Form::selectRange(\'${1:inputname}\', ${3:0}, ${4:10}, [\'class\' => \'form-control\'${5:, \'required\' => \'required\'}]) !!}
             <small class="text-danger">{{ \$errors->first(\'${1:inputname}\') }}</small>
         </div>
@@ -322,8 +322,8 @@
     rightLabelHTML: '<span style="color:#f4645f">Boostrap + Form::</span><span style="color:#07a">text</span>'
     body: """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
-            {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
-            {!! Form::text(\'${1:inputname}\',${3: null,} [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}
+            {!! Form::label(\'${1:inputname}\', \'${2:Inputlabel}\') !!}
+            {!! Form::text(\'${1:inputname}\',${3:null}, [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}
             <small class="text-danger">{{ \$errors->first(\'${1:inputname}\') }}</small>
         </div>
     """
@@ -334,9 +334,9 @@
     rightLabelHTML: '<span style="color:#f4645f">Boostrap + Form::</span><span style="color:#07a">text</span> - h'
     body: """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
-            {!! Form::label(\'${1:inputname}\', \'${2:Input}\', [\'class\' => \'${5:col-sm-3 control-label}\']) !!}
+            {!! Form::label(\'${1:inputname}\', \'${2:Inputlabel}\', [\'class\' => \'${5:col-sm-3 control-label}\']) !!}
             <div class="${6:col-sm-9}">
-                {!! Form::text(\'${1:inputname}\',${3: null,} [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}
+                {!! Form::text(\'${1:inputname}\',${3:null}, [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}
                 <small class="text-danger">{{ \$errors->first(\'${1:inputname}\') }}</small>
             </div>
         </div>
@@ -348,8 +348,8 @@
     rightLabelHTML: '<span style="color:#f4645f">Boostrap + Form::</span><span style="color:#07a">textarea</span>'
     body: """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
-            {!! Form::label(\'${1:inputname}\', \'${2:Input label}\') !!}
-            {!! Form::textarea(\'${1:inputname}\',${3: null,} [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}
+            {!! Form::label(\'${1:inputname}\', \'${2:Inputlabel}\') !!}
+            {!! Form::textarea(\'${1:inputname}\',${3:null}, [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}
             <small class="text-danger">{{ \$errors->first(\'${1:inputname}\') }}</small>
         </div>
     """
@@ -360,9 +360,9 @@
     rightLabelHTML: '<span style="color:#f4645f">Boostrap + Form::</span><span style="color:#07a">textarea</span> - h'
     body: """
         <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
-            {!! Form::label(\'${1:inputname}\', \'${2:Input}\', [\'class\' => \'${5:col-sm-3 control-label}\']) !!}
+            {!! Form::label(\'${1:inputname}\', \'${2:Inputlabel}\', [\'class\' => \'${5:col-sm-3 control-label}\']) !!}
             <div class="${6:col-sm-9}">
-                {!! Form::textarea(\'${1:inputname}\',${3: null,} [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}
+                {!! Form::textarea(\'${1:inputname}\',${3:null}, [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}
                 <small class="text-danger">{{ \$errors->first(\'${1:inputname}\') }}</small>
             </div>
         </div>
