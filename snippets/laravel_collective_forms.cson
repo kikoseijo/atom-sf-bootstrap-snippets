@@ -346,13 +346,7 @@
     prefix: 'form:textarea'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#f4645f">Boostrap + Form::</span><span style="color:#07a">textarea</span>'
-    body: """
-        <div class="form-group{{ \$errors->has('${1:inputname}') ? ' has-error' : '' }}">
-            {!! Form::label(\'${1:inputname}\', \'${2:Inputlabel}\') !!}
-            {!! Form::textarea(\'${1:inputname}\',${3:null}, [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}
-            <small class="text-danger">{{ \$errors->first(\'${1:inputname}\') }}</small>
-        </div>
-    """
+    body: '<div class="form-group{{ \$errors->has(\'${1:inputname}\') ? \' has-error\' : \'\' }}">\n\t{!! Form::label(\'${1:inputname}\', \'${2:Inputlabel}\') !!}\n\t{!! Form::textarea(\'${1:inputname}\',${3:null}, [\'class\' => \'form-control\'${4:, \'required\' => \'required\'}]) !!}\n\t<small class="text-danger">{{ \$errors->first(\'${1:inputname}\') }}</small>\n</div>\n'
 
   'textarea h':
     prefix: 'form:horizontal_textarea'
