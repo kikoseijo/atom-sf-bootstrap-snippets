@@ -18,6 +18,12 @@
     prefix: 'emm:columns_bulma'
     body:'.columns>.column*${1:6}'
 
+  'Emmet ul.nav.nav-tabs':
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#4A90E2">Emmet</span> ul.nav.nav-tabs'
+    prefix: 'emm:tabs-bootstrap'
+    body:'ul.nav.nav-tabs[role="tablist"]>(li[role="presentation"].active>a[href="#tab_$"][aria-controls="tab_$"][role="tab"][data-toggle="tab"]{Tab_Item_$})*3${1}\n.tab-content>(div[role="tabpanel"].tab-pane.active#tab_$)*3${2}'
+
   'Emmet .bootsstrap jumbotron':
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#4A90E2">Emmet</span> .columns>.column*'
