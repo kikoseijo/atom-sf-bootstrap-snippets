@@ -17,3 +17,21 @@
     rightLabelHTML: '<span style="color:#4A90E2">Emmet</span> .columns>.column*'
     prefix: 'emm:columns_bulma'
     body:'.columns>.column*${1:6}'
+
+  'Emmet .bootsstrap jumbotron':
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#4A90E2">Emmet</span> .columns>.column*'
+    prefix: 'emm:jumbotron'
+    body:'div.jumbotron.text-center>h1+p+a#go-button.btn.btn-danger'
+
+  'Emmet 2 column - information':
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#4A90E2">Emmet</span> .columns>.column*'
+    prefix: 'emm:two_column_information'
+    body:'div.row.text-center>(div.col-sm-4>div.info-box>span.glyphicon.glyphicon-fire+h2{Lions}+p)+(div.col-sm-8>div.info-box>span.glyphicon.glyphicon-send+h2{Emmet}+p)'
+
+  'Emmet .panel-group#accordion':
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#4A90E2">Emmet</span> .panel-group#accordion....'
+    prefix: 'emm:bootstrap-accordion'
+    body:'.panel-group#accordion-${1:NAME}[role="tablist"][aria-multiselectable="true"]>.panel.panel-default>.panel-heading[role="tab"]#${1:NAME}-heading-\$>h4.panel-title>a.accordion-toggle[data-toggle="collapse"][data-parent="#accordion-${1:NAME}"][href="#${1:NAME}-collapse-\$"][aria-expanded="true"][aria-controls="${1:NAME}-collapse-\$"]\{Heading text ${2:\$\$\$}\}^^#${1:NAME}-collapse-\$.panel-collapse.collapse.in[role="tabpanel"][aria-labelledby="${1:NAME}-heading-\$"]>.panel-body>\{Body text ${2:\$\$\$}\}^^^(.panel.panel-default>.panel-heading[role="tab"]#${1:NAME}-heading-\$@2>h4.panel-title>a.accordion-toggle.collapsed[data-toggle="collapse"][data-parent="#accordion-${1:NAME}"][href="#${1:NAME}-collapse-\$@2"][aria-expanded="false"][aria-controls="${1:NAME}-collapse-\$@2"]\{Heading text ${2:\$\$\$}@2\}>i.fa.fa-chevron-right.pull-right+i.fa.fa-chevron-down.pull-right^^^#${1:NAME}-collapse-\$@2.panel-collapse.collapse[role="tabpanel"][aria-labelledby="${1:NAME}-heading-\$@2"]>.panel-body>\{Body text ${2:\$\$\$}@2\})*${3:3}'
