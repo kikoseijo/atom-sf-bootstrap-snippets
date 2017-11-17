@@ -1,0 +1,7 @@
+'.text.html.vue':
+
+  'Vue: Element-UI menu ':
+    prefix: 'vue:el-menu'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#42b983">Vue</span> Element UI - el-menu'
+    body: '<el-menu\n\t:default-active="activeIndex2"\n\tclass="el-menu-demo"\n\tmode="horizontal"\n\t@select="handleSelect"\n\tbackground-color="#545c64"\n\ttext-color="#fff"\n\tactive-text-color="#ffd04b">\n\t<el-menu-item index="1">Processing Center</el-menu-item>\n\t<el-submenu index="2">\n\t\t<template slot="title">Workspace</template>\n\t\t<el-menu-item index="2-1">item one</el-menu-item>\n\t\t<el-menu-item index="2-2">item two</el-menu-item>\n\t\t<el-menu-item index="2-3">item three</el-menu-item>\n\t</el-submenu>\n\t<el-menu-item index="3"><a href="https://www.ele.me" target="_blank">Orders</a></el-menu-item>\n</el-menu>'
