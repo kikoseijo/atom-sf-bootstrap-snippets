@@ -38,6 +38,7 @@ Input | Shortcut | Result
 ## Snippets categories
 
 Here are some of the libraries used, and the shortcodes to bring them all in your screen.
+This are just some examples, there are many more commands you can use, list will show when you start typing.
 
 
 | Input                | Shortcut
@@ -55,6 +56,8 @@ Here are some of the libraries used, and the shortcodes to bring them all in you
 | **Typescript**       | `ts:model-class`
 
 ## what you get
+
+Here are some sample commands, list grows over time.
 
 ![PHP](/res/php.png?raw=true "PHP")
 
