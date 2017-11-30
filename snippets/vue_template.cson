@@ -10,3 +10,44 @@
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#42b983">Vue</span> Blank template - (export default)'
     body: '<template>\n\t<div>\n\t\tHello im module: {{ moduleName }}\n\t</div>\n</template>\n\n<script>\nexport default {\n\tdata () {\n\t\treturn {\n\t\t\tmoduleName: \'$1\'\n\t\t}\n\t}\n}\n</script>\n\n<style>\n</style>\n'
+
+  'Vue: data()':
+    prefix: 'vData'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#42b983">Vue</span> data: Object | Function'
+    body: 'data: {\n\treturn {\n\t\t$1\n\t}\n},'
+  'Vue: props':
+    prefix: 'vData'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#42b983">Vue</span> props: Array<string> | Object'
+    body: 'props: {\n\t$1\n},'
+  'Vue: propsData()':
+    prefix: 'vPropsData'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#42b983">Vue</span> propsData: { [key: string]: any }'
+    body: 'propsData:  {\n\t$1\n},'
+  'Vue: methods()':
+    prefix: 'vMethods'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#42b983">Vue</span> methods: { [key: string]: Function }'
+    body: 'methods: {\n\t${1:functionName}() {\n\t\t$2\n\t}\n},'
+  'Vue: computed()':
+    prefix: 'vComputed'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#42b983">Vue</span> computed: { [key: string]: Function | { get: Function, set: Function } }'
+    body: 'computed: {\n\t${1:functionName()} {\n\t\t$2\n\t}\n},'
+  'Vue: Options Lifecycle':
+    prefix: 'vLifecycle'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#42b983">Vue</span> Lifecycle: beforeCreate|created|beforeMount|mounted|beforeUpdate...'
+    body: '${1:beforeCreate|created|beforeMount|mounted|beforeUpdate|updated|activated|deactivated|beforeDestroy|destroyed|errorCaptured}: (){\n\t$1\n},\n'
+  'Vue: Options Assets':
+    prefix: 'vAssets'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#42b983">Vue</span> Assets: directives|filters|components'
+    body: '${1:directives|filters|components}: {\n\t$2\n},'
+  'Vue: Options / Composition':
+    prefix: 'vComposition'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#42b983">Vue</span> Composition: parent|mixins|extends'
+    body: '${1:this.$parent|mixins:[$2],|extends: $2,}'
