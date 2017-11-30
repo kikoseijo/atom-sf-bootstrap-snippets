@@ -76,8 +76,67 @@ Here are some sample commands, list grows over time.
 
 ### Changelog
 
-***2.9.0***
+***2.9***
+
 - Added VueJs API Options.
+
+***2.8***
+
+- Added [Vue Element](http://element.eleme.io).
+- Vue - async component template.
+- Vue- Basic Template.
+- Import VueJS for ES6
+- Added React [NativeBase](https://nativebase.io) snippets
+- React-native JSX Styles
+- CSS flexbox definitions
+- Added [Axios](https://github.com/axios/axios)
+
+***2.7***
+
+- ES6 snippets.
+
+***2.6***
+
+- NativeScript.
+- React-native components.
+- Laravel var_dump directive.
+- Laravel blade translate directive.
+
+***2.5***
+
+- Enhanced Laravel layout template.
+- NativeScripts templates.
+
+***2.5***
+
+- Apply some fix.
+
+***2.4***
+
+- Apply some fix.
+
+***2.3***
+
+- Enhanced Atom UI Style.
+- Added Laravel repository template.
+
+***2.2***
+
+- Laravel service provider template.
+- PHP Class definitions.
+- Emmet simple columns.
+
+***2.1***
+
+- Added [Bulma.io](https://bulma.io) library snippets.
+
+***2.0***
+
+- Updated help and descriptions.
+- git checkout -b "changelog" -a . -m "Initial commit including a changelog".
+
+
+
 
 ---
 ## Credits:
