@@ -74,7 +74,10 @@ Here are some sample commands, list grows over time.
 ![NativeBase](/res/react.png?raw=true "NativeBase")
 
 
+### Changelog
 
+***2.9.0***
+- Added VueJs API Options.
 
 ---
 ## Credits:
