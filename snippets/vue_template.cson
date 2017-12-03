@@ -17,10 +17,10 @@
     rightLabelHTML: '<span style="color:#42b983">Vue</span> data: Object | Function'
     body: 'data: {\n\treturn {\n\t\t$1\n\t}\n},'
   'Vue: props':
-    prefix: 'vData'
+    prefix: 'vProps'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#42b983">Vue</span> props: Array<string> | Object'
-    body: 'props: {\n\t$1\n},'
+    body: 'props: {\n\t${1:[\'$2\']}\n},'
   'Vue: propsData()':
     prefix: 'vPropsData'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
