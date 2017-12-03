@@ -40,7 +40,7 @@
     prefix: 'vLifecycle'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#42b983">Vue</span> Lifecycle: beforeCreate|created|beforeMount|mounted|beforeUpdate...'
-    body: '${1:beforeCreate|created|beforeMount|mounted|beforeUpdate|updated|activated|deactivated|beforeDestroy|destroyed|errorCaptured}: (){\n\t$2\n},\n'
+    body: '${1:beforeCreate|created|beforeMount|mounted|beforeUpdate|updated|activated|deactivated|beforeDestroy|destroyed|errorCaptured} () {\n\t$2\n},\n'
   'Vue: Options Assets':
     prefix: 'vAssets'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
