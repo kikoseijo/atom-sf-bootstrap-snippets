@@ -4,6 +4,11 @@
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#4A90E2'>LESS</span> media calls"
     body:"@media (min-width: 768px) {\n$i\n}\n@media (min-width: 992px) {\n\n}\n@media (min-width: 1200px) {\n\n}"
+  "CSS Margings Paddings -variable":
+    prefix: "css:margins-paddings"
+    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
+    rightLabelHTML: "<span style='color:#4A90E2'>LESS</span> Margins paddings"
+    body:".m-${1:t} { margin-${2:top}: 15px;}\n.m-${1:t}-10 { margin-${2:top}: 10px;}\n.m-${1:t}-20 { margin-${2:top}: 20px;}\n.m-${1:t}-30 { margin-${2:top}: 30px;}\n.m-${1:t}-40 { margin-${2:top}: 40px;}\n.m-${1:t}-50 { margin-${2:top}: 50px;}\n.p-${1:t} { padding-${2:top}: 15px;}\n.p-${1:t}-10 { padding-${2:top}: 10px;}\n.p-${1:t}-20 { padding-${2:top}: 20px;}\n.p-${1:t}-30 { padding-${2:top}: 30px;}\n.p-${1:t}-40 { padding-${2:top}: 40px;}\n.p-${1:t}-50 { padding-${2:top}: 50px;}"
   "Flexbox - align-content: flex-start;":
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#4A90E2'>Flexbox</span> align-content: flex-start"
