@@ -5,3 +5,8 @@
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#42b983">Vue</span> Element UI - el-menu'
     body: '<el-menu\n\t:default-active="activeIndex2"\n\tclass="el-menu-demo"\n\tmode="horizontal"\n\t@select="handleSelect"\n\tbackground-color="#545c64"\n\ttext-color="#fff"\n\tactive-text-color="#ffd04b">\n\t<el-menu-item index="1">Processing Center</el-menu-item>\n\t<el-submenu index="2">\n\t\t<template slot="title">Workspace</template>\n\t\t<el-menu-item index="2-1">item one</el-menu-item>\n\t\t<el-menu-item index="2-2">item two</el-menu-item>\n\t\t<el-menu-item index="2-3">item three</el-menu-item>\n\t</el-submenu>\n\t<el-menu-item index="3"><a href="#" target="_blank">Orders</a></el-menu-item>\n</el-menu>'
+  'Vue: Element-UI form item + input with errors':
+    prefix: 'vue:el-form-item-input'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#42b983">Vue</span> Element UI - el-form-item + input (with errors)'
+    body: '<el-form-item label="${1:Item Label}">\n\t<el-input v-model="form.$2" :class="{\'input\': true, \'invalid\': errors.has(\'$2\') }"></el-input>\n\t<span v-show="errors.has(\'$2\')" class="help text-danger">{{ errors.first(\'$2\') }}</span>\n</el-form-item>'

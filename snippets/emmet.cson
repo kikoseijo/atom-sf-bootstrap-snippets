@@ -1,4 +1,4 @@
-'.text.html.basic, .text.html.php, .text.html.php.blade':
+'.text.html.basic, .text.html.php, .text.html.php.blade, .text.html.vue':
 
   'Boostrap3 table Emmet Shortcut':
     prefix: 'emm:table'
@@ -35,6 +35,12 @@
     rightLabelHTML: '<span style="color:#4A90E2">Emmet</span> .columns>.column*'
     prefix: 'emm:two_column_information'
     body:'div.row.text-center>(div.col-sm-4>div.info-box>span.glyphicon.glyphicon-fire+h2{Lions}+p)+(div.col-sm-8>div.info-box>span.glyphicon.glyphicon-send+h2{Emmet}+p)'
+
+  'Emmet Bootstrap 2 column - simple':
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#4A90E2">Emmet</span> Bootstrap3 .row>.col-sm-6*2'
+    prefix: 'emm:two_column_simple'
+    body:'div.row>.col-sm-6*2'
 
   'Emmet .panel-group#accordion':
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
