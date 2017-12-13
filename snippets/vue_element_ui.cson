@@ -1,4 +1,4 @@
-'.text.html.vue':
+'.text.html.vue, text.html.basic':
 
   'Vue: Element-UI menu ':
     prefix: 'vue:el-menu'
