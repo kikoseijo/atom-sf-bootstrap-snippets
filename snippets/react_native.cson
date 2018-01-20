@@ -10,6 +10,11 @@
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#26DAFE">RN</span> React Native Pure Component function'
     body: "import React from 'react';\nimport { View, Text, StyleSheet } from 'react-native';\n\nconst ${1:ComponentName} = ($2) => (\n\t<View style={styles.container\\}>\n\t\t<Text>I'm ${1:ComponentName}</Text>\n\t</View>\n);$3\n\nexport default ${1:ComponentName};\n\nconst styles = StyleSheet.create({\n\tcontainer: {\n\t\tflex: 1,\n\t},\n});\n"
+  'React Native Pure Component Class':
+    prefix: 'rn:pure-component'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#26DAFE">RN</span> React Native Pure Component class with props validation'
+    body: "// External ////////////////\nimport React, { PureComponent } from 'react';\nimport PropTypes from 'prop-types';\nimport { View, Text, StyleSheet } from 'react-native';\n\n// Local files ////////////////\n\n\nconst styles = StyleSheet.create({\n  container: {\n    flex: 1,\n  },\n});\n\nexport default class KsListViewSimple extends PureComponent { // esldåint-disable-line\n  static propTypes = {\n    title: PropTypes.string,\n  }\n\n  static defaultProps = {\n    title: 'Hello KsListViewSimple',\n  }\n\n  render() {\n    return (\n      <View style={styles.container}>\n        <Text>{this.props.title}</Text>\n      </View>\n    );\n  }\n}\n"
   'React Native state definition':
     prefix: 'rn:state-initialization-declaration-init'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
@@ -20,3 +25,28 @@
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#26DAFE">RN</span> React Native State declaration initialization'
     body: "this.setState({$1:$2})$3"
+  "React Native: Import PropTypes":
+    prefix: "improps"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#26DAFE">RN</span> Import PropTypes'
+    body: "import PropTypes from 'prop-types';"
+  "React Native: PropTypes":
+    prefix: "rn:props"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#26DAFE">RN</span> PropTypes static version'
+    body: "static propTypes = {\n\thasTabs: PropTypes.bool,\n}\n\nstatic defaultProps = {\n\thasTabs: false,\n}\n"
+  "React Native: StyleSheet":
+    prefix: "rn:StyleSheet"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#26DAFE">RN</span> StyleSheet.create()'
+    body: "const styles = StyleSheet.create({\n\tcontainer: {\n\t\tflex: 1,\n\t},\n});"
+  "React Native: Constructor":
+    prefix: "rn:Constructor"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#26DAFE">RN</span> Constructor'
+    body: "constructor(props) {\n\tsuper(props);\n\tthis.state = {isShowingText: true};\n}"
+  "React Native: Render function":
+    prefix: "rn:Constructor"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#26DAFE">RN</span> Render function'
+    body: "render() {\n\tlet display = this.state.isShowingText ? this.props.text : ' ';\n\treturn (\n\t\t<Text>{display}</Text>\n\t);\n}"
