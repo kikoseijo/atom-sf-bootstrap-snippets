@@ -1,0 +1,13 @@
+'.source.js.jsx':
+
+  'React: functional component':
+    prefix: 're:functional-component'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00DBFC">React</span> functional component'
+    body: "import React from 'react';\n\nconst ${1} = () => {\n  return (\n    <div>\n      <p>Im a functional component</p>\n    </div>\n  );\n};\n\nexport default ${1};"
+
+  'React: class component':
+    prefix: 're:class-component'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#00DBFC">React</span> class component'
+    body: "import React from 'react';\n\nclass ${1} extends React.Component {\n  constructor(props) {\n    super(props);\n    this.handleChange = this.handleChange.bind(this);\n    this.state = {\n      login: ''\n    };\n  }\n\n  render() {\n    return (\n      <div>\n        <button onClick={this.handleChange}>Click me</button>\n      </div>\n    );\n  }\n\n  handleChange(e) {\n    this.setState({ login: e.target.value });\n  }\n}\n\nexport default ${1};"

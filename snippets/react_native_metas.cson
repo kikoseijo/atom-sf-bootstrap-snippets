@@ -1,0 +1,7 @@
+'.tag.jsx':
+
+  'React Native style':
+    prefix: 'style='
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#26DAFE">RN</span> style property'
+    body: "style={styles.${1}}"
