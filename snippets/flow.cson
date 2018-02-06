@@ -1,0 +1,16 @@
+".source.js, .source.jsx, .source.ts, .source.tsx":
+  "flow: Import react + add @flow":
+    prefix: "rflow"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#ffc737">flow</span> @flow + React import;'
+    body: "// @flow\nimport * as React from 'react';"
+  "flow: skeleton for a HOC with props":
+    prefix: "rflowhoc"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#ffc737">flow</span> HOC with props skeleton'
+    body: "// @flow\nimport * as React from 'react';\n\nfunction injectProp<Props: {}>(\n  Component: React.ComponentType<Props>,\n): React.ComponentType<$Diff<Props, { foo: number | void }>> {\n  return function WrapperComponent(props: Props) {\n    return <Component {...props} foo={42} />;\n  };\n}\n\nclass MyComponent extends React.Component<{\n  a: number,\n  b: number,\n  foo: number,\n}> {}\n\nconst MyEnhancedComponent = injectProp(MyComponent);\n\n// We don't need to pass in `foo` even though `MyComponent` requires it.\n<MyEnhancedComponent a={1} b={2} />;"
+  "flow: Class component with props and state Skeleton":
+    prefix: "rflowclassincluded"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#ffc737">flow</span> React.Component<State,Props> skeleton'
+    body: "// @flow\nimport * as React from 'react';\nimport { StyleSheet, View, Text } from 'react-native';\n\ntype Props = {\n  ${2:foo}: number\n};\ntype State = {\n  ${3:bar}: number\n};\n\nclass ${1:MyComponent} extends React.Component<Props, State> {\n  static defaultProps = {\n    ${2:foo}: 42\n  };\n\n  state = {\n    ${3:bar}: 42\n  };\n\n  componentDidMount() {\n    setInterval(() => {\n      this.setState(prevState => {\n        count: prevState.${3:bar} + 1;\n      });\n    }, 1000);\n  }\n\n  render() {\n    const { ${2:foo} } = this.props;\n    const { ${3:bar} } = this.state;\n    return (\n      <View style={styles.container}>\n        <Text>\n          {${2:foo}} Im reactive [{${3:bar}}]\n        </Text>\n      </View>\n    );\n  }\n}\n\nconst styles = StyleSheet.create({\n  container: {\n    flex: 1\n  }\n});\n\nexport default ${1:MyComponent};"

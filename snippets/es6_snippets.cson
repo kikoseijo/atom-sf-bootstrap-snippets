@@ -5,6 +5,11 @@
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#f5da55'>ES6</span> Import empty up 2 levels"
     body: "import ${1} from './${2:../../}${3}';"
+  "ES6: Console log":
+    prefix: "clog"
+    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> Console log '[-- ${1} --]'"
+    body: "console.log('[-- ${1} --]', ${1});"
 
   "ES6: Import axios":
     prefix: "import-axios"
@@ -24,17 +29,29 @@
     rightLabelHTML: "<span style='color:#f5da55'>ES6</span> Import axios from axios"
     body: "axios.get('${1}').then(res => {\n\tconsole.log(res);\n}).catch(error => {\n\tconsole.log(error);\n});"
 
-  "ES6: Import module":
-    prefix: "iimport"
+  "ES6: Import default from module":
+    prefix: "ilibrary"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
-    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import module"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import default from module"
     body: "import ${1} from '${2}';"
 
-  "ES6: Import module with brackets":
-    prefix: "iimmport"
+  "ES6: Import local module":
+    prefix: "ilocal"
+    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import local ./../../module"
+    body: "import ${1} from './../../${2}';"
+
+  "ES6: Import * as MODULE from 'module'":
+    prefix: "iallas"
+    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> Import * as MODULE from 'module'"
+    body: "import * as ${1} from '${2}';"
+
+  "ES6: Import module from":
+    prefix: "iefrom"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import { Component } from 'module' "
-    body: "import { ${1} } from '${2:$1|}';"
+    body: "import { ${1} } from '${2}';"
 
   "ES6: export default MODULE":
     prefix: "edefault"
