@@ -1,66 +1,78 @@
 ".source.js, .source.jsx, .source.ts, .source.tsx":
 
-  "ES6: Import empty":
-    prefix: "import-empty-parent-folder-2-levels"
+  "ES6: Console log variable":
+    prefix: "cclog"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
-    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> Import empty up 2 levels"
-    body: "import ${1} from './${2:../../}${3}';"
-  "ES6: Console log":
-    prefix: "clog"
-    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
-    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> Console log '[-- ${1} --]'"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> console.log('item', item);"
     body: "console.log('[-- ${1} --]', ${1});"
+  "ES6: Console log":
+    prefix: "ccstringlog"
+    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> console.log('[--XX ${1} XX--]');"
+    body: "console.log('[--XX ${1} XX--]');"
 
   "ES6: Import axios":
-    prefix: "import-axios"
+    prefix: "iiaxios"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
-    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> Import axios from axios"
-    body: "import axios from 'axios';\n$1"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import axios from 'axios';"
+    body: "import axios from 'axios';"
 
   "ES6: Import Vue":
-    prefix: "import-vue"
+    prefix: "iivue"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
-    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> Import Vue from vue"
-    body: "import Vue from 'vue';\n$1"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import Vue from 'vue';"
+    body: "import Vue from 'vue';"
 
   "ES6: Axios get":
-    prefix: "axios-get"
+    prefix: "iiaxios-get"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#f5da55'>ES6</span> Import axios from axios"
     body: "axios.get('${1}').then(res => {\n\tconsole.log(res);\n}).catch(error => {\n\tconsole.log(error);\n});"
 
   "ES6: Import default from module":
-    prefix: "ilibrary"
+    prefix: "i"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
-    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import default from module"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import ${1} from '${2}';"
     body: "import ${1} from '${2}';"
-
   "ES6: Import local module":
-    prefix: "ilocal"
+    prefix: "ii1"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
-    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import local ./../../module"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import ${1} from './${2}';"
+    body: "import ${1} from './${2}';"
+  "ES6: Import local module 1 level":
+    prefix: "ii2"
+    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import ${1} from './../${2}';"
+    body: "import ${1} from './../${2}';"
+  "ES6: Import local module 2 levels":
+    prefix: "ii3"
+    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import ${1} from './../../${2}';"
     body: "import ${1} from './../../${2}';"
-
+  "ES6: Import local module 3 levels":
+    prefix: "ii4"
+    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import ${1} from './../../../${2}';"
+    body: "import ${1} from './../../../${2}';"
   "ES6: Import * as MODULE from 'module'":
-    prefix: "iallas"
+    prefix: "iias"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
-    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> Import * as MODULE from 'module'"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import * as ${1} from '${2}';"
     body: "import * as ${1} from '${2}';"
-
   "ES6: Import module from":
-    prefix: "iefrom"
+    prefix: "iim"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
-    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import { Component } from 'module' "
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import { ${1} } from '${2}';"
     body: "import { ${1} } from '${2}';"
 
   "ES6: export default MODULE":
-    prefix: "edefault"
+    prefix: "eedefault"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
-    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> export default NAME; "
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> export default ${1};"
     body: "export default ${1};"
 
   "ES6: export default { MODULE }":
-    prefix: "edefaultbrakets"
+    prefix: "eedefaultbrakets"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
-    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> export default { MODULE }; "
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> export default { ${1} };"
     body: "export default { ${1} };"
