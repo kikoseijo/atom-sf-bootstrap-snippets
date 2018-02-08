@@ -1,45 +1,50 @@
 '.source.js.jsx':
 
   'React Native Component Class':
-    prefix: 'rn:class-component'
+    prefix: 'rnclass-component'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#26DAFE">React Native</span> class Component'
     body: "// @flow\nimport * as React from 'react';\nimport { View, Text, StyleSheet, } from 'react-native';\n\nexport default class ${1:ComponentName} extends React.Component<{}> {\n\trender() {\n\t\treturn (\n\t\t\t<View style={styles.container\\}>\n\t\t\t\t<Text>I'm the ${1:ComponentName} component</Text>\n\t\t\t</View>\n\t\t);$5\n\t}\n}\n\nconst styles = StyleSheet.create({\n\tcontainer: {\n\t\tflex: 1,\n\t},\n});\n"
   'React Native function component':
-    prefix: 'rn:function-component'
+    prefix: 'rnfunction-component'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#26DAFE">React Native</span> function Component'
     body: "// @flow\nimport * as React from 'react';\n\nimport { View, Text, StyleSheet } from 'react-native';\n\nconst ${1:ComponentName} = ($2) => (\n\t<View style={styles.container\\}>\n\t\t<Text>I'm ${1:ComponentName}</Text>\n\t</View>\n);$3\n\nexport default ${1:ComponentName};\n\nconst styles = StyleSheet.create({\n\tcontainer: {\n\t\tflex: 1,\n\t},\n});\n"
   'React Native Pure Component Class':
-    prefix: 'rn:pure-component'
+    prefix: 'rnpure-component'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#26DAFE">React Native</span> Pure Component + props validation'
     body: "// @flow\nimport * as React from 'react';\nimport { View, Text, StyleSheet } from 'react-native';\n\nconst styles = StyleSheet.create({\n  container: {\n    flex: 1,\n  },\n});\n\nexport default class ${1:ComponentName} extends React.PureComponent<{}> {\n  static propTypes = {\n    title: PropTypes.string,\n  }\n\n  static defaultProps = {\n    title: 'Hello ${1:ComponentName}',\n  }\n\n  render() {\n    return (\n      <View style={styles.container}>\n        <Text>{this.props.title}</Text>\n      </View>\n    );\n  }\n}\n"
-  'React Native state definition':
-    prefix: 'rn:state-initialization-declaration-init'
+  'React Native type State':
+    prefix: 'rnTypeState'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
-    rightLabelHTML: '<span style="color:#26DAFE">React Native</span> State declaration initialization'
-    body: "state = {\n\t${1}: ${2:[]},\n\t${3}\n}"
-  'React Native setState Inline':
-    prefix: 'rn:set-state-inline'
+    rightLabelHTML: '<span style="color:#26DAFE">React Native</span> type State = {}'
+    body: "type State = {\n\tbar: string,\n\t${3}\n};"
+  'React Native setState Async':
+    prefix: 'thisSetState'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
-    rightLabelHTML: '<span style="color:#26DAFE">React Native</span> State declaration initialization'
-    body: "this.setState({$1:$2})$3"
-  'React Native constants from properties':
-    prefix: 'rn:constprops'
+    rightLabelHTML: '<span style="color:#26DAFE">React Native</span> this.SetState({ $1: $2 })'
+    body: "this.setState({ $1: $2 });"
+  'React Native setState function':
+    prefix: 'thisSetStateFunc'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
-    rightLabelHTML: '<span style="color:#26DAFE">React Native</span> const { Var } = this.props;'
+    rightLabelHTML: '<span style="color:#26DAFE">React Native</span> this.setState((prevState, props) => {'
+    body: "this.setState((prevState, props) => {\nreturn { $1: $2 }});"
+  'React Native extract constants from properties':
+    prefix: 'rncprops'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#26DAFE">React Native</span> const { ${1} } = this.props;'
     body: "const { ${1} } = this.props;"
-  "React Native: Import PropTypes":
-    prefix: "improps"
+  "React Native: extract constant from state":
+    prefix: 'rncstate'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
-    rightLabelHTML: '<span style="color:#26DAFE">React Native</span> Import PropTypes'
-    body: "import PropTypes from 'prop-types';"
-  "React Native: PropTypes":
-    prefix: "rn:props"
+    rightLabelHTML: '<span style="color:#26DAFE">React Native</span> const { ${1} } = this.state;'
+    body: "const { ${1} } = this.state;"
+  "React Native: type Props":
+    prefix: "rntypeprops"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
-    rightLabelHTML: '<span style="color:#26DAFE">RN</span> PropTypes static version'
-    body: "static propTypes = {\n\thasTabs: PropTypes.bool,\n}\n\nstatic defaultProps = {\n\thasTabs: false,\n}\n"
+    rightLabelHTML: '<span style="color:#26DAFE">React Native</span> type Props = { }'
+    body: "type Props = {\nfoo: string\n};"
   "React Native: StyleSheet":
     prefix: "rn:StyleSheet"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'

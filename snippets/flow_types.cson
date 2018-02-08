@@ -8,7 +8,7 @@
     prefix: "ftelement"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#ffc737">flow</span> Type Element'
-    body: "React.Element<${1/typeof Component|'div'}>"
+    body: "React.Element<typeof ${1:Component|'div'}>"
   "flow: Type ChildrenArray":
     prefix: "ftchildren"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
