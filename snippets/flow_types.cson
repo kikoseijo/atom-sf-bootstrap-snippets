@@ -54,3 +54,8 @@
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#ffc737">flow</span> React.ElementRef'
     body: "React.ElementRef<typeof ${1:Component}>"
+  "flow: StyleSheet.style":
+    prefix: "ftStyle"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#ffc737">flow</span> StyleObj TYPE'
+    body: "import type { StyleObj } from 'react-native/Libraries/StyleSheet/StyleSheetTypes';\n"

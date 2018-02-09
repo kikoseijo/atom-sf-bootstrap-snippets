@@ -49,7 +49,7 @@
     prefix: "rn:StyleSheet"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#26DAFE">RN</span> StyleSheet.create()'
-    body: "const styles = StyleSheet.create({\n\tcontainer: {\n\t\tflex: 1,\n\t},\n});"
+    body: "const styles = StyleSheet.create({\n\tcontainer: {\n\t\tflex: 1,\n\t},\n});\n"
   "React Native: Constructor":
     prefix: "rn:Constructor"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
