@@ -1,0 +1,8 @@
+'.source.js.jsx':
+
+  'React Native Animations Fade':
+    prefix: 'rnclass-component'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#26DAFE">React Native Animations</span> Fade'
+    body: "// State\nfadeAnim: new Animated.Value(0),  // Initial value for opacity: 0\n\n// componentDidMount\nAnimated.timing(                  // Animate over time\n  this.state.fadeAnim,            // The animated value to drive\n  {\n    toValue: 1,                   // Animate to opacity: 1 (opaque)\n    duration: 10000,              // Make it take a while\n  }\n).start(); \n\n// render()\nlet { fadeAnim } = this.state;\n<Animated.View                 // Special animatable View\n  style={{\n    ...this.props.style,\n    opacity: fadeAnim,         // Bind opacity to animated value\n  }}\n>\n  {this.props.children}\n</Animated.View>"
+  
