@@ -30,40 +30,41 @@
     body: "axios.get('${1}').then(res => {\n\tconsole.log(res);\n}).catch(error => {\n\tconsole.log(error);\n});"
 
   "ES6: Import default from module":
-    prefix: "i"
+    prefix: "i_"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import ${1} from '${2}';"
     body: "import ${1} from '${2}';"
-  "ES6: Import local module":
-    prefix: "ii1"
-    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
-    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import ${1} from './${2}';"
-    body: "import ${1} from './${2}';"
-  "ES6: Import local module 1 level":
-    prefix: "ii2"
-    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
-    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import ${1} from './../${2}';"
-    body: "import ${1} from './../${2}';"
-  "ES6: Import local module 2 levels":
-    prefix: "ii3"
-    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
-    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import ${1} from './../../${2}';"
-    body: "import ${1} from './../../${2}';"
-  "ES6: Import local module 3 levels":
-    prefix: "ii4"
-    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
-    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import ${1} from './../../../${2}';"
-    body: "import ${1} from './../../../${2}';"
-  "ES6: Import * as MODULE from 'module'":
-    prefix: "iias"
-    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
-    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import * as ${1} from '${2}';"
-    body: "import * as ${1} from '${2}';"
   "ES6: Import module from":
     prefix: "iim"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import { ${1} } from '${2}';"
     body: "import { ${1} } from '${2}';"
+  "ES6: Import local module":
+    prefix: "iiimport"
+    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import ${1} from './${2}';"
+    body: "import ${1} from './${2}';"
+  "ES6: Import local module 1 level":
+    prefix: "ii1"
+    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import ${1} from './../${2}';"
+    body: "import ${1} from './../${2}';"
+  "ES6: Import local module 2 levels":
+    prefix: "ii2"
+    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import ${1} from './../../${2}';"
+    body: "import ${1} from './../../${2}';"
+  "ES6: Import local module 3 levels":
+    prefix: "ii3"
+    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import ${1} from './../../../${2}';"
+    body: "import ${1} from './../../../${2}';"
+  "ES6: Import * as MODULE from 'module'":
+    prefix: "ias"
+    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> import * as ${1} from '${2}';"
+    body: "import * as ${1} from '${2}';"
+
 
   "ES6: export default MODULE":
     prefix: "eedefault"
