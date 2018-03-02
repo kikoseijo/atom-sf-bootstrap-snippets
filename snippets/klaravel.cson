@@ -1,0 +1,6 @@
+'.text.html.php.blade':
+  'Klaravel modal':
+    prefix: 'klmodal'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#f4645f">Klaravel</span> modal'
+    body: '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#$1">\n  Launch demo modal\n</button>\n@component(\'klaravel::ui.modal\', [\'modalId\' => \'$1\', \'size\' => \'lg\'])\n    @includeIf(\'$2\')\n@endcomponent'

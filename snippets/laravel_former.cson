@@ -1,0 +1,11 @@
+'.text.html.php.blade':
+  'Former login from spanish version':
+    prefix: 'former_login_form_es'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#f4645f">Former</span> Login Form (spanish)'
+    body: "{!! Former::horizontal_open()\n    ->route('login')\n    ->method('POST')\n    ->rules(['password' => 'required|min:3|max:225', 'email' => 'required|email']) \n!!}\n{!! Former::email('email')->label('Direccion de correo') !!}\n{!! Former::password('password')->label('Contraseña') !!}\n{!! Former::checkbox('remember')->check()->text(' Recordarme en este equipo')->label('&nbsp;') !!}\n{!! Former::actions()\n    ->large_dark_submit('Acceder ahora'); \n!!}\n{!! Former::close() !!}"
+  'Former Contact from spanish version':
+    prefix: 'former_contact_form'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#f4645f">Former</span> Contact Form'
+    body: ""
