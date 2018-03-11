@@ -3,32 +3,13 @@
     prefix: 'lara:layout'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#f4645f">Laravel</span> Layout'
-    body: """<!DOCTYPE html>
-        <html lang="{{ app()->getLocale() }}">
-          <head>@if (App::environment() === 'production' && env('ANALYTICS_CODE') != '')
-                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107185797-1"></script>
-                <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments)};
-                gtag('js', new Date());
-                gtag('config', {{ env('ANALYTICS_CODE') }});
-                </script>
-            @endif
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>@yield('title', config('app.name'))</title>
-            <meta name="csrf-token" content="{{ csrf_token() }}">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="{{ asset('css/${1:app}.css')}}">
-            @stack('stylesheet')
-          </head>
-          <body id="web-app">
-            $2@includeif('web.nav.header')
-            @yield('content')
-            @includeif('web.nav.footer')
-            <div class="overlay"></div>
-            <script src="{{ asset('js/${1:app}.js') }}" charset="utf-8"></script>
-            @stack('scripts')
-          </body>
-        </html>
+    body: """
+      <!DOCTYPE html>\n<html lang="{{ app()->getLocale() }}">\n<head>\n\t@if (App::environment() === 'production' && env('ANALYTICS_CODE') != '')\n\t<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107185797-1"></script>\n\t<script>\n\t\twindow.dataLayer = window.dataLayer || [];\n\t\tfunction gtag(){dataLayer.push(arguments)};\n\t\tgtag('js', new Date());\n\t\tgtag('config', {{ env('ANALYTICS_CODE') }});\n\t</script>\n\t@endif\n\t<meta charset="utf-8">\n\t<meta name="viewport" content="width=device-width, initial-scale=1">\n\t<title>@yield('title', config('app.name'))</title>\n\t<meta name="csrf-token" content="{{ csrf_token() }}">\n\t<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">\n\t<link rel="stylesheet" href="{{ asset('css/app.css')}}">\n\t@stack('stylesheet')\n</head>\n<body id="web-app">\n\t@includeif('web.nav.header')\n\t@yield('content')\n\t@includeif('web.nav.footer')\n\t<div class="overlay"></div>\n\t<script src="{{ asset('js/app.js') }}" charset="utf-8"></script>\n\t@stack('scripts')\n</body>\n</html>
+    """
+  'Layout 2.0':
+    prefix: 'layout'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#f4645f">Laravel</span> Layout 2.0'
+    body: """
+      <!DOCTYPE html>\n<html lang="{{ config('app.locale') }}" class="js-viewport | html--stretched">\n@includeIf('layouts._partials.credits')\n<head>\n\t@if (app()->environment('production'))\n\t@includeif('klaravel::_parts.analytics', [\n\t    'anaKey' => config('application.contact.google_analytics_key')\n\t])\n\t@endif\n\t{{-- <title>{{ isset($title) ? $title . ' | ' : '' }} Estepona {{ config('app.name', 'Klaravel, by Sunnyface.com') }}</title> --}}\n\t@includeIf('layouts._partials.meta')\n\t@includeIf('layouts._partials.favicons')\n\t@includeIf('layouts._partials.seo')\n\t@stack('stylesheets')\n\t<link href="{{ asset('css/front.css') }}" rel="stylesheet">\n\t<script>\n\t    window.Larapp = {!! json_encode([\n\t\t'csrfToken' => csrf_token()\n\t    ]) !!};\n\t</script>\n</head>\n<body>\n\t<div id="app">\n\t    @includeIf('web.parts.header')\n\t    @yield('content')\n\t    @includeIf('web.parts.footer')\n\t    @component('klaravel::ui.modal', [\n\t\t'modalId' => 'avisosModal',\n\t\t'title' => 'Avisador de vehículos',\n\t\t'size' => 'lg'\n\t    ])\n\t    @includeIf('web.parts.avisos-modal')\n\t    @endcomponent\n\t    @stack('modals')\n\t</div>\n\t@if (app()->isLocal())\n\t  <script src="{{ mix('js/front.js') }}"></script>\n\t@else\n\t  <script src="{{ mix('js/manifest.js') }}"></script>\n\t  <script src="{{ mix('js/vendor.js') }}"></script>\n\t  <script src="{{ mix('js/front.js') }}"></script>\n\t@endif\n\t@stack('scripts')\n\t@include('cookieConsent::index')\n</body>\n</html>\n
     """
