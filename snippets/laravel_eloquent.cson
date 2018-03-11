@@ -1,0 +1,26 @@
+'.text.html.php':
+  'Laravel Eloquent Belongs-to-many':
+    prefix: 'belongsToMany'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#f4645f">Eloquent</span> $this->belongsToMany'
+    body: "public function ${1:relationship}()\n{\n\treturn $this->belongsToMany('App\\\\Models\\\\$2');\n}"
+  'Laravel Eloquent Belongs to':
+    prefix: 'belongsTo'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#f4645f">Eloquent</span> $this->belongsTo'
+    body: "public function ${1:relationship}()\n{\n\treturn $this->belongsTo('App\\\\Models\\\\$2');\n}"
+  'Laravel Eloquent Has many':
+    prefix: 'hasMany'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#f4645f">Eloquent</span> $this->hasMany'
+    body: "public function ${1:relationship}()\n{\n\treturn $this->hasMany('App\\\\Models\\\\$2');\n}"
+  'Laravel Eloquent Has one':
+    prefix: 'hasOne'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#f4645f">Eloquent</span> $this->hasOne'
+    body: "public function ${1:relationship}()\n{\n\treturn $this->hasOne('App\\\\Models\\\\$2');\n}"
+  'Laravel Model definition':
+    prefix: 'modelProperties'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#f4645f">Eloquent</span> Model properties definition'
+    body: "use Notifiable, SoftDeletes, HasLogs;\nuse Ksoft\\\\Klaravel\\\\Traits\\\\ActiveScope;\n\nprotected $guarded = ['id'];\n\nprotected $casts = [\n\t'active'    => 'boolean',\n];\nprotected $fillable = ['name'];\nprotected $hidden = ['password', 'remember_token'];\n\npublic static $rules = [\n\t'name' => 'required|string|max:255',\n\t'email' => 'required|string|email|max:255|unique:users',\n];"
