@@ -1,9 +1,9 @@
 ".source.css, .source.less, .source.scss":
   "CSS Media calls":
-    prefix: "css:media-calls"
+    prefix: "media-calls"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
-    rightLabelHTML: "<span style='color:#4A90E2'>LESS</span> media calls"
-    body:"@media (min-width: 768px) {\n$i\n}\n@media (min-width: 992px) {\n\n}\n@media (min-width: 1200px) {\n\n}"
+    rightLabelHTML: "<span style='color:#4A90E2'>CSS</span> Responsive media calls"
+    body: "// Small devices (phones, 576px and up)\n@media (min-width: 576px) {\n\n}\n\n/// Medium devices (tablets, 768px and up)\n@media (min-width: 768px) {\n\n}\n\n// Large devices (desktops, 992px and up)\n@media (min-width: 992px) {\n\n}\n\n// Extra large devices (large desktops, 1200px and up)\n@media (min-width: 1200px) {\n\n}"
   "CSS Margings Paddings -variable":
     prefix: "css:margins-paddings"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
