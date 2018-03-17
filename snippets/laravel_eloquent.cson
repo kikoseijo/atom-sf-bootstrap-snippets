@@ -23,4 +23,4 @@
     prefix: 'modelProperties'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#f4645f">Eloquent</span> Model properties definition'
-    body: "use Notifiable, SoftDeletes, HasLogs;\nuse Ksoft\\\\Klaravel\\\\Traits\\\\ActiveScope;\n\nprotected $guarded = ['id'];\n\nprotected $casts = [\n\t'active'    => 'boolean',\n];\nprotected $fillable = ['name'];\nprotected $hidden = ['password', 'remember_token'];\n\npublic static $rules = [\n\t'name' => 'required|string|max:255',\n\t'email' => 'required|string|email|max:255|unique:users',\n];"
+    body: "use Notifiable, SoftDeletes, HasLogs;\nuse Ksoft\\\\Klaravel\\\\Traits\\\\ActiveScope;\n\nprotected $guarded = ['id'];\n\nprotected $casts = [\n\t'active'    => 'boolean',\n];\nprotected $fillable = ['name'];\nprotected $hidden = ['password', 'remember_token'];\n\nprotected $dates = ['published_at'];\n\npublic static $rules = [\n\t'name' => 'required|string|max:255',\n\t'email' => 'required|string|email|max:255|unique:users',\n];"

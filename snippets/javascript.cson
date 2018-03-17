@@ -1,0 +1,12 @@
+'.text.html, .meta.tag.script.html':
+
+  'JS: Simple script':
+    prefix: 'scriptdocumentready'
+    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
+    rightLabelHTML: "<span style='color:#EFC725'>JS</span> Script open + $(document).ready(function() {"
+    body: "<script type=\"text/javascript\">\n\t$(document).ready(function() {\n\t\t//$1\n\t});\n</script>"
+  'JS: Document ready':
+    prefix: 'documentready'
+    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
+    rightLabelHTML: "<span style='color:#EFC725'>JS</span> $(document).ready(function() { });"
+    body: "$(document).ready(function() {\n\t//$1\n});"

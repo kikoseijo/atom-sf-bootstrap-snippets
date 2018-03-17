@@ -5,6 +5,7 @@
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
     rightLabelHTML: "<span style='color:#f5da55'>ES6</span> console.log('item', item);"
     body: "console.log('[-- ${1} --]', ${1});"
+
   "ES6: Console log":
     prefix: "ccstringlog"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
