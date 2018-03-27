@@ -9,7 +9,7 @@
     prefix: 'rnfunction-component'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#26DAFE">React Native</span> function Component'
-    body: "// @flow\nimport * as React from 'react';\n\nimport { View, Text, StyleSheet } from 'react-native';\n\nconst ${1:ComponentName} = ($2) => (\n\t<View style={styles.container\\}>\n\t\t<Text>I'm ${1:ComponentName}</Text>\n\t</View>\n);$3\n\nexport default ${1:ComponentName};\n\nconst styles = StyleSheet.create({\n\tcontainer: {\n\t\tflex: 1,\n\t},\n});\n"
+    body: "// @flow\nimport * as React from 'react';\n\nimport { View, Text, StyleSheet } from 'react-native';\n\ntype Props = {\n  text: string\n};\n\nconst ${1:ComponentName} = ({text}:Props) => (\n\t<View style={styles.container\\}>\n\t\t<Text>I'm ${1:ComponentName}</Text>\n\t</View>\n);$3\n\nexport default ${1:ComponentName};\n\nconst styles = StyleSheet.create({\n\tcontainer: {\n\t\tflex: 1,\n\t},\n});\n"
   'React Native Pure Component Class':
     prefix: 'rnpure-component'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'

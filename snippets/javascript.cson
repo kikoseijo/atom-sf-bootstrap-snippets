@@ -1,4 +1,4 @@
-'.text.html, .meta.tag.script.html':
+'.text.html, .meta.tag.script.html, .source.js.jsx':
 
   'JS: Simple script':
     prefix: 'scriptdocumentready'
