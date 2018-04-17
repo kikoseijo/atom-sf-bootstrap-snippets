@@ -1,4 +1,4 @@
-".text.html.basic, .text.html.php, .text.html.php.blade":
+".text.html.basic, .text.html.php, .text.html.php.blade, .text.html.hack":
 
   "Boostrap3 Table - Responsive Table ":
     prefix:"boo3:table-responsive"

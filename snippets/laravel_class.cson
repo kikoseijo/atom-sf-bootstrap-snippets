@@ -1,4 +1,4 @@
-'.text.html.php':
+'.text.html.php, .text.html.hack':
 
   'Service Provider':
     prefix: 'laravel:ServiceProvider'

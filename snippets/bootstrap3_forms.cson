@@ -1,4 +1,4 @@
-'.text.html.php.blade, .text.html, .text.html.php':
+'.text.html.php.blade, .text.html, .text.html.php, .text.html.hack':
   "Boostrap3 Form Group":
     prefix:"bootstrap3:formgroup"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'

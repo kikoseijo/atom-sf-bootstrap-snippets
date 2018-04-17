@@ -1,4 +1,4 @@
-'.text.html.php.blade':
+'.text.html.php.blade, .text.html.hack':
   'Former login from spanish version':
     prefix: 'former_login_form_es'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'

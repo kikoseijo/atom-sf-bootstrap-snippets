@@ -1,4 +1,4 @@
-'.text.html.php.blade':
+'.text.html.php.blade, .text.html.hack':
   'Layout':
     prefix: 'lara:layout'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'

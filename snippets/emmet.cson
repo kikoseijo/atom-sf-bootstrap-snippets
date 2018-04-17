@@ -1,4 +1,4 @@
-'.text.html.basic, .text.html.php, .text.html.php.blade, .text.html.vue':
+'.text.html.basic, .text.html.php, .text.html.php.blade, .text.html.vue, .text.html.hack':
 
   'Boostrap3 table Emmet Shortcut':
     prefix: 'emm:table'
