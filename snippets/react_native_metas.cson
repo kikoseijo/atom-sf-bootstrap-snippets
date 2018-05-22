@@ -5,3 +5,21 @@
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#26DAFE">RN</span> style property'
     body: "style={styles.${1}}"
+
+'.source.js.jsx':
+
+  'React Native CSS Width + Height':
+    prefix: 'widthheight-RNCSS'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#26DAFE">RN</span> React-native Css'
+    body: "width: 50,\nheight: 50,"
+  'React Native CSS flex Positioning':
+    prefix: 'flex-RNCSS'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#26DAFE">RN</span> React-native Css'
+    body: "flex: 1,\nflexDirection: 'column',\njustifyContent: 'space-between', // flex-start, center, flex-end, space-around, space-between and space-evenly\nalignItems: 'center', // flex-start, center, flex-end, and stretch"
+  'React Native CSS alignSelf':
+    prefix: 'alignSelf-RNCSS'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#26DAFE">RN</span> React-native Css'
+    body: "alignSelf: 'center', // auto, flex-start, flex-end, center, stretch, baseline"

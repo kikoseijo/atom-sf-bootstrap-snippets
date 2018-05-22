@@ -3,7 +3,7 @@
     prefix: 'lang'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#f4645f">Blade</span> @lang(\'key.val\')'
-    body: "@lang('${1:file_name}.${2:key_name})"
+    body: "@lang('${2:file_name}.${1:key_name}')"
   'translate blade directive trans':
     prefix: '__'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
