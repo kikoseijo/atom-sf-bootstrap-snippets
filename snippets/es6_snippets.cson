@@ -27,8 +27,14 @@
   "ES6: Axios get":
     prefix: "axios-get"
     leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
-    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> Import axios from axios"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> Axios get function declaration"
     body: "axios.get('${1}').then(res => {\n\tconsole.log(res);\n}).catch(error => {\n\tconsole.log(error);\n});"
+    
+  "ES6: Axios post Vue+":
+    prefix: "axios-post"
+    leftLabelHTML: "<span style='color:#1B81B6'>Ⓢ</span>"
+    rightLabelHTML: "<span style='color:#f5da55'>ES6</span> Axios post function declaration"
+    body: "const formData = { record_title };\n\tconst updateUrl = this.updateUrl + '/' + record_id + '?_token=' + Larapp.csrfToken;\n\taxios\n\t  .post(updateUrl, formData)\n\t  .then(res => {\n\t    if (res.data && res.data.success) {\n\t\tthis.listData.splice(this.listData.indexOf(record), 1);\n\t} else {\n\t\tLarapp.processErrors(res);\n\t}\n\t})\n\t.catch(error => {\n\tLarapp.processErrors(error);\n\t});"
 
   "ES6: Import default from module":
     prefix: "i_"

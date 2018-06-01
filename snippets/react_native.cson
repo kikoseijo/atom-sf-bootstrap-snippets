@@ -20,6 +20,11 @@
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#26DAFE">React Native</span> type State = {}'
     body: "type State = {\n\tbar: string,\n\t${3}\n};"
+  'React Native types Props + State':
+    prefix: 'typesrn'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#26DAFE">React Native</span>  type Props = {} + type State = {}'
+    body: "type Props = {\n\t$1\n};\n\ntype State = {};"
   'React Native setState Async':
     prefix: 'thisSetState'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
