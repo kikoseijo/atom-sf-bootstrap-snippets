@@ -60,6 +60,16 @@
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#26DAFE">RN</span> Constructor'
     body: "constructor(props) {\n\tsuper(props);\n\tthis.state = {isShowingText: true};\n}"
+  "React Native: Logi":
+    prefix: "logi"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#26DAFE">RN</span> console.log(\'$1\', $1);'
+    body: "console.log('$1', $1);"
+  "React Native: LogiBreakpoint":
+    prefix: "logibreakpoint"
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#26DAFE">RN</span> console.log(\'$1\');'
+    body: "console.log('$1');"
   "React Native: Render function":
     prefix: "rn:Constructor"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
