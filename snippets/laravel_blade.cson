@@ -9,6 +9,11 @@
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
     rightLabelHTML: '<span style="color:#f4645f">Blade</span> {{ __(\'key.val\') }}'
     body: "{{ __('${1:file_name}.${2:key_name}') }}"
+  'translate blade directive json':
+    prefix: '_'
+    leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
+    rightLabelHTML: '<span style="color:#f4645f">Blade</span> {{ __(\'val\') }}'
+    body: "{{ __('${1:key_name}') }}"
   'translate blade directive dd':
     prefix: 'dd'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
