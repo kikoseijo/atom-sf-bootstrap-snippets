@@ -1,4 +1,4 @@
-'.tag.jsx, source.flow':
+'.tag.jsx, .source.flow':
 
   'React Native style':
     prefix: 'style='
@@ -6,7 +6,7 @@
     rightLabelHTML: '<span style="color:#26DAFE">RN</span> style property'
     body: "style={styles.${1}}"
 
-'.source.js, .source.js.jsx, source.flow':
+'.source.js, .source.js.jsx, .source.flow':
 
   'React Native CSS Width + Height':
     prefix: 'widthheight-RNCSS'

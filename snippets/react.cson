@@ -1,4 +1,4 @@
-'.source.js, .source.js.jsx, source.flow':
+'.source.js, .source.js.jsx, .source.flow':
 
   'React: functional component':
     prefix: 're:functional-component'

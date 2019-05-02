@@ -1,4 +1,4 @@
-".source.js, .source.jsx, .source.ts, .source.tsx, source.flow":
+".source.js, .source.jsx, .source.ts, .source.tsx, .source.flow":
 
   "ES6: Console log variable":
     prefix: "cclog"

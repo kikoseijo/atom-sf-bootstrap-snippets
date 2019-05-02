@@ -1,4 +1,4 @@
-".source.js, .source.jsx, .source.ts, .source.tsx, source.flow":
+".source.js, .source.jsx, .source.ts, .source.tsx, .source.flow":
   "flow: React.Node children":
     prefix: "ftnode"
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
