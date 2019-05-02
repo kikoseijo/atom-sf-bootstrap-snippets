@@ -1,4 +1,4 @@
-'.source.js, source.js.jsx':
+'.source.js, .source.js.jsx':
   'Anatomy':
     prefix: 'rnb:anatomy'
     leftLabelHTML: '<span style="color:#1B81B6">Ⓢ</span>'
